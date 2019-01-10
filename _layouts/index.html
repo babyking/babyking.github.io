@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  {% include header.html %}
+
+  <body>
+    {% include header_nav.html %}
+    <div class="wrapper main">
+      <blockquote id="intro">
+        <p>
+          现居北京,目前就职于拉卡拉,负责移动前端开发.
+        </p>
+        <br />
+        <p>
+          <a href="http://twitter.com/babyking1949" target="_blank">Tweets</a> ·
+          <a href="http://github.com/babyking" target="_blank">Github</a> ·
+          <a
+            href="https://www.youtube.com/playlist?list=LLQYMzCEEC8Or65JVMsg6Ktw"
+            target="_blank"
+            >YouTube</a>
+        </p>
+      </blockquote>
+
+      <div id="content" class="index">
+        <div id="main">{{ content }}</div>
+      </div>
+      {% include footer.html %}
+    </div>
+  </body>
+</html>

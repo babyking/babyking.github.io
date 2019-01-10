@@ -1,0 +1,28 @@
+<div id="nav">
+	<div class="wrapper">
+		<div id="logo"><a href="/"><img src="/image/logo.png" /></a></h1>
+		</div>
+		<ul>
+			<li id="category-tech"><a href="/category/tech.html">技术</a></li>
+			<li id="category-music"><a href="/category/music.html">音乐</a></li>
+			<li id="category-sketch"><a href="/category/sketch.html">随笔</a></li>
+			<li id="category-discovery"><a href="/category/discovery.html">发现</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>
+	var category = location.pathname;
+	if (category == '/') {
+		// document.getElementById('category-all').style.textDecoration = "underline";
+	} else if (category == '/category/tech.html') {
+		document.getElementById('category-tech').style.textDecoration = "underline";
+	} else if (category == '/category/music.html') {
+		document.getElementById('category-music').style.textDecoration = "underline";
+	} else if (category == '/category/discovery.html') {
+		document.getElementById('category-discovery').style.textDecoration = "underline";
+	} else if (category == '/category/sketch.html') {
+		document.getElementById('category-sketch').style.textDecoration = "underline";
+	}
+
+</script>

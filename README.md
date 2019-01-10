@@ -1,2 +1,3 @@
-# babyking.github.io
-# babyking.github.io
+BabyKing's blog
+
+https://babyking.github.io

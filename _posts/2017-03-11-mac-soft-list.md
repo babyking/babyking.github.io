@@ -72,7 +72,9 @@ Markdown 编辑器,这篇博客就是用其来写的,与其他同类编辑器的
 
 目录快速跳转插件, 只需要 j + 目录名(或部分目录名),便可快速跳转到你曾经去过的地方.
 
+[**Go2Shell**](http://zipzapmac.com/Go2Shell)
 
+Finder里快速进入shell并以选择的目录为当前目录
 
 ### Google Chrome插件 
 

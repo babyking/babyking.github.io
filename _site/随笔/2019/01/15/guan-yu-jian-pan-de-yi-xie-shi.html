@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<title> 关于键盘的一些事</title>
+  
+
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/lzyy">
+</head>
+
+
+<body>
+	<div id="nav">
+	<div class="wrapper">
+		<div id="logo"><a href="/"><img src="/image/logo.png" /></a></h1>
+		</div>
+		<ul>
+			<li id="category-tech"><a href="/category/tech.html">技术</a></li>
+			<li id="category-music"><a href="/category/music.html">音乐</a></li>
+			<li id="category-sketch"><a href="/category/sketch.html">随笔</a></li>
+			<li id="category-discovery"><a href="/category/discovery.html">发现</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>
+	var category = location.pathname;
+	if (category == '/') {
+		// document.getElementById('category-all').style.textDecoration = "underline";
+	} else if (category == '/category/tech.html') {
+		document.getElementById('category-tech').style.textDecoration = "underline";
+	} else if (category == '/category/music.html') {
+		document.getElementById('category-music').style.textDecoration = "underline";
+	} else if (category == '/category/discovery.html') {
+		document.getElementById('category-discovery').style.textDecoration = "underline";
+	} else if (category == '/category/sketch.html') {
+		document.getElementById('category-sketch').style.textDecoration = "underline";
+	}
+
+</script>
+	<div class="wrapper main">
+		<div id="content">
+			<h2>关于键盘的一些事</h2>
+			<br />
+			<div class="cnt">
+				<blockquote>
+  <p>IT产业新技术日新月异，令人目不暇给，然而在这其中，真正称得上伟大东西的却寥寥无几。1998年，被誉为“软件世界的爱迪生”，发明了BSD、TCP/IP、csh、vi和NFS的SUN首席科学家Bill Joy曾经不无调侃地说，在计算机体系结构领域里，<strong>缓存</strong>是唯一称得上伟大的思想，其他的一切发明和技术不过是在不同场景下应用这一思想而已。</p>
+</blockquote>
+
+<p>上面是『精通正则表达式』序里的一段话,对缓存这事做了定性.细细想来,不光是在计算机体系中,在很多生活场景也同样适用. 再简单一点的说,缓存就是效率.</p>
+
+<p>今天说的是关于键盘相关的一些事情,自己曾在上面花了一些时间的,内容有些杂,但重心都是跟效率相关的.</p>
+
+<h3 id="方向键-vim的提示">方向键-Vim的提示</h3>
+
+<p>方向键使用最频繁,但又离打字区较远,这样是无法有效率的,即使大多数人习惯于此.</p>
+
+<p>vim的hjkl这个设计思路无疑是最佳方案,在vim及一些不支持vim模式的编辑文字的地方可以借鉴.</p>
+
+<p>首先我们需要定义一个组合键来映射方向键,比如 ⌘+H, J, K, L这个方式有个最大的问题就是原来的⌘+HJKL的组合键被覆盖了,不合适.  <a href="http://stevelosh.com/blog/2012/10/a-modern-space-cadet/">A Modern Space Cadet</a> 这里给出了方案. 定义一个Hyper键,通过Hyper键+HJKL来做映射,这样避免冲突,为啥? Hyper键实际上是 ⌘⌃⌥⇧四个键组合,并将这四个组合映射到Capslock键上,当然也可以映射到你想要的键上.</p>
+
+<p>文中的映射是通过KeyRemap4MacBook和PCKeyboardHack 来实现的,这个软件后来改名了,叫karabiner,再后来又因为macOS的发布又改了一次 karabiner-element.</p>
+
+<p>有了一个Hyper键,不光是方向键,其实还可以做很多的无冲突的扩展.</p>
+
+<p><img src="/image/Snipaste_2019-01-15_10-42-52.jpg" alt="Snipaste_2019-01-15_10-42-52" /></p>
+
+<h3 id="键的模式">键的模式</h3>
+
+<p>很少有人留意过键盘的键的工作模式.咔嚓一下,就出来个字母, ⌘+C组合就是copy,F功能键有特定功能,大概如此了.刚刚说的copy,⌘键的行为就是按下等着C键的按下,然后触发了copy. 那普通的键是不是也可以呢. 我长按个Z然后再加个C是不是也能是个组合键呢? 理解上当然可以,这就需要区分一个键的是长按还是短按.这就是键的模式</p>
+
+<ol>
+  <li>单击</li>
+  <li>长按</li>
+  <li>双击</li>
+  <li>多击</li>
+</ol>
+
+<p>单击就是我们普通击键,长按就是按下一个键不立即释放超过一定时间,双击就是在一定时间内连续单击两次,多击类似双击.</p>
+
+<p>这些模式有什么用呢? 简单说两点:</p>
+
+<ol>
+  <li>提供更多无冲突可扩展快捷键定义</li>
+  <li>扩展现有的修饰键的功能</li>
+</ol>
+
+<p>举几个例子:</p>
+
+
+				<br />
+				<!-- --EOF--
+				<p>若无特别说明，本站文章均为原创，转载请保留链接，谢谢</p> -->
+			</div>
+			<div id="disqus_thread"></div>
+			<script type="text/javascript">
+				/**
+				* var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
+				*/
+				(function () {
+					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					dsq.src = 'https://babyking.disqus.com/embed.js';
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=babyking">comments powered
+					by Disqus.</a></noscript>
+		</div>
+		<div id="footer">
+	<p style="color:#ccc;font-size:12px;text-align: center">穿越这无限世界</p>
+	<p style="clear:both"></p>
+</div>
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-127077562-1';
+    var _gaDomain = '';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+	</div>
+</body>
+
+</html>

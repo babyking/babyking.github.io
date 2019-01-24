@@ -25,7 +25,7 @@ vm-tools更方便在宿主与虚拟机的切换,数据共享
 
 编辑 /etc/sysconfig/network-script/ifcfg-xxx ,
 
-```
+```ini
 BOOTPROTO=static
 ONBOOT=yes
 IPADDR=192.168.8.250
@@ -39,7 +39,7 @@ DNS1=192.168.8.2
 
 编辑 /Library/Preferences/VMware Fusion/vmnet8/nat.conf 
 
-```
+```ini
 [incomingtcp]
 
 # Use these with care - anyone can enter into your VM through these...

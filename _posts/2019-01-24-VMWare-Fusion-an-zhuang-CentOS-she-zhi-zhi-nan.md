@@ -2,10 +2,10 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: post
-title: VMWare Fusion安装CentOS设置
+title: VMware Fusion安装CentOS设置
 date: 2019-01-24 13:49
 category: 技术
-tags: VMWare CentOS
+tags: VMware CentOS
 ---
 
 

@@ -65,19 +65,21 @@ category: 技术
 
 首先了解这3个参数的功能:
 
-```json
+
+
 "parameters": {
-        // 按下一个键超过300毫秒触发 to_delayed_action事件,如果在300毫秒之内,有另外一个键的事件发性,则会触发其下的 to_if_canceled 事件,同时后面不会处理与to_if_canceled同级的to_if_invoked事件.
+        	   **// 按下一个键超过300毫秒触发 to_delayed_action事件,如果在300毫秒之内,有另外一个键的事件发性,则会触发其下的 to_if_canceled 事件,同时后面不会处理与to_if_canceled同级的to_if_invoked事件.**
   			"basic.to_delayed_action_delay_milliseconds": 300, 
         
-  			// 按下一个键并释放的时间不超过200毫秒触发 to_if_alone 事件
+  			**// 按下一个键并释放的时间不超过200毫秒触发 to_if_alone 事件**
   			"basic.to_if_alone_timeout_milliseconds": 200, 
   			
-  			//按下一个键超过200毫秒        
+  			**//按下一个键超过200毫秒**        
   			"basic.to_if_held_down_threshold_milliseconds": 200 
+}
 
-      }
-```
+
+
 
 这几个事件独立使用很简单,但是经过组合可以实现很酷的键盘定义.
 

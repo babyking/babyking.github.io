@@ -18,6 +18,11 @@ category: 技术
   "description": "test",
   "manipulators": [
     {
+      "parameters": {
+        "basic.to_delayed_action_delay_milliseconds": 300,
+        "basic.to_if_alone_timeout_milliseconds": 200,
+        "basic.to_if_held_down_threshold_milliseconds": 200
+      },
       "from": {
         "key_code": "t",
         "modifiers": {
@@ -25,11 +30,6 @@ category: 技术
             "any"
           ]
         }
-      },
-      "parameters": {
-        "basic.to_delayed_action_delay_milliseconds": 300,
-        "basic.to_if_alone_timeout_milliseconds": 200,
-        "basic.to_if_held_down_threshold_milliseconds": 200
       },
       "to_delayed_action": {
         "to_if_canceled": [

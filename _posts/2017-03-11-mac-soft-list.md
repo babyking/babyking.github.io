@@ -42,6 +42,8 @@ category: 技术
 程序员查文档唯一选择.
 
 
+
+
 ### 编辑器
 
 **[Sublime Text](http://www.sublimetext.com/)**
@@ -97,6 +99,12 @@ Finder里快速进入shell并以选择的目录为当前目录
 **[SourceGraph](https://chrome.google.com/webstore/search/SourceGraph?hl=en-US)**
 
 比OctoTree更好用的插件,提供一跳转到定义
+
+**[GitZip](https://chrome.google.com/webstore/search/SourceGraph?hl=en-US)**
+
+下载仓库中的部分(某个目录)代码
+
+
 
 ### 其他
 

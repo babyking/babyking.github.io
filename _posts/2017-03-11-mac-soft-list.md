@@ -94,6 +94,10 @@ Finder里快速进入shell并以选择的目录为当前目录
 
 像IDE一样浏览Github的代码.
 
+**[SourceGraph](https://chrome.google.com/webstore/search/SourceGraph?hl=en-US)**
+
+比OctoTree更好用的插件,提供一跳转到定义
+
 ### 其他
 
 **[Shadowsocks](http://shadowsocks.org/en/index.html)**

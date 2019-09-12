@@ -39,17 +39,11 @@ sendMessage(msg, to:sb)
 再来看一段obj-c的代码就会更容易明白为什么要这么设计了.
 
 ```objective-c
--(void) sendMessage:(NSString*) msg
-								 to:(NSString*) sb 
-{
-	// send msg to sb.                   
-}
-NSString msg = @"hello";
-NSString msg = @"bob"
-  
-[self sendMessage:msg
-							 to:sb
-];
+    [[NSNotificationCenter defaultCenter] addObserver:observer
+                                             selector:aSelector
+                                                 name:LKLNFT_APP_INITIATIVE_COMPLETED
+                                               object:nil];
+
 ```
 
 

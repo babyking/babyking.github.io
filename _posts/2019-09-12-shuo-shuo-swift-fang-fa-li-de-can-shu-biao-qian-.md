@@ -39,26 +39,15 @@ sendMessage(msg, to:sb)
 再来看一段obj-c的代码就会更容易明白为什么要这么设计了.
 
 ```objective-c
-    [[NSNotificationCenter defaultCenter] addObserver:observer
-                                             selector:aSelector
-                                                 name:LKLNFT_APP_INITIATIVE_COMPLETED
-                                               object:nil];
-
+[[NSNotificationCenter defaultCenter] addObserver:observer
+                                         selector:aSelector
+                                             name:LKLNFT_APP_INITIATIVE_COMPLETED
+                                           object:nil];
 ```
 
 
 
-参数加上标签可以更清楚的说明参数的用意,很显然,obj-c中的表达形式更优雅一些. 因为obj-c中的第一个参数的标签就是方法名本身. 这样写起来很对称,看起来似乎也更易读一些. 不防看看参数多的例子就更明显.
-
-```objc
-[self sendMessage:msg
-							 to:sb
- 							 at:tonight
- 			    rotocal:udp
-]
-```
-
-
+参数加上标签可以更清楚的说明参数的用意,很显然,obj-c中的表达形式更优雅一些.
 
 同时object-c中方法并不是简单通过方法名来区别不同的方法调用的.而是通过叫 selector来区分的.什么是selector
 

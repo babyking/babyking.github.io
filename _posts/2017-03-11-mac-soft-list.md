@@ -15,7 +15,7 @@ category: 技术
 
 
 
-### 效率工具类
+## 效率工具类
 
 **[Alfred](https://www.alfredapp.com)**
 
@@ -44,7 +44,7 @@ category: 技术
 
 
 
-### 编辑器
+## 编辑器
 
 **[Sublime Text](http://www.sublimetext.com/)**
 
@@ -64,7 +64,7 @@ Markdown 编辑器,这篇博客就是用其来写的,与其他同类编辑器的
 
 
 
-### Shell
+## Shell
 
 **[Oh My Zsh!](http://ohmyz.sh/)**
 
@@ -78,7 +78,7 @@ Markdown 编辑器,这篇博客就是用其来写的,与其他同类编辑器的
 
 Finder里快速进入shell并以选择的目录为当前目录
 
-### Google Chrome插件 
+## Google Chrome插件 
 
 **[Vimium](https://github.com/philc/vimium/wiki/Search-Completion)**
 
@@ -106,7 +106,7 @@ Finder里快速进入shell并以选择的目录为当前目录
 
 
 
-### 其他
+## 其他
 
 **[Shadowsocks](http://shadowsocks.org/en/index.html)**
 

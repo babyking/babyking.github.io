@@ -10,7 +10,7 @@ tags: VMware CentOS
 
 
 
-### 安装vm-tools
+## 安装vm-tools
 
 vm-tools更方便在宿主与虚拟机的切换,数据共享
 
@@ -19,7 +19,7 @@ vm-tools更方便在宿主与虚拟机的切换,数据共享
 # reboot
 ```
 
-### 网络配置
+## 网络配置
 
  选择以Nat网络方式,手动设置CentOS网络配置
 

@@ -94,7 +94,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333333;
+  color: #434C5E;
 }
 p,
 h2,
@@ -134,7 +134,7 @@ h1 a:hover {
 
 #nav {
   overflow: hidden;
-  background: #2f2f2f;
+  background: white;
   height: 46px;
 }
 
@@ -167,7 +167,7 @@ h1 a:hover {
 }
 
 #nav li a {
-  color: #fff;
+color: #434C5E;
 }
 
 div.wrapper {
@@ -291,7 +291,7 @@ p code {
 }
 
 ul.posts li a {
-  color: #000;
+  color: #434C5E;
 }
 
 ul.index li {
@@ -331,7 +331,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 900;
   line-height: 100%;
 }
 
@@ -341,18 +340,16 @@ h6 {
 }
 
 h1 {
-  font-size: 1.5em;
-  font-weight: bold !important;
+  font-size: 1.9em;
 }
 
 h2 {
-  font-size: 1.3em;
-  font-weight: bold !important;
+  font-size: 1.6em;
   margin-top: 25px;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 h4,
@@ -380,29 +377,26 @@ div#content .cnt li ul li {
 .cnt h4,
 .cnt h5,
 .cnt h6 {
-  margin-top: 20px;
-  font-weight: 300;
-  color: #574c4c;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #ddd;
+  margin-top: 60px;
+  color: #444444;
+  padding-bottom: 15px;
+  /* border-bottom: 1px solid #ddd; */
 }
 
 #content .cnt h3 {
-  background: #eee;
+  /* background: #eee; */
   padding: 15px;
   margin: 20px -15px;
   border: 0;
-  color: #000;
 }
 
 #content .cnt h4 {
   font-size: 1.2em;
-  color: #000;
 }
 
 #content {
   font-size: 16px;
-  padding: 0 15px;
+  padding: 30px 15px;
 }
 
 ul.columns {

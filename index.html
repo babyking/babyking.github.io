@@ -6,7 +6,7 @@ layout: index
 		{% for post in site.posts %}
 		<li>
 			<span class="date" cate="{{ post.categories }}">{{ post.date | date:"%Y-%m-%d" }}</span> 
-			<span class="category">{{ post.category}}</span>
+			<!-- <span class="category">{{ post.category}}</span> -->
 			<a href="{{ post.url }}">{{ post.title }}</a>
 		</li>
 		{% endfor %}

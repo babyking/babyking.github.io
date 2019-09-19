@@ -520,6 +520,7 @@ span.balloon {
 #content.index {
   overflow: hidden;
   padding: 10px 15px 0 15px;
+  max-width: 650px;
 }
 
 #main {

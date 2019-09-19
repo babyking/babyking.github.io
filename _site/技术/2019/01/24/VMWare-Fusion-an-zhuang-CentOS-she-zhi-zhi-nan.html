@@ -55,9 +55,11 @@
 
 <p>vm-tools更方便在宿主与虚拟机的切换,数据共享</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># yum install -y open-vm-tools</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="c"># yum install -y open-vm-tools</span>
 <span class="c"># reboot</span>
-</code></pre></div></div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <h2 id="网络配置">网络配置</h2>
 
@@ -65,27 +67,41 @@
 
 <p>编辑 /etc/sysconfig/network-script/ifcfg-xxx ,</p>
 
-<div class="language-ini highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="py">BOOTPROTO</span><span class="p">=</span><span class="s">static</span>
+<div class="language-ini highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="py">BOOTPROTO</span><span class="p">=</span><span class="s">static</span>
 <span class="py">ONBOOT</span><span class="p">=</span><span class="s">yes</span>
 <span class="py">IPADDR</span><span class="p">=</span><span class="s">192.168.8.250</span>
 <span class="py">NETMASK</span><span class="p">=</span><span class="s">255.255.255.0</span>
 <span class="py">NETWORK</span><span class="p">=</span><span class="s">192.168.8.0</span>
 <span class="py">GATEWAY</span><span class="p">=</span><span class="s">192.168.8.2</span>
 <span class="py">DNS1</span><span class="p">=</span><span class="s">192.168.8.2 </span>
-</code></pre></div></div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>为了从宿主机器ssh到虚拟机还需要做Nat端口映射</p>
 
 <p>编辑 /Library/Preferences/VMware Fusion/vmnet8/nat.conf</p>
 
-<div class="language-ini highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">[incomingtcp]</span>
+<div class="language-ini highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="nn">[incomingtcp]</span>
 
 <span class="c"># Use these with care - anyone can enter into your VM through these...
 # The format and example are as follows:
 #&lt;external port number&gt; = &lt;VM's IP address&gt;:&lt;VM's port number&gt;
 #8080 = 172.16.3.128:80
 #宿主机器端口(任意) = 虚拟机ip:虚拟机端口(ssh这是应该是22)
-</span></code></pre></div></div>
+</span></pre></td></tr></tbody></table></code></pre></div></div>
 
 
 				<br />

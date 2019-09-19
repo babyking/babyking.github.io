@@ -2,7 +2,7 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: post
-title: 如何理解karabiner的alone, held_down,delayed_action这几个事件
+title: karabiner的alone,held_down,delayed_action这几个事件
 date: 2019-07-18 16:20
 category: 技术
 ---

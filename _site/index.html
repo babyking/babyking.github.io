@@ -19,10 +19,12 @@
 		<div id="logo"><a href="/"><img src="/image/logo.png" /></a></h1>
 		</div>
 		<ul>
+			<li id="category-home"><a href="/">首页</a></li>
 			<li id="category-tech"><a href="/category/tech.html">技术</a></li>
 			<li id="category-music"><a href="/category/music.html">音乐</a></li>
 			<li id="category-sketch"><a href="/category/sketch.html">随笔</a></li>
 			<li id="category-discovery"><a href="/category/discovery.html">发现</a></li>
+			<!-- <li id="category-about"><a href="/category/about.html">关于</a></li> -->
 		</ul>
 	</div>
 </div>
@@ -30,7 +32,7 @@
 <script>
 	var category = location.pathname;
 	if (category == '/') {
-		// document.getElementById('category-all').style.textDecoration = "underline";
+		document.getElementById('category-home').style.textDecoration = "underline";
 	} else if (category == '/category/tech.html') {
 		document.getElementById('category-tech').style.textDecoration = "underline";
 	} else if (category == '/category/music.html') {
@@ -39,27 +41,56 @@
 		document.getElementById('category-discovery').style.textDecoration = "underline";
 	} else if (category == '/category/sketch.html') {
 		document.getElementById('category-sketch').style.textDecoration = "underline";
+	} else if (category == '/category/about.html') {
+		// document.getElementById('category-about').style.textDecoration = "underline";
 	}
 
 </script>
     <div class="wrapper main">
-      <blockquote id="intro">
-        <p>
-          现居北京,目前就职于拉卡拉,负责移动前端开发.
-        </p>
-        <br />
-        <p>
-          <a href="http://twitter.com/babyking1949" target="_blank">Tweets</a> ·
-          <a href="http://github.com/babyking" target="_blank">Github</a> ·
-          <a
-            href="https://www.youtube.com/playlist?list=LLQYMzCEEC8Or65JVMsg6Ktw"
-            target="_blank"
-            >YouTube</a>
-        </p>
-      </blockquote>
-
       <div id="content" class="index">
         <div id="main"><ul class="posts">
+		
+		<li>
+			<span class="date" cate="技术">2019-09-12</span> 
+			<span class="category">技术</span>
+			<a href="/%E6%8A%80%E6%9C%AF/2019/09/12/shuo-shuo-swift-fang-fa-li-de-can-shu-biao-qian.html">说说swift方法里的参数标签</a>
+		</li>
+		
+		<li>
+			<span class="date" cate="技术">2019-07-18</span> 
+			<span class="category">技术</span>
+			<a href="/%E6%8A%80%E6%9C%AF/2019/07/18/ru-he-li-jie-karabiner-de-zhe-ji-ge-shi-jian.html">如何理解karabiner的alone, held_down,delayed_action这几个事件</a>
+		</li>
+		
+		<li>
+			<span class="date" cate="技术">2019-07-15</span> 
+			<span class="category">技术</span>
+			<a href="/%E6%8A%80%E6%9C%AF/2019/07/15/an-zhuang-macOS-ji-ge-fang-shi.html">安装macOS几个方式</a>
+		</li>
+		
+		<li>
+			<span class="date" cate="音乐">2019-06-26</span> 
+			<span class="category">音乐</span>
+			<a href="/%E9%9F%B3%E4%B9%90/2019/06/26/fender.html">fender stratocaster音色钮控制说明</a>
+		</li>
+		
+		<li>
+			<span class="date" cate="音乐">2019-06-26</span> 
+			<span class="category">音乐</span>
+			<a href="/%E9%9F%B3%E4%B9%90/2019/06/26/kuai-su-ting-yin-ji-pu-de-yi-ge-fang-fa.html">快速听音记谱的一个方法</a>
+		</li>
+		
+		<li>
+			<span class="date" cate="技术">2019-01-24</span> 
+			<span class="category">技术</span>
+			<a href="/%E6%8A%80%E6%9C%AF/2019/01/24/VMWare-Fusion-an-zhuang-CentOS-she-zhi-zhi-nan.html">VMware Fusion安装CentOS设置</a>
+		</li>
+		
+		<li>
+			<span class="date" cate="随笔">2019-01-15</span> 
+			<span class="category">随笔</span>
+			<a href="/%E9%9A%8F%E7%AC%94/2019/01/15/you-shi-ni-wang-zhe-tian-kong.html">有时你望着天空</a>
+		</li>
 		
 		<li>
 			<span class="date" cate="随笔">2019-01-15</span> 
@@ -76,7 +107,7 @@
 		<li>
 			<span class="date" cate="音乐">2018-10-21</span> 
 			<span class="category">音乐</span>
-			<a href="/%E9%9F%B3%E4%B9%90/2018/10/21/duet2ba-gong-le.html">Duet2罢工了</a>
+			<a href="/%E9%9F%B3%E4%B9%90/2018/10/21/duet2-ba-gong-le.html">Duet2罢工了</a>
 		</li>
 		
 		<li>
@@ -88,7 +119,7 @@
 		<li>
 			<span class="date" cate="技术">2017-03-11</span> 
 			<span class="category">技术</span>
-			<a href="/%E6%8A%80%E6%9C%AF/2017/03/11/ru-he-zi-ding-yi-APPshi-yong-yu-yan.html">指定APP启动默认语言</a>
+			<a href="/%E6%8A%80%E6%9C%AF/2017/03/11/ru-he-zi-ding-yi-APP-shi-yong-yu-yan.html">指定APP启动默认语言</a>
 		</li>
 		
 		<li>

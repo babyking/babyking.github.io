@@ -19,10 +19,12 @@
 		<div id="logo"><a href="/"><img src="/image/logo.png" /></a></h1>
 		</div>
 		<ul>
+			<li id="category-home"><a href="/">首页</a></li>
 			<li id="category-tech"><a href="/category/tech.html">技术</a></li>
 			<li id="category-music"><a href="/category/music.html">音乐</a></li>
 			<li id="category-sketch"><a href="/category/sketch.html">随笔</a></li>
 			<li id="category-discovery"><a href="/category/discovery.html">发现</a></li>
+			<!-- <li id="category-about"><a href="/category/about.html">关于</a></li> -->
 		</ul>
 	</div>
 </div>
@@ -30,7 +32,7 @@
 <script>
 	var category = location.pathname;
 	if (category == '/') {
-		// document.getElementById('category-all').style.textDecoration = "underline";
+		document.getElementById('category-home').style.textDecoration = "underline";
 	} else if (category == '/category/tech.html') {
 		document.getElementById('category-tech').style.textDecoration = "underline";
 	} else if (category == '/category/music.html') {
@@ -39,6 +41,8 @@
 		document.getElementById('category-discovery').style.textDecoration = "underline";
 	} else if (category == '/category/sketch.html') {
 		document.getElementById('category-sketch').style.textDecoration = "underline";
+	} else if (category == '/category/about.html') {
+		// document.getElementById('category-about').style.textDecoration = "underline";
 	}
 
 </script>
@@ -53,15 +57,15 @@
 
 <p>上面是『精通正则表达式』序里的一段话,对缓存这事做了定性.细细想来,不光是在计算机体系中,在很多生活场景也同样适用. 再简单一点的说,缓存就是效率.</p>
 
-<p>今天说的是关于键盘相关的一些事情,自己曾在上面花了一些时间的,内容有些杂,但重心都是跟效率相关的.</p>
+<p>今天说的是关于键盘相关的一些事情,自己曾在上面花了一些时间的,内容有些杂,但重心都是跟效率相关.</p>
 
 <h3 id="方向键-vim的提示">方向键-Vim的提示</h3>
 
-<p>方向键使用最频繁,但又离打字区较远,这样是无法有效率的,即使大多数人习惯于此.</p>
+<p>方向键使用最频繁,但又离打字区较远,又多又远不会有效率,即使大多数人习惯于此.</p>
 
 <p>vim的hjkl这个设计思路无疑是最佳方案,在vim及一些不支持vim模式的编辑文字的地方可以借鉴.</p>
 
-<p>首先我们需要定义一个组合键来映射方向键,比如 ⌘+H, J, K, L这个方式有个最大的问题就是原来的⌘+HJKL的组合键被覆盖了,不合适.  <a href="http://stevelosh.com/blog/2012/10/a-modern-space-cadet/">A Modern Space Cadet</a> 这里给出了方案. 定义一个Hyper键,通过Hyper键+HJKL来做映射,这样避免冲突,为啥? Hyper键实际上是 ⌘⌃⌥⇧四个键组合,并将这四个组合映射到Capslock键上,当然也可以映射到你想要的键上.</p>
+<p>首先我们需要定义一个组合键来映射方向键,比如 ⌘+H, J, K, L,但有个最大的问题就是原来的⌘+HJKL的组合键会被覆盖.  <a href="http://stevelosh.com/blog/2012/10/a-modern-space-cadet/">A Modern Space Cadet</a> 这里给出了方案. 定义一个Hyper键,通过Hyper键+HJKL来做映射,这样避免冲突,为啥? Hyper键实际上是 ⌘⌃⌥⇧四个键组合,并将这四个组合映射到Capslock键上,当然也可以映射到你想要的键上.这个想法实在是太好了,以至于后来的一些键盘自定义软件像karabiner都把这个作为预置.</p>
 
 <p>文中的映射是通过KeyRemap4MacBook和PCKeyboardHack 来实现的,这个软件后来改名了,叫karabiner,再后来又因为macOS的发布又改了一次 karabiner-element.</p>
 
@@ -71,7 +75,7 @@
 
 <h3 id="键的模式">键的模式</h3>
 
-<p>很少有人留意过键盘的键的工作模式.咔嚓一下,就出来个字母, ⌘+C组合就是copy,F功能键有特定功能,大概如此了.刚刚说的copy,⌘键的行为就是按下等着C键的按下,然后触发了copy. 那普通的键是不是也可以呢. 我长按个Z然后再加个C是不是也能是个组合键呢? 理解上当然可以,这就需要区分一个键的是长按还是短按.这就是键的模式</p>
+<p>很少有人留意过键盘按键的工作模式.打字嘛,咔嚓一下,就行了, copy直接就⌘+C,大概如此了.刚刚说的copy,有谁会细细观察总结一下,⌘键的行为就是按下等着C键的按下,然后触发了copy.再想一下,普通的键是不是也可以这样操作呢. 我长按个Z然后再加个C是不是也能是个组合键呢? 理论上当然可以,这就需要区分一个键的是长按还是短按.这就是键的模式</p>
 
 <ol>
   <li>单击</li>
@@ -80,26 +84,30 @@
   <li>多击</li>
 </ol>
 
-<p>单击就是我们普通击键,长按就是按下一个键不立即释放超过一定时间,双击就是在一定时间内连续单击两次,多击类似双击.</p>
+<p>单击就是我们普通打字的模式,长按就是按下一个键不立即释放超过一定时间,双击就是在一定时间内连续单击两次,多击类似双击. 相信写过GUI程序的人肯定会有深刻的理解,key down,key up,key press.但是估计这么思考也只存在于写代码当下的上下文中.</p>
 
 <p>这些模式有什么用呢?</p>
 
-<ol>
-  <li>更多无冲突可扩展快捷键定义</li>
-  <li>扩展现有的修饰键功能</li>
-</ol>
+<ul>
+  <li>
+    <p>更多无冲突可扩展快捷键定义</p>
+  </li>
+  <li>
+    <p>扩展现有的修饰键功能</p>
+  </li>
+</ul>
 
 <p>举几个例子:</p>
 
 <ul>
-  <li>Jetbrains的IDEA系列开发工具,都有个双击 Shift弹出全局搜索</li>
+  <li>Jetbrains的IDEA系列开发工具,都有个双击 Shift弹出全局搜索.</li>
 </ul>
 
 <p><img src="/image/Xnip2019-01-15_13-52-26.jpg" alt="Xnip2019-01-15_13-52-26" /></p>
 
 <ul>
   <li>
-    <p>QQ有一段时间的版本也有个可以定义的双击修饰键(⌘⌃⌥)全局弹出搜索框.</p>
+    <p>QQ以前的几个版本也有个功能,全局弹出搜索框通过双击修饰键⌘或⌥来触发.</p>
   </li>
   <li>
     <p>前面讲到的方向键通过 Capslock+ HJKL映射,但是Caps键一般是左手小指,不舒适,直接将G键的长按定义为Hyper键,通过G+HJKL来实现方向键.</p>
@@ -112,31 +120,33 @@
 
 <h3 id="小指的问题">小指的问题</h3>
 
-<p>网上经常说的Emacs综合症指的就是小指劳损,因为Emacs中的hyper键默认就是Ctrl,大量的使用小指来按ctrl确实会有问题,问题不在数量,而是因为小指是五个手指中最弱的手指.换作拇指怎么造都没有问题,可惜拇指同学却只负责空格键,而且相当一部分人习惯于一只手的拇指.</p>
+<p>网上经常说的Emacs综合症指的就是小指劳损,因为Emacs中的hyper键默认就是Ctrl,而Emacs中的常用快捷键都是以Ctrl组合键来触发的,大量的使用小指来按ctrl确实会有问题,问题不在数量,而是因为小指是五个手指中力量最弱的手指.如果换作力量最强的拇指怎么造都没有问题,可惜拇指同学却只负责空格键,而且相当一部分人习惯于一只手的拇指. 这些恐怕都是当初设计软件的人不会想到的.</p>
 
-<p>只要将小指使用场景多的情况减少,或者将小指的任务移交给其他有力量的手指就可以了.</p>
+<p>问题总有解决方案的,只要将小指使用场景多的情况减少,或者将小指的任务移交给其他有力量的手指就可以了.</p>
 
-<p>比如,输出上档键都需要Shift,这算是一个极高频率的操作了,两手小指负责这个实在难为他们了, 结合上面说的键的模式中的长按,将Shift输出上档键的功能叠加到空格键上. 长按空格映射至Shift, 单击空格保持不变.  这样就完美的解决上面的问题, 同时因为空格键的特殊位置,使得Cpas键的功能也显得不那么重要了.</p>
+<p>比如,输出上档键都需要Shift,这算是一个极高频率的操作了,两手小指负责这个实在难为他们了.</p>
+
+<p>结合上面说的键的模式中的长按,将Shift输出上档键的功能叠加到空格键上. 长按空格映射至Shift, 单击空格保持不变.  这样就完美的解决上面的问题, 同时因为空格键的特殊位置,使得Cpas键的功能也显得不那么重要了.</p>
 
 <p>再比如前面说的hyper键映射到Cpaslock键同样也是小指来操作,而且只有左手的小指.(当然也可以用无名指).我索性将『tab』和『\』键都映射为hyper,使用无名指,同时相应的组合键也有左右手来分配,更为合理.(想想macbook下的ctrl+q你怎么按)</p>
 
 <h3 id="盲打与肌肉记忆">盲打与肌肉记忆</h3>
 
-<p>观察身边的大部分人对于盲打这件事情并没有很重视,表现比较好的更多是26个字母及10个数字的盲打以及极少的诸如Ctrl+C这样的快捷组合. 有些像 9,0,-,+,[],这样的几个键的按法更是百花齐放,各有千秋了.记得有一次我发现前女友(现老婆)竟然打上档键是左边Shift负责左边字母键区,右边Shift的负责右边键区,我指出这样是不对的,她直接回了句关你屁事.算了,再争论下去我就成了孔乙已,毕竟这事也没多重要. 可见,习惯养成是困难的,重构更是.</p>
+<p>大部分人对于盲打这件事情并没有很重视,能做到26个字母及10个数字的盲打以及极少的诸如Ctrl+C这样的快捷组合都算是好的. 像 9,0,-,+,[],这样的几个键的按法更是百花齐放,各有千秋了.记得有一次我发现前女友(现老婆)打上档键竟然是左边Shift负责左边字母键区,右边Shift的负责右边键区,一只手搞定,当我指出这样是不对的,她直接回了句关你屁事.算了,再争论下去我就成了孔乙已,毕竟这事比起家庭和谐也没多重要. 可见,习惯养成是困难的,重构更是.</p>
 
-<p>你盲打不好,没有形成肌肉记忆,就意味着这辈子你只要打字总要有眼睛的参与,同时伴随的是中断,特别是这样的中断的数量可能是以万次为单位的.这样的成本算起来应该很可观. 可惜你显然已习惯于此,并无察觉.</p>
+<p>不会盲打,没有形成肌肉记忆,就意味着这辈子你打字的时候总要有眼睛的参与,同时伴随着短时间的中断,只是这样的中断次数可能是以万为单位的.成本算起来是不是也很可观.你显然已习惯于此,并无察觉.</p>
 
 <h3 id="自定义键盘首要原则">自定义键盘首要原则</h3>
 
-<p>自定义键盘的要遵守的原则.  简单来说就是别人可以无障碍的使用我的电脑,反之我使用别人的电脑像弱智.</p>
+<p>自定义键盘的要遵守的原则就是别人可以无障碍的使用我的电脑,反之我使用别人的电脑像弱智.</p>
 
-<p>定义不要有破坏性,自定义一个快捷键不是随便找一个就可以的,要有设计,要尽可能的保证没有冲突,即使有也能很好的控制范围.  这有点像程序中的命名空间,作用域. 像上面的长按空格映射为Shift就是个很好的例子,在空格键上扩展了Shift功能,但并没有破坏空格键本身的功能. 双击⌘作应用切换也没有影响⌘这个键的功能.</p>
+<p>不要有破坏性,自定义一个快捷键不是随便找一个就可以的,要有设计,要尽可能的兼容标准,做到没有冲突,即使有也能控制在一定范围.  这有点像程序中的命名空间,作用域. 比如上面的长按空格扩展映射为Shift就是个很好的例子,在空格键上扩展了Shift功能,但并没有破坏空格键本身的功能.</p>
 
-<p>你使用了充满各种机关暗道的功能自定义键盘,说明你对你要做的事情有过整理,分类,思考和优化.这本身就是一种更好的刻意练习,解决问题的过程.价值存在于这样的训练过程,而并不只是输出的结果.</p>
+<p>充满各种机关暗道的功能的键盘,说明你对你要做的事情有过整理,分析,思考和优化.这就是刻意练习,解决问题的过程.价值存在于这样的训练过程,而并不仅仅是最终达到的结果.</p>
 
 <h3 id="最频繁的和最重要的">最频繁的和最重要的</h3>
 
-<p>开始的时候我们说到的缓存,换一种解释就是最频繁的和最重要的,当一件事情频繁发生,它就大概率上是最重要的,即使不是最重要的,也需要认真审视,让其简单,更快,或者自动化.  程序上的自动化更像是人的知识的内化,永远存在,但无负担,运用自如,就像我永远都记得自己的名子一样.</p>
+<p>开始的时候我们说到的缓存,换一种说法就是最频繁的和最重要的,当一件事情频繁发生,它就大概率上是最重要的,即使不是最重要也需要认真审视,让其简单,更快,或者自动化.  程序上的自动化更像是人的知识的内化,永远存在,但无负担,运用自如,就像行走无需考虑先迈哪只脚一样.</p>
 
 <blockquote>
   <p>缓存是唯一称得上伟大的思想，其他的一切发明和技术不过是在不同场景下应用这一思想而已</p>
@@ -149,17 +159,6 @@
 				<!-- --EOF--
 				<p>若无特别说明，本站文章均为原创，转载请保留链接，谢谢</p> -->
 			</div>
-			<div id="disqus_thread"></div>
-			<script type="text/javascript">
-				/**
-				* var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
-				*/
-				(function () {
-					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-					dsq.src = 'https://babyking.disqus.com/embed.js';
-					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-				})();
-			</script>
 			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=babyking">comments powered
 					by Disqus.</a></noscript>
 		</div>

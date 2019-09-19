@@ -19,10 +19,12 @@
 		<div id="logo"><a href="/"><img src="/image/logo.png" /></a></h1>
 		</div>
 		<ul>
+			<li id="category-home"><a href="/">首页</a></li>
 			<li id="category-tech"><a href="/category/tech.html">技术</a></li>
 			<li id="category-music"><a href="/category/music.html">音乐</a></li>
 			<li id="category-sketch"><a href="/category/sketch.html">随笔</a></li>
 			<li id="category-discovery"><a href="/category/discovery.html">发现</a></li>
+			<!-- <li id="category-about"><a href="/category/about.html">关于</a></li> -->
 		</ul>
 	</div>
 </div>
@@ -30,7 +32,7 @@
 <script>
 	var category = location.pathname;
 	if (category == '/') {
-		// document.getElementById('category-all').style.textDecoration = "underline";
+		document.getElementById('category-home').style.textDecoration = "underline";
 	} else if (category == '/category/tech.html') {
 		document.getElementById('category-tech').style.textDecoration = "underline";
 	} else if (category == '/category/music.html') {
@@ -39,6 +41,8 @@
 		document.getElementById('category-discovery').style.textDecoration = "underline";
 	} else if (category == '/category/sketch.html') {
 		document.getElementById('category-sketch').style.textDecoration = "underline";
+	} else if (category == '/category/about.html') {
+		// document.getElementById('category-about').style.textDecoration = "underline";
 	}
 
 </script>
@@ -107,6 +111,10 @@
 
 <p>目录快速跳转插件, 只需要 j + 目录名(或部分目录名),便可快速跳转到你曾经去过的地方.</p>
 
+<p><a href="http://zipzapmac.com/Go2Shell"><strong>Go2Shell</strong></a></p>
+
+<p>Finder里快速进入shell并以选择的目录为当前目录</p>
+
 <h3 id="google-chrome插件">Google Chrome插件</h3>
 
 <p><strong><a href="https://github.com/philc/vimium/wiki/Search-Completion">Vimium</a></strong></p>
@@ -124,6 +132,14 @@
 <p><strong>OctoTree</strong></p>
 
 <p>像IDE一样浏览Github的代码.</p>
+
+<p><strong><a href="https://chrome.google.com/webstore/search/SourceGraph?hl=en-US">SourceGraph</a></strong></p>
+
+<p>比OctoTree更好用的插件,提供一跳转到定义</p>
+
+<p><strong><a href="https://chrome.google.com/webstore/search/SourceGraph?hl=en-US">GitZip</a></strong></p>
+
+<p>下载仓库中的部分(某个目录)代码</p>
 
 <h3 id="其他">其他</h3>
 
@@ -151,17 +167,6 @@
 				<!-- --EOF--
 				<p>若无特别说明，本站文章均为原创，转载请保留链接，谢谢</p> -->
 			</div>
-			<div id="disqus_thread"></div>
-			<script type="text/javascript">
-				/**
-				* var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
-				*/
-				(function () {
-					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-					dsq.src = 'https://babyking.disqus.com/embed.js';
-					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-				})();
-			</script>
 			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=babyking">comments powered
 					by Disqus.</a></noscript>
 		</div>

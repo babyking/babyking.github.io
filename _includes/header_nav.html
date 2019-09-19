@@ -3,10 +3,12 @@
 		<div id="logo"><a href="/"><img src="/image/logo.png" /></a></h1>
 		</div>
 		<ul>
+			<li id="category-home"><a href="/">首页</a></li>
 			<li id="category-tech"><a href="/category/tech.html">技术</a></li>
 			<li id="category-music"><a href="/category/music.html">音乐</a></li>
 			<li id="category-sketch"><a href="/category/sketch.html">随笔</a></li>
 			<li id="category-discovery"><a href="/category/discovery.html">发现</a></li>
+			<!-- <li id="category-about"><a href="/category/about.html">关于</a></li> -->
 		</ul>
 	</div>
 </div>
@@ -14,7 +16,7 @@
 <script>
 	var category = location.pathname;
 	if (category == '/') {
-		// document.getElementById('category-all').style.textDecoration = "underline";
+		document.getElementById('category-home').style.textDecoration = "underline";
 	} else if (category == '/category/tech.html') {
 		document.getElementById('category-tech').style.textDecoration = "underline";
 	} else if (category == '/category/music.html') {
@@ -23,6 +25,8 @@
 		document.getElementById('category-discovery').style.textDecoration = "underline";
 	} else if (category == '/category/sketch.html') {
 		document.getElementById('category-sketch').style.textDecoration = "underline";
+	} else if (category == '/category/about.html') {
+		// document.getElementById('category-about').style.textDecoration = "underline";
 	}
 
 </script>

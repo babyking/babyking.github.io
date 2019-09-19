@@ -84,9 +84,9 @@ html {
   overflow-y: scroll;
 }
 body {
-  font-family: Helvetica, Arial, 'Hiragino Sans GB', sans-serif;
+  font-family: Arial, "Hiragino Sans GB", 冬青黑, "Microsoft YaHei", 微软雅黑, SimSun, 宋体, Helvetica, Tahoma, "Arial sans-serif";
   -webkit-text-size-adjust: none; /* 禁止 Safari 自动调整字体，会影响到代码段的表现 */
-  background: #f4f4f4;
+  /* background: #f4f4f4; */
   color: rgba(0, 0, 0, 0.8);
 }
 h2,
@@ -173,14 +173,14 @@ h1 a:hover {
 div.wrapper {
   overflow: hidden;
   font-size: 14px;
-  max-width: 700px;
+  max-width: 780px;
   margin: 0 auto;
 }
 
 .wrapper.main {
   background: white;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
-  border: 1px solid rgba(0, 0, 0, 0.09);
+  /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04); */
+  /* border: 1px solid rgba(0, 0, 0, 0.09); */
 }
 
 #intro {

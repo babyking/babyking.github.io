@@ -19,10 +19,12 @@
 		<div id="logo"><a href="/"><img src="/image/logo.png" /></a></h1>
 		</div>
 		<ul>
+			<li id="category-home"><a href="/">首页</a></li>
 			<li id="category-tech"><a href="/category/tech.html">技术</a></li>
 			<li id="category-music"><a href="/category/music.html">音乐</a></li>
 			<li id="category-sketch"><a href="/category/sketch.html">随笔</a></li>
 			<li id="category-discovery"><a href="/category/discovery.html">发现</a></li>
+			<!-- <li id="category-about"><a href="/category/about.html">关于</a></li> -->
 		</ul>
 	</div>
 </div>
@@ -30,7 +32,7 @@
 <script>
 	var category = location.pathname;
 	if (category == '/') {
-		// document.getElementById('category-all').style.textDecoration = "underline";
+		document.getElementById('category-home').style.textDecoration = "underline";
 	} else if (category == '/category/tech.html') {
 		document.getElementById('category-tech').style.textDecoration = "underline";
 	} else if (category == '/category/music.html') {
@@ -39,6 +41,8 @@
 		document.getElementById('category-discovery').style.textDecoration = "underline";
 	} else if (category == '/category/sketch.html') {
 		document.getElementById('category-sketch').style.textDecoration = "underline";
+	} else if (category == '/category/about.html') {
+		// document.getElementById('category-about').style.textDecoration = "underline";
 	}
 
 </script>
@@ -47,7 +51,7 @@
 			<h2>Degitech Trio+使用感受</h2>
 			<br />
 			<div class="cnt">
-				<p><img src="/image/image-20181008092759243.png" alt="image-20181008092759243" /></p>
+				<p><img src="/image/Xnip2019-01-15_17-33-16.jpg" alt="Xnip2019-01-15_17-33-16" /></p>
 
 <p>这个效果器像是鼓机 + Looper的结合体.</p>
 
@@ -86,17 +90,6 @@
 				<!-- --EOF--
 				<p>若无特别说明，本站文章均为原创，转载请保留链接，谢谢</p> -->
 			</div>
-			<div id="disqus_thread"></div>
-			<script type="text/javascript">
-				/**
-				* var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
-				*/
-				(function () {
-					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-					dsq.src = 'https://babyking.disqus.com/embed.js';
-					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-				})();
-			</script>
 			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=babyking">comments powered
 					by Disqus.</a></noscript>
 		</div>

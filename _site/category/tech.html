@@ -18,10 +18,12 @@
 		<div id="logo"><a href="/"><img src="/image/logo.png" /></a></h1>
 		</div>
 		<ul>
+			<li id="category-home"><a href="/">首页</a></li>
 			<li id="category-tech"><a href="/category/tech.html">技术</a></li>
 			<li id="category-music"><a href="/category/music.html">音乐</a></li>
 			<li id="category-sketch"><a href="/category/sketch.html">随笔</a></li>
 			<li id="category-discovery"><a href="/category/discovery.html">发现</a></li>
+			<!-- <li id="category-about"><a href="/category/about.html">关于</a></li> -->
 		</ul>
 	</div>
 </div>
@@ -29,7 +31,7 @@
 <script>
 	var category = location.pathname;
 	if (category == '/') {
-		// document.getElementById('category-all').style.textDecoration = "underline";
+		document.getElementById('category-home').style.textDecoration = "underline";
 	} else if (category == '/category/tech.html') {
 		document.getElementById('category-tech').style.textDecoration = "underline";
 	} else if (category == '/category/music.html') {
@@ -38,6 +40,8 @@
 		document.getElementById('category-discovery').style.textDecoration = "underline";
 	} else if (category == '/category/sketch.html') {
 		document.getElementById('category-sketch').style.textDecoration = "underline";
+	} else if (category == '/category/about.html') {
+		// document.getElementById('category-about').style.textDecoration = "underline";
 	}
 
 </script>
@@ -46,7 +50,15 @@
 				<div id="main">
 					<ul class="posts">
 					
-					<li><p class="date" cate="技术">2017-03-11</p> <a href="/%E6%8A%80%E6%9C%AF/2017/03/11/ru-he-zi-ding-yi-APPshi-yong-yu-yan.html">指定APP启动默认语言</a></li>
+					<li><p class="date" cate="技术">2019-09-12</p> <a href="/%E6%8A%80%E6%9C%AF/2019/09/12/shuo-shuo-swift-fang-fa-li-de-can-shu-biao-qian.html">说说swift方法里的参数标签</a></li>
+					
+					<li><p class="date" cate="技术">2019-07-18</p> <a href="/%E6%8A%80%E6%9C%AF/2019/07/18/ru-he-li-jie-karabiner-de-zhe-ji-ge-shi-jian.html">如何理解karabiner的alone, held_down,delayed_action这几个事件</a></li>
+					
+					<li><p class="date" cate="技术">2019-07-15</p> <a href="/%E6%8A%80%E6%9C%AF/2019/07/15/an-zhuang-macOS-ji-ge-fang-shi.html">安装macOS几个方式</a></li>
+					
+					<li><p class="date" cate="技术">2019-01-24</p> <a href="/%E6%8A%80%E6%9C%AF/2019/01/24/VMWare-Fusion-an-zhuang-CentOS-she-zhi-zhi-nan.html">VMware Fusion安装CentOS设置</a></li>
+					
+					<li><p class="date" cate="技术">2017-03-11</p> <a href="/%E6%8A%80%E6%9C%AF/2017/03/11/ru-he-zi-ding-yi-APP-shi-yong-yu-yan.html">指定APP启动默认语言</a></li>
 					
 					<li><p class="date" cate="技术">2017-03-11</p> <a href="/%E6%8A%80%E6%9C%AF/2017/03/11/mac-soft-list.html">Mac常用软件备忘</a></li>
 					

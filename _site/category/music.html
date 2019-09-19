@@ -18,10 +18,12 @@
 		<div id="logo"><a href="/"><img src="/image/logo.png" /></a></h1>
 		</div>
 		<ul>
+			<li id="category-home"><a href="/">首页</a></li>
 			<li id="category-tech"><a href="/category/tech.html">技术</a></li>
 			<li id="category-music"><a href="/category/music.html">音乐</a></li>
 			<li id="category-sketch"><a href="/category/sketch.html">随笔</a></li>
 			<li id="category-discovery"><a href="/category/discovery.html">发现</a></li>
+			<!-- <li id="category-about"><a href="/category/about.html">关于</a></li> -->
 		</ul>
 	</div>
 </div>
@@ -29,7 +31,7 @@
 <script>
 	var category = location.pathname;
 	if (category == '/') {
-		// document.getElementById('category-all').style.textDecoration = "underline";
+		document.getElementById('category-home').style.textDecoration = "underline";
 	} else if (category == '/category/tech.html') {
 		document.getElementById('category-tech').style.textDecoration = "underline";
 	} else if (category == '/category/music.html') {
@@ -38,6 +40,8 @@
 		document.getElementById('category-discovery').style.textDecoration = "underline";
 	} else if (category == '/category/sketch.html') {
 		document.getElementById('category-sketch').style.textDecoration = "underline";
+	} else if (category == '/category/about.html') {
+		// document.getElementById('category-about').style.textDecoration = "underline";
 	}
 
 </script>
@@ -46,9 +50,13 @@
 				<div id="main">
 					<ul class="posts">
 					
+					<li><p class="date" cate="音乐">2019-06-26</p> <a href="/%E9%9F%B3%E4%B9%90/2019/06/26/fender.html">fender stratocaster音色钮控制说明</a></li>
+					
+					<li><p class="date" cate="音乐">2019-06-26</p> <a href="/%E9%9F%B3%E4%B9%90/2019/06/26/kuai-su-ting-yin-ji-pu-de-yi-ge-fang-fa.html">快速听音记谱的一个方法</a></li>
+					
 					<li><p class="date" cate="音乐">2019-01-10</p> <a href="/%E9%9F%B3%E4%B9%90/2019/01/10/xin-de-zhuo-mian.html">新的桌面</a></li>
 					
-					<li><p class="date" cate="音乐">2018-10-21</p> <a href="/%E9%9F%B3%E4%B9%90/2018/10/21/duet2ba-gong-le.html">Duet2罢工了</a></li>
+					<li><p class="date" cate="音乐">2018-10-21</p> <a href="/%E9%9F%B3%E4%B9%90/2018/10/21/duet2-ba-gong-le.html">Duet2罢工了</a></li>
 					
 					<li><p class="date" cate="音乐">2018-10-08</p> <a href="/%E9%9F%B3%E4%B9%90/2018/10/08/Degitec.html">Degitech Trio+使用感受</a></li>
 					

@@ -306,26 +306,8 @@ ul.posts li .date {
   margin: 0;
 }
 
-/*
-h1 {
-	-moz-border-radius:5px 5px 5px 5px;
-	-webkit-border-radius:5px;
-	border-radius:5px;
-	-moz-box-shadow:0 1px 0 #FFFFFF;
-	background-color:#222222;
-	color:#FFFFFF;
-	display:inline;
-	float:left;
-	font-weight:400;
-	line-height:150%;
-	padding:10px;
-	text-shadow:0 1px 0 #000000;
-}
-h1 a {
-	color:#FFFFFF;
-	font-weight:400;
-}
-*/
+
+
 h2,
 h3,
 h4,
@@ -371,16 +353,23 @@ div#content .cnt li ul li {
 .index h2 {
   margin-bottom: 50px;
 }
+#content .date {
+  color: #999;
+  font-size: 12px;
+  margin-top: 20px;
+}
+#content .cnt{
+  margin-top:50px;
+}
+
 .cnt h1,
 .cnt h2,
 .cnt h3,
 .cnt h4,
 .cnt h5,
 .cnt h6 {
-  margin-top: 60px;
+  margin: 60px 0 40px 0px;
   color: #444444;
-  padding-bottom: 15px;
-  /* border-bottom: 1px solid #ddd; */
 }
 
 #content .cnt h3 {

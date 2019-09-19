@@ -41,11 +41,11 @@ Apogee Maestro面板也找不到设备,声卡的液晶屏显示apogee的logo,不
 
 google, youtube,论坛各种搜索,发现2个跟我情况一模一样的
 
-**1.Youtube**
+1.Youtube
 
 [Apogee Duet 2 Not Working/Connecting](https://www.youtube.com/watch?v=wca40hU8mxI&list=LLQYMzCEEC8Or65JVMsg6Ktw&index=2&t=24s)
 
-**2.Tonymacx86.com**
+2.Tonymacx86.com
 
 [Apogee Maestro / Duet2 not working on Sierra Hackintosh](https://www.tonymacx86.com/threads/apogee-maestro-duet2-not-working-on-sierra-hackintosh.207988/)
 

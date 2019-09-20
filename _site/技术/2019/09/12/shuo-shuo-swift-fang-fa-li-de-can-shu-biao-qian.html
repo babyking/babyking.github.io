@@ -55,33 +55,22 @@
 
 <p>上一段swift2的代码</p>
 
-<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="rouge-code"><pre><span class="kd">func</span> <span class="nf">sendMessage</span><span class="p">(</span><span class="nv">msg</span><span class="p">:</span> <span class="kt">String</span><span class="p">){</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">func</span> <span class="nf">sendMessage</span><span class="p">(</span><span class="nv">msg</span><span class="p">:</span> <span class="kt">String</span><span class="p">){</span>
   <span class="c1">// send msg</span>
 <span class="p">}</span>
 <span class="k">var</span> <span class="nv">msg</span> <span class="o">=</span> <span class="s">"hello"</span>
 <span class="nf">sendMessage</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+</code></pre></div></div>
 
 <p>一个参数的方法似乎与其他语言没什么不同,如果方法有两个参数就得写成这样了</p>
 
-<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="rouge-code"><pre><span class="kd">func</span> <span class="nf">sendMessage</span><span class="p">(</span><span class="nv">msg</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">to</span> <span class="nv">sb</span><span class="p">:</span> <span class="kt">String</span><span class="p">){</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">func</span> <span class="nf">sendMessage</span><span class="p">(</span><span class="nv">msg</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">to</span> <span class="nv">sb</span><span class="p">:</span> <span class="kt">String</span><span class="p">){</span>
   <span class="c1">// send msg to sb</span>
 <span class="p">}</span>
 <span class="k">var</span> <span class="nv">msg</span> <span class="o">=</span> <span class="s">"hello"</span>
 <span class="k">var</span> <span class="nv">sb</span> <span class="o">=</span> <span class="s">"bob"</span>
 <span class="nf">sendMessage</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span><span class="n">sb</span><span class="p">)</span> 
-</pre></td></tr></tbody></table></code></pre></div></div>
+</code></pre></div></div>
 
 <p>为什么sendMessage后面的参数会变这样,感觉乱乱的. 这个原因主要是因为swift的语言设计的时候的主要目标是替代现有的objective-c,语言的更替最需要考虑的就是语言多年积累的生态,各种库和框架. 所以swift需要兼容这些.</p>
 
@@ -118,27 +107,19 @@
 
 <p>但是到了swift中,方法定义是跟大多数语言一样,方法名加上括号以及括号中的参数,这样的语法设计很显然无法保持 上面说的对称与美感,为了兼容obj-c,总让人看起来怪怪的.</p>
 
-<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nf">sendMessage</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span><span class="n">sb</span><span class="p">)</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">sendMessage</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span><span class="n">sb</span><span class="p">)</span>
+</code></pre></div></div>
 
 <p>从swift3开始,对这个做了一些调整,就是方法的第一个参数不再是默认省略标签了, 所有的参数在方法定义都必须显示声明标签,如果调用的时候不想输入标签,那也要使用<code class="highlighter-rouge">_</code> 进行声明.</p>
 
-<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="rouge-code"><pre><span class="kd">func</span> <span class="nf">send</span><span class="p">(</span><span class="n">msg</span> <span class="nv">msg</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">to</span> <span class="nv">sb</span><span class="p">:</span><span class="kt">String</span><span class="p">){}</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">func</span> <span class="nf">send</span><span class="p">(</span><span class="n">msg</span> <span class="nv">msg</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">to</span> <span class="nv">sb</span><span class="p">:</span><span class="kt">String</span><span class="p">){}</span>
 <span class="nf">send</span><span class="p">(</span><span class="nv">msg</span><span class="p">:</span><span class="n">msg</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span><span class="n">sb</span><span class="p">)</span>
 
 <span class="c1">//如果不想输入参数标签,使用 _ 进行声明,这样就更类c语言的调用一样的风格了</span>
 <span class="kd">func</span> <span class="nf">send</span><span class="p">(</span><span class="n">_</span> <span class="nv">msg</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">sb</span><span class="p">:</span><span class="kt">String</span><span class="p">){}</span>
 <span class="nf">send</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span><span class="n">sb</span><span class="p">)</span>
 
-</pre></td></tr></tbody></table></code></pre></div></div>
+</code></pre></div></div>
 
 <p>到这里,基本明白swift为什么会有方法标签了,如果没有obj-c的兼容问题,估计语言的设计者不会保留标签这个特性了,毕竟现在的IDE或是编辑器都可以很方便的显示参数的相关信息,并不需要通过语言特性来实现,有时候对开发者反而是个负担. 好在swift3的做法也基本能自圆其说了,但仍然无法有obj-c那样的对称美了. 但想到obj-c是一个80年代就出生的语言,当年连个象样的编辑器都不多,别说IDE了.所以这样的别致设计还真是让人眼前一亮.</p>
 

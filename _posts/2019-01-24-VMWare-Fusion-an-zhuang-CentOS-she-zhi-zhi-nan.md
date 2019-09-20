@@ -5,7 +5,7 @@ layout: post
 title: VMware Fusion安装CentOS设置
 date: 2019-01-24 13:49
 category: 技术
-tags: VMware CentOS
+tags: [VMware,CentOS]
 ---
 
 

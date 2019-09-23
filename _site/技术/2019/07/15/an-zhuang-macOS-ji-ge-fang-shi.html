@@ -20,10 +20,10 @@
 		</div>
 		<ul>
 			<li id="category-home"><a href="/">首页</a></li>
-			<li id="category-tech"><a href="/category/tech.html">技术</a></li>
-			<li id="category-music"><a href="/category/music.html">音乐</a></li>
-			<li id="category-sketch"><a href="/category/sketch.html">随笔</a></li>
-			<li id="category-discovery"><a href="/%E5%8F%91%E7%8E%B0/2019/09/23/discovery.html">发现</a></li>
+			<li id="category-tech"><a href="/tech/">技术</a></li>
+			<li id="category-music"><a href="/music/">音乐</a></li>
+			<li id="category-sketch"><a href="/sketch/">随笔</a></li>
+			<li id="category-discovery"><a href="/find/">发现</a></li>
 			<!-- <li id="category-about"><a href="/category/about.html">关于</a></li> -->
 		</ul>
 	</div>
@@ -33,17 +33,15 @@
 	var category = location.pathname;
 	if (category == '/') {
 		document.getElementById('category-home').style.textDecoration = "underline";
-	} else if (category == '/category/tech.html') {
+	} else if (category == '/tech/') {
 		document.getElementById('category-tech').style.textDecoration = "underline";
-	} else if (category == '/category/music.html') {
+	} else if (category == '/music/') {
 		document.getElementById('category-music').style.textDecoration = "underline";
-	} else if (category == '/category/discovery.html') {
+	} else if (category == '/find/') {
 		document.getElementById('category-discovery').style.textDecoration = "underline";
-	} else if (category == '/category/sketch.html') {
+	} else if (category == '/sketch/') {
 		document.getElementById('category-sketch').style.textDecoration = "underline";
-	} else if (category == '/category/about.html') {
-		// document.getElementById('category-about').style.textDecoration = "underline";
-	}
+	} 
 
 </script>
 	<div class="wrapper main">

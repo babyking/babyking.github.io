@@ -1,12 +1,11 @@
 ---
 typora-root-url: ../
 typora-copy-images-to: ../image
-layout: page
+layout: post
 title: 发现
 date: 2019-09-23 11:46
 category: 发现
 ---
 
 
-
-# 发现有趣的事
+[bash 圣经](https://github.com/dylanaraps/pure-bash-bible/blob/master/README.md)

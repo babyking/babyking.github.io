@@ -3,13 +3,12 @@
 		<div id="logo"><a href="/"><img src="/image/logo.png" /></a></h1>
 		</div>
 		<ul>
-			<li id="category-home"><a href="/">首页</a></li>
-			<li id="category-tech"><a href="/tech/">技术</a></li>
-			<li id="category-music"><a href="/music/">音乐</a></li>
-			<li id="category-sketch"><a href="/sketch/">随笔</a></li>
-			<li id="category-discovery"><a href="/find/">发现</a></li>
-			<li id="category-about"><a href="/about/">关于</a></li>
-			<!-- <li id="category-about"><a href="/category/about.html">关于</a></li> -->
+			<li id="1"><a href="/">首页</a></li>
+			<li id="2"><a href="/tech/">技术</a></li>
+			<li id="3"><a href="/music/">音乐</a></li>
+			<li id="4"><a href="/sketch/">随笔</a></li>
+			<li id="5"><a href="/find/">发现[T]</a></li>
+			<li id="6"><a href="/about/">关于</a></li>
 		</ul>
 	</div>
 </div>
@@ -17,17 +16,17 @@
 <script>
 	var category = location.pathname;
 	if (category == '/') {
-		document.getElementById('category-home').style.textDecoration = "underline";
+		document.getElementById('1').style.textDecoration = "underline";
 	} else if (category == '/tech/') {
-		document.getElementById('category-tech').style.textDecoration = "underline";
+		document.getElementById('2').style.textDecoration = "underline";
 	} else if (category == '/music/') {
-		document.getElementById('category-music').style.textDecoration = "underline";
-	} else if (category == '/find/') {
-		document.getElementById('category-discovery').style.textDecoration = "underline";
+		document.getElementById('3').style.textDecoration = "underline";
 	} else if (category == '/sketch/') {
-		document.getElementById('category-sketch').style.textDecoration = "underline";
+		document.getElementById('4').style.textDecoration = "underline";
+	} else if (category == '/find/') {
+		document.getElementById('5').style.textDecoration = "underline";
 	} else if (category == '/about/') {
-		document.getElementById('category-about').style.textDecoration = "underline";
+		document.getElementById('6').style.textDecoration = "underline";
 	} 
 
 </script>

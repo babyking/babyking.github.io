@@ -385,7 +385,7 @@ div#content .cnt li ul li {
 
 #content {
   font-size: 16px;
-  padding: 30px 15px;
+  padding: 0px 15px;
 }
 
 ul.columns {
@@ -869,3 +869,5 @@ pre a:only-of-type::before {
   /*list-style: circle;*/
   padding: 0;
 }
+
+.padding-top50 {padding-top: 50px;}

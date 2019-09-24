@@ -4,9 +4,9 @@ layout: index
 
 <ul class="posts">
 		{% for post in site.posts %}
-		{% if post.title == "发现" %}
-		{%   continue %}
-		{% endif %}
+			{% if post.layout == "page" %}
+			{%   continue %}
+			{% endif %}
 		<li>
 			<span class="date" cate="{{ post.categories }}">{{ post.date | date:"%Y-%m-%d" }}</span> 
 			<!-- <span class="category">{{ post.category}}</span> -->

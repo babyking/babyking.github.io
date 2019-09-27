@@ -23,7 +23,7 @@ category: 技术
 
 知道这些,问题就好解决了.
 
-我的ruby是用rbenv进行安装的,安装时需要集成readline
+ruby是用rbenv进行安装的,安装时需要集成readline
 
 没有安装readline的话先安装
 

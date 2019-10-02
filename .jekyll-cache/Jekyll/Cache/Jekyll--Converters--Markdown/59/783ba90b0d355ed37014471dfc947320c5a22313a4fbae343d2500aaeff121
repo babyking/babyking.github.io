@@ -1,0 +1,53 @@
+I"/<blockquote>
+  <p>问题终于解决,详见文末.</p>
+</blockquote>
+
+<p>Macbook 重装系统(High Serria)后,  Duet2声卡 罢工了,驱动版本2.5<code class="highlighter-rouge">duet_2.5.dmg</code></p>
+
+<p>电脑启动后不停的提示需要更新固件,但更新程序显示固件的版本是最新的.</p>
+
+<p><img src="/image/Xnip2018-10-21_20-55-02.jpg" alt="Xnip2018-10-21_20-55-02" /></p>
+
+<p>Apogee Maestro面板也找不到设备,声卡的液晶屏显示apogee的logo,不能正常工作.</p>
+
+<p><img src="/image/Xnip2018-10-11_22-29-11.jpg" alt="Xnip2018-10-11_22-29-11" /></p>
+
+<p>网上搜索无果.但我的另一台2014年Macbook倒是工作正常,macOS版本也是High Serria,这台macbook的操作系统是从老版本连续升级过来的,Apogee Maestro版本为<code class="highlighter-rouge">2.10.6</code>,而最新<code class="highlighter-rouge">duet_2.5.dmg</code> 的Maestro驱动对应的版本是<code class="highlighter-rouge">2.10.9</code> (驱动版本与控制程序版本是分开的)</p>
+
+<p><img src="/image/Snip20181021_1.png" alt="Snip20181021_1" /></p>
+
+<p>顺着这个思路,是不是找到<code class="highlighter-rouge">2.10.6</code>对应的驱动是否就好了, 可惜官网似乎无法找到对应的版本了.</p>
+
+<p>挖个坑,解决了再来填.</p>
+
+<h2 id="问题解决">问题解决</h2>
+
+<p>google, youtube,论坛各种搜索,发现2个跟我情况一模一样的</p>
+
+<p>1.Youtube</p>
+
+<p><a href="https://www.youtube.com/watch?v=wca40hU8mxI&amp;list=LLQYMzCEEC8Or65JVMsg6Ktw&amp;index=2&amp;t=24s">Apogee Duet 2 Not Working/Connecting</a></p>
+
+<p>2.Tonymacx86.com</p>
+
+<p><a href="https://www.tonymacx86.com/threads/apogee-maestro-duet2-not-working-on-sierra-hackintosh.207988/">Apogee Maestro / Duet2 not working on Sierra Hackintosh</a></p>
+
+<p>但评论区似乎都没有解决方案.</p>
+
+<p>我的两台电脑有一台能工作且能工作的电脑的驱动比较老,所以一直都把问题归结为新版本的驱动问题,在<a href="http://audiobar.cn">音频应用</a>上也有朋友给了几个老版本的驱动,问题依然没有解决.</p>
+
+<p>周日,突然想到声卡无法工作的这台MacBookPro笔记本有重装过,且当时安装时把文件系统设置为了大小写敏感.</p>
+
+<p>因为自己平时偶尔写一些程序要部署到大小写敏感的Linux上,就顺手干了这事. 脑洞一开,会不会是这个导致呢?</p>
+
+<p>​	1.重装OSX 10.11 , 默认安装(文件系统不区分大小写),安装驱动,问题解决.</p>
+
+<p>​	2.从10.11升级至10.13,工作正常.</p>
+
+<p>​	3.直接默认重装macOS 10.13,安装duet2驱动,工作正常.</p>
+
+<p>原来真是这个问题.  Apogee Duet的驱动在大小写敏感的文件系统上无法正常工作,说是驱动的兼容性问题也没毛病.</p>
+
+<p>Duet 复活了,终于可以下单 Generic 8010A 了,期待….</p>
+
+:ET

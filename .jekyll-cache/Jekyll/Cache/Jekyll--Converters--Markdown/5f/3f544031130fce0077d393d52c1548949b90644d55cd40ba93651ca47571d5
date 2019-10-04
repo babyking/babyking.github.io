@@ -1,0 +1,10 @@
+I"�<p>~/.vimrc 增加下面代码</p>
+
+<div class="language-vim highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">" Change cursor shape between insert and normal mode in iTerm2.app</span>
+<span class="k">if</span> $TERM_PROGRAM <span class="p">=~</span> <span class="s2">"iTerm"</span>
+<span class="k">let</span> &amp;t_SI <span class="p">=</span> <span class="s2">"\&lt;Esc&gt;]50;CursorShape=1\x7"</span> " Vertical bar <span class="k">in</span> insert <span class="k">mode</span>
+<span class="k">let</span> &amp;t_EI <span class="p">=</span> <span class="s2">"\&lt;Esc&gt;]50;CursorShape=0\x7"</span> " Block <span class="k">in</span> normal <span class="k">mode</span>
+<span class="k">endif</span>
+</code></pre></div></div>
+
+:ET

@@ -8,22 +8,22 @@
 				<div id="main">
 
 					<div class="tags-items">
-						{% assign tags = site.categories | sort %}
-						{% for tag in tags %}
+						{% assign categories = site.categories | sort %}
+						{% for category in categories %}
 						  <span class="tags-items-list">
-							<a href="#{{ tag[0] | slugify }}">
-									{{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+							<a href="#{{ category[0] | slugify }}">
+									{{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})
 							</a>
 						</span>
 						{% endfor %}
 		  
 						<hr/>
 						<div class="tags-items-section">
-						  {% for tag in site.categories %}
-						  <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+						  {% for category in site.categories %}
+						  <h2 id="{{ category[0] | slugify }}">{{ category[0] }}</h2>
 						  <br>
 						  <ul class="posts">
-							{% for post in tag[1] %}
+							{% for post in category[1] %}
 							<li>
 									  <span class="date" cate="{{ post.categories }}">{{ post.date | date:"%Y-%m-%d" }}</span> 
 								<a  href="{{ site.baseurl }}{{ post.url }}">

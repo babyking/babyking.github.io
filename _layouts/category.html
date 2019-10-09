@@ -5,34 +5,37 @@
 		{% include header_nav.html %}
 		<div class="wrapper main">
 			<div id="content" class="index">
-				<div class="tags-items">
-					{% assign tags = site.categories | sort %}
-					{% for tag in tags %}
-					  <span class="tags-items-list">
-						<a href="#{{ tag[0] | slugify }}">
-								{{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
-						</a>
-					</span>
-					{% endfor %}
-	  
-					<hr/>
-					<div class="tags-items-section">
-					  {% for tag in site.categories %}
-					  <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
-					  <br>
-					  <ul class="posts">
-						{% for post in tag[1] %}
-						<li>
-								  <span class="date" cate="{{ post.categories }}">{{ post.date | date:"%Y-%m-%d" }}</span> 
-							<a  href="{{ site.baseurl }}{{ post.url }}">
-								{{ post.title }}
+				<div id="main">
+
+					<div class="tags-items">
+						{% assign tags = site.categories | sort %}
+						{% for tag in tags %}
+						  <span class="tags-items-list">
+							<a href="#{{ tag[0] | slugify }}">
+									{{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
 							</a>
-						</li>
+						</span>
 						{% endfor %}
-					  </ul>
-					  {% endfor %}
-					</div>
-				</div> 	
+		  
+						<hr/>
+						<div class="tags-items-section">
+						  {% for tag in site.categories %}
+						  <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+						  <br>
+						  <ul class="posts">
+							{% for post in tag[1] %}
+							<li>
+									  <span class="date" cate="{{ post.categories }}">{{ post.date | date:"%Y-%m-%d" }}</span> 
+								<a  href="{{ site.baseurl }}{{ post.url }}">
+									{{ post.title }}
+								</a>
+							</li>
+							{% endfor %}
+						  </ul>
+						  {% endfor %}
+						</div>
+					</div> 	
+				</div>
 			</div>
 			{% include footer.html %}
 		</div>

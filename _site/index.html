@@ -20,11 +20,10 @@
 		</div>
 		<ul>
 			<li id="1"><a href="/">首页</a></li>
-			<li id="2"><a href="/tech/">技术</a></li>
-			<li id="3"><a href="/music/">音乐</a></li>
-			<li id="4"><a href="/sketch/">随笔</a></li>
-			<li id="5"><a href="/t/"><span id="t">ⓣ</span></a></li>
-			<li id="6"><a href="/about/">关于</a></li>
+			<li id="2"><a href="/category/">分类</a></li>
+			<li id="3"><a href="/tag/">标签</a></li>
+			<li id="4"><a href="/t/"><span id="t">ⓣ</span></a></li>
+			<li id="5"><a href="/about/">关于</a></li>
 		</ul>
 	</div>
 </div>
@@ -33,22 +32,41 @@
 	var category = location.pathname;
 	if (category == '/') {
 		document.getElementById('1').style.textDecoration = "underline";
-	} else if (category == '/tech/') {
+	} else if (category == '/category/') {
 		document.getElementById('2').style.textDecoration = "underline";
-	} else if (category == '/music/') {
+	} else if (category == '/tag/') {
 		document.getElementById('3').style.textDecoration = "underline";
-	} else if (category == '/sketch/') {
-		document.getElementById('4').style.textDecoration = "underline";
 	} else if (category == '/t/') {
 		document.getElementById('t').style.color = "red";
 	} else if (category == '/about/') {
-		document.getElementById('6').style.textDecoration = "underline";
+		document.getElementById('5').style.textDecoration = "underline";
 	} 
 
 </script>
     <div class="wrapper main">
       <div id="content" class="index">
         <div id="main"><ul class="posts">
+		
+			
+		<li>
+			<span class="date" cate="技术">2019-10-09</span> 
+			<!-- <span class="category">技术</span> -->
+			<a href="/%E6%8A%80%E6%9C%AF/2019/10/09/vscode-shi-shi-yu-lan-html.html">vscode实时预览html</a>
+		</li>
+		
+			
+		<li>
+			<span class="date" cate="技术">2019-10-09</span> 
+			<!-- <span class="category">技术</span> -->
+			<a href="/%E6%8A%80%E6%9C%AF/2019/10/09/qq-for-mac-de-kuai-jie-jian-chong-tu.html">QQ for Mac的快捷键冲突</a>
+		</li>
+		
+			
+		<li>
+			<span class="date" cate="技术">2019-10-08</span> 
+			<!-- <span class="category">技术</span> -->
+			<a href="/%E6%8A%80%E6%9C%AF/2019/10/08/qu-xiao-keynote-zi-dong-pin-xie-jian-cha.html">取消keynote自动拼写检查</a>
+		</li>
 		
 			
 		<li>
@@ -114,7 +132,7 @@
 		<li>
 			<span class="date" cate="技术">2019-01-24</span> 
 			<!-- <span class="category">技术</span> -->
-			<a href="/%E6%8A%80%E6%9C%AF/2019/01/24/VMWare-Fusion-an-zhuang-CentOS-she-zhi-zhi-nan.html">VMware Fusion安装CentOS设置</a>
+			<a href="/%E6%8A%80%E6%9C%AF/2019/01/24/vmware-fusion-an-zhuang-centos-she-zhi-zhi-nan.html">VMware Fusion安装CentOS设置</a>
 		</li>
 		
 			
@@ -149,7 +167,7 @@
 		<li>
 			<span class="date" cate="音乐">2018-10-08</span> 
 			<!-- <span class="category">音乐</span> -->
-			<a href="/%E9%9F%B3%E4%B9%90/2018/10/08/Degitec.html">Degitech Trio+使用感受</a>
+			<a href="/%E9%9F%B3%E4%B9%90/2018/10/08/degitec.html">Degitech Trio+使用感受</a>
 		</li>
 		
 			

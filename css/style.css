@@ -351,7 +351,7 @@ div#content .cnt li ul li {
 }
 
 .index h2 {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 #content .sub_date {
   color: #999;
@@ -869,3 +869,7 @@ pre a:only-of-type::before {
   padding: 0;
 }
 
+.tags-items-list a {
+  color:#434c5e;
+  margin: 0 5px 0 5px;
+}

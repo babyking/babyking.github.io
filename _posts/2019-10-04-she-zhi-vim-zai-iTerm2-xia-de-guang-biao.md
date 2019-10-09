@@ -5,6 +5,7 @@ layout: post
 title: 设置vim在iTerm2下的光标
 date: 2019-10-04 16:34
 category: 技术
+tags: vi
 ---
 
 ~/.vimrc 增加下面代码

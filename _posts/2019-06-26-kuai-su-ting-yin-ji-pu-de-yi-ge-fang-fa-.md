@@ -5,6 +5,7 @@ layout: post
 title: 快速听音记谱的一个方法
 date: 2019-06-26 10:18
 category: 音乐
+tags: 视唱
 ---
 
 

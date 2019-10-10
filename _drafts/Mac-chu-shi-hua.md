@@ -5,6 +5,7 @@ layout: post
 title: Mac初始化
 date: 2019-10-09 13:55
 category: 技术
+tags: [Mac]
 ---
 
 
@@ -27,7 +28,9 @@ Alfred
 
 Keyboard Maestro
 
-ShortCat
+以上三款软件导入常用配置,配置使用坚果云同步
+
+Shotcat, `⌘⇧` + `space` 
 
 
 
@@ -46,4 +49,12 @@ ShortCat
 hosts文件
 
 Oh-my-zsh
+
+
+
+## Palua
+
+快捷切换function功能键模式,`⌥⌘` + `tab`
+
+
 

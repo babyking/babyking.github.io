@@ -43,3 +43,7 @@ ShortCat
 
 ## iTerm2
 
+hosts文件
+
+Oh-my-zsh
+

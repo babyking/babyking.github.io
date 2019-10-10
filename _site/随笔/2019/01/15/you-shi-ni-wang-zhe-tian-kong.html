@@ -56,23 +56,23 @@
 					by Disqus.</a></noscript>
 		</div>
 		<!-- Gitalk start -->
-		<div id="gitalk-container"></div> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-		<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> 
-		<script src="/js/md5.min.js"></script>
-		<script>
-			var gitalk  = new Gitalk ({
-				id: window.location.pathname,   // Ensure uniqueness and length less than 50
-				clientID: 'ff150298319a020d8df9',
-				clientSecret: '40e533e2734bc7444e08a2212000c2c6cbac9fcf',
-				repo: 'babyking.github.io',
-				owner: 'babyking',
-				admin: ['babyking'],
-				id: md5(location.href),
-					distractionFreeMode: false  // Facebook-like distraction free mode
-			})
-			gitalk.render('gitalk-container')
-		</script> 
-		<!-- Gitalk end -->
+<div id="gitalk-container"></div> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> 
+<script src="/js/md5.min.js"></script>
+<script>
+    var gitalk  = new Gitalk ({
+        id: window.location.pathname,   // Ensure uniqueness and length less than 50
+        clientID: 'ff150298319a020d8df9',
+        clientSecret: '40e533e2734bc7444e08a2212000c2c6cbac9fcf',
+        repo: 'babyking.github.io',
+        owner: 'babyking',
+        admin: ['babyking'],
+        id: md5(location.href),
+            distractionFreeMode: false  // Facebook-like distraction free mode
+    })
+    gitalk.render('gitalk-container')
+</script> 
+<!-- Gitalk end -->
 		<div id="footer">
 	<p style="color:#ccc;font-size:12px;text-align: center">穿越这无限世界</p>
 	<p style="clear:both"></p>

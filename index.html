@@ -4,7 +4,7 @@ layout: index
 
 <ul class="posts">
 		{% for post in site.posts %}
-			{% if post.layout == "about" %}
+			{% if post.layout != "post" %}
 			{%   continue %}
 			{% endif %}
 		<li>

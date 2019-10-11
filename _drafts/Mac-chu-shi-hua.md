@@ -24,9 +24,20 @@ tags: [Mac]
 
 Karabiner-element
 
+* 配置网盘同步
+
 Alfred
 
+* 剪切板历史 `⌃⌥⌘⇧` + `y`  
+* Action`⌃⌥⌘⇧` +  `+`
+* Previous Path `⌃⌥⌘⇧` + `-`
+* Clipboard 历史的保存时间设置为最大
+* 数据网盘同步
+
 Keyboard Maestro
+
+* 配置网盘同步
+* 
 
 以上三款软件导入常用配置,配置使用坚果云同步
 
@@ -46,15 +57,56 @@ Shotcat, `⌘⇧` + `space`
 
 ## iTerm2
 
-hosts文件
+/etc/hosts
 
-Oh-my-zsh
+**oh-my-zsh**
+
+**Homebrew**
+
+一般要取消brew install时的update. 放到.bashrc或.zshrc等文件里
+
+```sh
+export HOMEBREW_NO_AUTO_UPDATE=true
+```
+
+**pyenv**
+
+```sh
+# pyenv
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+```
+
+**rbenv**
+
+```sh
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+```
 
 
+
+## Dash
+
+全局选中文字快捷键 `⇧⌘` + `R` ,karabiner中长按 `R` 也映射到此组合.
+
+## Snip
+
+截图快捷键使用 `⌃⌥⌘⇧` + `4`
 
 ## Palua
 
 快捷切换function功能键模式,`⌥⌘` + `tab`
 
 
+
+## 其他软件列表
+
+* ShadowsocksX-NG-R8
+* Wunderlist
+* Nutstore
+* 1Password
+* 
 

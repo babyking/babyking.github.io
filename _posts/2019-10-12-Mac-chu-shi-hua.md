@@ -3,7 +3,7 @@ typora-root-url: ../
 typora-copy-images-to: ../image
 layout: post
 title: Mac初始化
-date: 2019-10-09 13:55
+date: 2019-10-12 13:55
 category: 技术
 tags: [Mac]
 ---

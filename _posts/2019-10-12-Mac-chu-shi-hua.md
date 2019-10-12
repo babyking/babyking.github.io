@@ -57,7 +57,9 @@ Shotcat, `⌘⇧` + `space`
 
 ## iTerm2
 
-/etc/hosts
+**/etc/hosts**
+
+设置公司内网ip域名映射
 
 **oh-my-zsh**
 
@@ -100,6 +102,14 @@ git config --global user.email "babyking1949@gmail"
 git config --global user.name "babyking"
 ```
 
+**autojump**
+
+```sh
+brew install autojump
+# ~/.zshrc中加入autojump
+# plugins=(autojump)
+```
+
 
 
 ## Dash
@@ -113,6 +123,10 @@ git config --global user.name "babyking"
 ## Palua
 
 快捷切换function功能键模式,`⌥⌘` + `tab`
+
+### Go2Shell
+
+运行安装
 
 
 

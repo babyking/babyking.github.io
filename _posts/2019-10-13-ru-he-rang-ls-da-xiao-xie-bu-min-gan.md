@@ -29,3 +29,7 @@ yash:
 ```bsh
 set +o case-glob
 ```
+
+
+
+如果长期使用可以放到`.[shell_name]rc`文件中去.

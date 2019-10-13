@@ -5,7 +5,7 @@ layout: post
 title: 如何让ls大小写不敏感
 date: 2019-10-13 21:37
 category: Unix
-tags: [ls]
+tags: [shell]
 ---
 
 
@@ -32,4 +32,4 @@ set +o case-glob
 
 
 
-如果长期使用可以放到`.[shell_name]rc`文件中去.
+如果长期使用可以放到`.[shell_name]rc`文件中去. 

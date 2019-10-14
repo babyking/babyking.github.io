@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout:     post
 title:        "Mac常用软件备忘"
 date:       2017-03-11 
-category: 技术
+category: Mac
 tags: [Mac,Software]
 ---
 

@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout:     post
 title:        指定APP启动默认语言
 date:       2017-03-11 
-category: 技术
+category: Mac
 tags: Mac
 ---
 

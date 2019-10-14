@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: post
 title: VMware Fusion安装CentOS设置
 date: 2019-01-24 13:49
-category: 技术
+category: 开发工具
 tags: [VMware,CentOS]
 ---
 

@@ -4,8 +4,8 @@ typora-copy-images-to: ../image
 layout: post
 title: karabiner的alone,held_down,delayed_action这几个事件
 date: 2019-07-18 16:20
-category: 技术
-tags: karabiner
+category: 软件
+tags: [karabiner,键盘]
 ---
 
 

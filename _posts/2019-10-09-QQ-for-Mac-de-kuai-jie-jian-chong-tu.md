@@ -4,8 +4,8 @@ typora-copy-images-to: ../image
 layout: post
 title: QQ for Mac的快捷键冲突
 date: 2019-10-09 12:34
-category: 技术
-tags: bug
+category: 软件
+tags: [bug,qq]
 ---
 
 这有点尴尬.

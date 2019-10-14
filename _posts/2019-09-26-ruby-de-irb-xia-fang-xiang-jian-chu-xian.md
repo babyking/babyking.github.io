@@ -4,8 +4,8 @@ typora-copy-images-to: ../image
 layout: post
 title: ruby的irb下方向键出现^[[A
 date: 2019-09-26 15:31
-category: 技术
-tags: ruby
+category: 开发
+tags: [ruby,readline]
 ---
 
 

@@ -4,7 +4,8 @@ typora-copy-images-to: ../image
 layout: post
 title: 几句话理解ruby的单件类
 date: 2019-10-01 22:30
-category: 技术
+category: 开发
+tags: [ruby]
 ---
 
 

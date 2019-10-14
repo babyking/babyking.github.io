@@ -16,6 +16,7 @@ kramdown:
       start_line: 1
 
 paginate: 5
+paginate_path: "blog/page:num"
 
 # Google Analytics
 ga_track_id: UA-127077562-1            # Format: UA-xxxxxx-xx

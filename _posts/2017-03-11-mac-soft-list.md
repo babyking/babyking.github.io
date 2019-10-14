@@ -5,7 +5,7 @@ layout:     post
 title:        "Mac常用软件备忘"
 date:       2017-03-11 
 category: Mac
-tags: [mac]
+tags: [Mac]
 ---
 
 

@@ -5,7 +5,7 @@ layout: post
 title: 取消keynote自动拼写检查
 date: 2019-10-08 17:29
 category: 软件
-tags: [keynote,拼写,Mac]
+tags: [keynote,拼写,mac]
 ---
 
 

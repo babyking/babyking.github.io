@@ -5,7 +5,7 @@ layout: post
 title: Mac初始化
 date: 2019-10-12 13:55
 category: Mac
-tags: [Mac]
+tags: [mac]
 ---
 
 

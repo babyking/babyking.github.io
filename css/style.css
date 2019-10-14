@@ -870,7 +870,25 @@ pre a:only-of-type::before {
 }
 
 .tags-items-list a {
+  font-size: 16px;
   line-height: 200%;
   color:#434c5e;
   margin: 0 5px 0 5px;
+}
+.tags-items-list a span {
+  color: gray;
+  font-weight: normal;
+  vertical-align: sub;
+  font-size: 12px;
+}
+.category-items-list a {
+  line-height: 200%;
+  color:#434c5e;
+  margin: 0 5px 0 5px;
+}
+.category-items-list a span {
+  color: gray;
+  font-weight: normal;
+  vertical-align: sub;
+  font-size: 12px;
 }

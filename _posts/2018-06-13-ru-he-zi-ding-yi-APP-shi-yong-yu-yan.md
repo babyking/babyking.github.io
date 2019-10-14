@@ -5,7 +5,7 @@ layout:     post
 title:        指定APP启动默认语言
 date:       2017-03-11 
 category: Mac
-tags: Mac
+tags: mac
 ---
 
 macOS下应用程序的界面语言使用的是系统默认语言.我自己使用的默认的语言是英文,但对于像logic pro这样的应用,想要其默认使用中文该怎么办?

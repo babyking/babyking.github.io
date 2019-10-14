@@ -870,6 +870,7 @@ pre a:only-of-type::before {
 }
 
 .tags-items-list a {
+  line-height: 200%;
   color:#434c5e;
   margin: 0 5px 0 5px;
 }

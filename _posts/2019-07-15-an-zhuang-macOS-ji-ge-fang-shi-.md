@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: post
 title: 安装macOS几个方式
 date: 2019-07-15 09:34
-category: 技术
+category: Mac
 tags: Mac
 ---
 

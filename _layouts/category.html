@@ -8,7 +8,7 @@
 				<div id="main">
 
 					<div class="category-items">
-						{% assign categories = site.categories | sort %}
+						{% assign categories = site.categories %}
 						{% for category in categories %}
 						  <span class="category-items-list">
 							<a href="#{{ category[0] | slugify }}">

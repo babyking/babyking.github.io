@@ -874,6 +874,7 @@ pre a:only-of-type::before {
   line-height: 200%;
   color:#434c5e;
   margin: 0 5px 0 5px;
+  white-space: nowrap;
 }
 .tags-items-list a span {
   color: gray;
@@ -885,6 +886,7 @@ pre a:only-of-type::before {
   line-height: 200%;
   color:#434c5e;
   margin: 0 5px 0 5px;
+  white-space: nowrap;
 }
 .category-items-list a span {
   color: gray;

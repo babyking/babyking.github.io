@@ -1,4 +1,8 @@
-I"�*<p>alfred中的terminal一直没找到如何传递全局变量的方法.今天发现可以通过run script组件直接将变量的值输出到terminal,terminal组件中直接接收{query}就可以了. 哈哈,简单的事情搞复杂了.</p>
+I"+<p>[ ! -e path/to/file ] &amp;&amp; echo ‘not exists’</p>
+<font size="1">2019-10-14 11:49 AM</font>
+<hr />
+
+<p>alfred中的terminal一直没找到如何传递全局变量的方法.今天发现可以通过run script组件直接将变量的值输出到terminal,terminal组件中直接接收{query}就可以了. 哈哈,简单的事情搞复杂了.</p>
 <font size="1">2019-10-13 22:06 PM</font>
 <hr />
 

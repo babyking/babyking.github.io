@@ -1,0 +1,19 @@
+I"�<p>在写alfred的插件的时候,需要ls根据通配符列出的文件名不区分大小写.</p>
+
+<p>bash下设置:</p>
+
+<pre><code class="language-bsh">shopt -s nocaseglob
+</code></pre>
+
+<p>zsh:</p>
+
+<pre><code class="language-bsh">unsetopt CASE_GLOB
+</code></pre>
+
+<p>yash:</p>
+
+<pre><code class="language-bsh">set +o case-glob
+</code></pre>
+
+<p>如果长期使用可以放到<code class="highlighter-rouge">.[shell_name]rc</code>文件中去.</p>
+:ET

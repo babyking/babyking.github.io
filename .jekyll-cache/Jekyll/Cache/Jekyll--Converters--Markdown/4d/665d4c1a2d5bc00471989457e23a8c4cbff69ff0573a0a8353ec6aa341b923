@@ -1,0 +1,124 @@
+I"�<blockquote>
+  <p>一台合乎自己使用习惯的Mac的设置</p>
+</blockquote>
+
+<h2 id="用户名">用户名</h2>
+
+<p>多台电脑使用同一用户名,方便一些脚本在不同电脑上一致性,虽然然脚本中可以使用$HOME这样的环境变量.</p>
+
+<h2 id="效率软件">效率软件</h2>
+
+<p>Karabiner-element</p>
+
+<ul>
+  <li>配置网盘同步</li>
+</ul>
+
+<p>Alfred</p>
+
+<ul>
+  <li>剪切板历史 <code class="highlighter-rouge">⌃⌥⌘⇧</code> + <code class="highlighter-rouge">y</code></li>
+  <li>Action<code class="highlighter-rouge">⌃⌥⌘⇧</code> +  <code class="highlighter-rouge">+</code></li>
+  <li>Previous Path <code class="highlighter-rouge">⌃⌥⌘⇧</code> + <code class="highlighter-rouge">-</code></li>
+  <li>Clipboard 历史的保存时间设置为最大</li>
+  <li>数据网盘同步</li>
+</ul>
+
+<p>Keyboard Maestro</p>
+
+<ul>
+  <li>配置网盘同步</li>
+  <li></li>
+</ul>
+
+<p>以上三款软件导入常用配置,配置使用坚果云同步</p>
+
+<p>Shotcat, <code class="highlighter-rouge">⌘⇧</code> + <code class="highlighter-rouge">space</code></p>
+
+<h2 id="输入法">输入法</h2>
+
+<ol>
+  <li>只保留中英两个输入法</li>
+  <li>在系统设置-&gt;键盘中设置两个输入法切换的快捷键(⌃⌥⌘⇧+0),这里的设置跟karabiner中的一键shift切换设置的映射键相同</li>
+  <li>安装ShowyEdge软件,可以通过顶部颜色块来帮助识别当前输入法状态</li>
+  <li>中文输入法的shift切换中英文关闭</li>
+  <li>五笔输入法的拼音混合输入打开</li>
+</ol>
+
+<h2 id="iterm2">iTerm2</h2>
+
+<p><strong>/etc/hosts</strong></p>
+
+<p>设置公司内网ip域名映射</p>
+
+<p><strong>oh-my-zsh</strong></p>
+
+<p><strong>Homebrew</strong></p>
+
+<p>一般要取消brew install时的update. 放到.bashrc或.zshrc等文件里</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">HOMEBREW_NO_AUTO_UPDATE</span><span class="o">=</span><span class="nb">true</span>
+</code></pre></div></div>
+
+<p><strong>pyenv</strong></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># pyenv</span>
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.pyenv/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
+<span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span>pyenv init -<span class="si">)</span><span class="s2">"</span>
+<span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span>pyenv virtualenv-init -<span class="si">)</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<p><strong>rbenv</strong></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># rbenv</span>
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.rbenv/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
+<span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span>rbenv init -<span class="si">)</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<p><strong>git</strong></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># git alias</span>
+git config <span class="nt">--global</span> alias.co checkout
+git config <span class="nt">--global</span> alias.br branch
+git config <span class="nt">--global</span> alias.ci commit
+git config <span class="nt">--global</span> alias.st status
+
+<span class="c"># git </span>
+git config <span class="nt">--global</span> user.email <span class="s2">"babyking1949@gmail"</span>
+git config <span class="nt">--global</span> user.name <span class="s2">"babyking"</span>
+</code></pre></div></div>
+
+<p><strong>autojump</strong></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>autojump
+<span class="c"># ~/.zshrc中加入autojump</span>
+<span class="c"># plugins=(autojump)</span>
+</code></pre></div></div>
+
+<h2 id="dash">Dash</h2>
+
+<p>全局选中文字快捷键 <code class="highlighter-rouge">⇧⌘</code> + <code class="highlighter-rouge">R</code> ,karabiner中长按 <code class="highlighter-rouge">R</code> 也映射到此组合.</p>
+
+<h2 id="snip">Snip</h2>
+
+<p>截图快捷键使用 <code class="highlighter-rouge">⌃⌥⌘⇧</code> + <code class="highlighter-rouge">4</code></p>
+
+<h2 id="palua">Palua</h2>
+
+<p>快捷切换function功能键模式,<code class="highlighter-rouge">⌥⌘</code> + <code class="highlighter-rouge">tab</code></p>
+
+<h3 id="go2shell">Go2Shell</h3>
+
+<p>运行安装</p>
+
+<h2 id="其他软件列表">其他软件列表</h2>
+
+<ul>
+  <li>ShadowsocksX-NG-R8</li>
+  <li>Wunderlist</li>
+  <li>Nutstore</li>
+  <li>1Password</li>
+  <li></li>
+</ul>
+
+:ET

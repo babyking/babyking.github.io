@@ -8,7 +8,9 @@ category: 前端
 tags: [javascript,prototype]
 ---
 
+![image-20191014161025728](/image/image-20191014161025728.png)
 
-![Snip20191010_13](/image/Snip20191010_13.png)
 
-![Snip20191010_14](/image/Snip20191010_14.png)
+
+![image-20191014161108412](/image/image-20191014161108412.png)
+

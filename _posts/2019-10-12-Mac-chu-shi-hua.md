@@ -8,8 +8,6 @@ category: Mac
 tags: [mac]
 ---
 
-* any list
-{:toc}
 
 > 一台合乎自己使用习惯的Mac的设置
 

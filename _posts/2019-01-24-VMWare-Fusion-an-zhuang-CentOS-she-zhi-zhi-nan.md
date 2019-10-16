@@ -15,8 +15,8 @@ tags: [vmware,centos]
 vm-tools更方便在宿主与虚拟机的切换,数据共享
 
 ```shell
-# yum install -y open-vm-tools
-# reboot
+yum install -y open-vm-tools
+reboot
 ```
 
 ## 网络配置

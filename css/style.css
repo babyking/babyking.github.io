@@ -188,9 +188,6 @@ div.wrapper {
   margin: 15px 15px 0;
 }
 
-#content a {
-  /* font-weight: bold; */
-}
 
 #content .posts li a {
   font-weight: normal;
@@ -350,9 +347,6 @@ div#content .cnt li ul li {
   margin-left: 15px;
 }
 
-.index h2 {
-  /* margin-bottom: 50px; */
-}
 #content .sub_date {
   color: #999;
   font-size: 12px;
@@ -592,219 +586,6 @@ div#disqus_thread li ul li {
   margin-top: -20px;
 }
 
-/* for the highlight syntax ╮(╯▽╰)╭ */
-
-.cnt pre,
-.cnt .highlight {
-  background: #272822;
-  margin: 10px 0;
-  padding: 10px 10px;
-  overflow: auto;
-  color: #4c4c4c;
-  line-height: 22.400000000000002px;
-}
-.cnt .highlight .gutter pre,
-.cnt .gist .gist-file .gist-data .line-numbers {
-  color: #666;
-}
-.cnt pre,
-.cnt code {
-  font-family: 'Source Code Pro', Consolas, Monaco, Menlo, Consolas, monospace;
-}
-.cnt code {
-  background: #eee;
-  padding: 0 0.3em;
-  border: none;
-}
-.cnt pre {
-  color: #fff;
-}
-.cnt pre code {
-  background: none;
-  text-shadow: none;
-  padding: 0;
-  color: #fff;
-}
-.cnt .highlight {
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-}
-.cnt .highlight pre {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-.cnt .highlight table {
-  margin: 0;
-  width: auto;
-}
-.cnt .highlight td {
-  border: none;
-  padding: 0;
-}
-.cnt .highlight figcaption {
-  font-size: 0.85em;
-  color: highlight-comment;
-  line-height: 1em;
-  margin-bottom: 1em;
-}
-.cnt .highlight figcaption:before,
-.cnt .highlight figcaption:after {
-  content: '';
-  display: table;
-}
-.cnt .highlight figcaption:after {
-  clear: both;
-}
-.cnt .highlight figcaption a {
-  float: right;
-}
-.cnt .highlight .gutter pre {
-  text-align: right;
-  padding-right: 20px;
-}
-.cnt .highlight .gutter pre .line {
-  text-shadow: none;
-}
-.cnt .highlight .line {
-  font-size: 15px;
-  height: 15px;
-}
-.cnt .gist {
-  margin: 0 -20px;
-  border-style: solid;
-  border-color: #ddd;
-  border-width: 1px 0;
-  background: #272822;
-  padding: 15px 20px 15px 0;
-}
-.cnt .gist .gist-file {
-  border: none;
-  font-family: 'Source Code Pro', Consolas, Monaco, Menlo, Consolas, monospace;
-  margin: 0;
-}
-.cnt .gist .gist-file .gist-data {
-  background: none;
-  border: none;
-}
-.cnt .gist .gist-file .gist-data .line-numbers {
-  background: none;
-  border: none;
-  padding: 0 20px 0 0;
-}
-.cnt .gist .gist-file .gist-data .line-data {
-  padding: 0 !important;
-}
-.cnt .gist .gist-file .highlight {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-.cnt .gist .gist-file .gist-meta {
-  background: #272822;
-  color: highlight-comment;
-  font: 0.85em 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-shadow: 0 0;
-  padding: 0;
-  margin-top: 1em;
-  margin-left: 20px;
-}
-.cnt .gist .gist-file .gist-meta a {
-  color: #258fb8;
-  font-weight: normal;
-}
-.cnt .gist .gist-file .gist-meta a:hover {
-  text-decoration: underline;
-}
-pre .comment {
-  color: #75715e;
-}
-pre .keyword,
-pre .function .keyword,
-pre .class .params {
-  color: #66d9ef;
-}
-pre .tag,
-pre .doctype,
-pre .params,
-pre .function,
-pre .css .value {
-  color: #fff;
-}
-pre .css ~ * .tag,
-pre .title,
-pre .at_rule,
-pre .at_rule .keyword,
-pre .preprocessor,
-pre .preprocessor .keyword {
-  color: #f92672;
-}
-pre .attribute,
-pre .built_in,
-pre .class,
-pre .css ~ * .class,
-pre .function .title {
-  color: #a6e22e;
-}
-pre .value,
-pre .string {
-  color: #e6db74;
-}
-pre .number {
-  color: #7163d7;
-}
-pre .id,
-pre .css ~ * .id {
-  color: #fd971f;
-}
-
-pre {
-  counter-reset: line-numbering;
-  border: solid 1px #d9d9d9;
-  border-radius: 0;
-  background: #fff;
-  padding: 0;
-  line-height: 23px;
-  margin-bottom: 30px;
-  white-space: pre;
-  overflow-x: auto;
-  word-break: inherit;
-  word-wrap: inherit;
-}
-
-pre a::before {
-  content: counter(line-numbering);
-  counter-increment: line-numbering;
-  padding-right: 1em; /* space after numbers */
-  width: 25px;
-  text-align: right;
-  opacity: 0.7;
-  display: inline-block;
-  color: #aaa;
-  background: #eee;
-  margin-right: 16px;
-  padding: 2px 10px;
-  font-size: 13px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-pre a:first-of-type::before {
-  padding-top: 10px;
-}
-
-pre a:last-of-type::before {
-  padding-bottom: 10px;
-}
-
-pre a:only-of-type::before {
-  padding: 10px;
-}
-
 #content ul#doing li .tag {
   background: #039be5;
   padding: 3px 6px;
@@ -924,3 +705,6 @@ ul#markdown-toc {
   border: #fff 0.5em solid;
   background-color: white;
 }	
+
+
+

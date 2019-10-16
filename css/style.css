@@ -883,6 +883,12 @@ pre a:only-of-type::before {
   vertical-align: sub;
   font-size: 12px;
 }
+
+#content .tags-items-section a {
+  font-weight: normal;
+  /* color: #434c5e */
+}
+
 #content .category-items-list a {
   font-weight: bold;
   line-height: 200%;
@@ -899,6 +905,7 @@ pre a:only-of-type::before {
 
 #content .category-items-section a {
   font-weight: normal;
+  /* color: #434c5e */
 }
 
 #markdown:before {

@@ -8,7 +8,8 @@ category: Mac
 tags: [mac]
 ---
 
-
+* any list
+{:toc}
 
 > 一台合乎自己使用习惯的Mac的设置
 
@@ -124,7 +125,7 @@ brew install autojump
 
 快捷切换function功能键模式,`⌥⌘` + `tab`
 
-### Go2Shell
+## Go2Shell
 
 运行安装
 

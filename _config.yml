@@ -1,7 +1,8 @@
 title: "穿越这无限世界-BabyKing's Blog"
 
 highlighter: rouge
-
+markdown: kramdown
+toc_levels: 2..4
 kramdown:
   syntax_highlighter: rouge
 

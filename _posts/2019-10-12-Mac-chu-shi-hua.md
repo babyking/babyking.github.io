@@ -125,7 +125,14 @@ brew install autojump
 
 ## Go2Shell
 
-运行安装
+运行运行安装,配置通过运行来进行.
+
+
+
+## VSCode
+
+1. Alfred中的vscode helper的菜单要控制长度
+2. 
 
 
 

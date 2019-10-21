@@ -59,10 +59,12 @@ Shotcat, `⌘⇧` + `space`
 6. 五笔输入法字库的定制
 
    > 清歌输入法提供了字库的编辑功能
+   
+7. 如果五笔无法提供字库的定制,提供词的调频功能也可以部分解决问题,但是五笔输入法的字词调频功能是一把双刃剑,这跟拼音不同.
 
 
 
-## iTerm2
+## 终端/iTerm2
 
 **iterm2设置**
 
@@ -125,6 +127,14 @@ git config --global user.name "babyking"
 brew install autojump
 # ~/.zshrc中加入autojump
 # plugins=(autojump)
+```
+
+**tldr**(too long don't read)
+
+```sh
+brew install tldr
+# 在.zshrc中加入别名, manx比tldr更容易记忆和使用  
+# alias manx=tldr
 ```
 
 

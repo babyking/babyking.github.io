@@ -56,6 +56,16 @@ Shotcat, `⌘⇧` + `space`
 
 ## iTerm2
 
+**iterm2设置**
+
+1. 边框
+
+   ![image-20191021112346574](/image/image-20191021112346574.png)
+
+2. option + 左右方向键 以单词为单位移动光标
+
+   ![Screen Shot 2019-10-21 at 11.29.57 AM](/image/Screen Shot 2019-10-21 at 11.29.57 AM.png)
+
 **/etc/hosts**
 
 设置公司内网ip域名映射

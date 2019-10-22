@@ -45,7 +45,7 @@ kern.sysv.shmall=1024
 
 保存后,重启机器生效.
 
-启动连接数据
+启动连接数据库
 
 ```sh
 # 启动postgresql服务

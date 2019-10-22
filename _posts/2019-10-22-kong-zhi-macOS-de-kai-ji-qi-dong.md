@@ -25,16 +25,28 @@ macOS系统上开机启动这个叫法不准确，应该叫“自启动”或者
 ## 使用launchctl工具添加启动项
 
 从OS X 10.4 Tiger开始，Apple要求开发者使用[launch daemons and agents](https://link.jianshu.com/?t=https%3A%2F%2Fdeveloper.apple.com%2Flibrary%2Fmac%2Fdocumentation%2FMacOSX%2FConceptual%2FBPSystemStartup%2FChapters%2FCreatingLaunchdJobs.html)配置自启动项，launch daemons和launch agents由launchd进程管理。launchd是macOS下用于初始化系统环境的关键进程，它是内核装载成功之后在OS环境下启动的第一个进程。采用这种方式来配置自启动项只需要一个plist文件，该plist文件存在于以下目录，各目录决定了其启动的先后和拥有的权限：
-`~/Library/LaunchAgents //特定用户登录后以当前用户启动，第三方程序一般都放这里`
-`/Library/LaunchAgents //任一用户登录后以当前用户启动，管理员使用`
-`/System/Library/LaunchAgents //系统组件，任一用户登录后以当前用户启动`
-`/Library/LaunchDaemons //系统装载时以root用户启动，管理员使用`
-`/System/Library/LaunchDaemons //系统组件，系统装载时以root用户启动`
+
+`~/Library/LaunchAgents` //特定用户登录后以当前用户启动，第三方程序一般都放这里
+
+`/Library/LaunchAgents` //任一用户登录后以当前用户启动，管理员使用
+
+`/System/Library/LaunchAgents` //系统组件，任一用户登录后以当前用户启动
+
+`/Library/LaunchDaemons `//系统装载时以root用户启动，管理员使用
+
+`/System/Library/LaunchDaemons` //系统组件，系统装载时以root用户启动
+
+
 
 目录区别：
-`/System/Library //存放Apple开发的系统组件。`
-`/Library //存放系统管理员安装的程序。`
-`~/Library //存放普通用户安装的程序。`
+
+`/System/Library`  //存放Apple开发的系统组件
+
+`/Library ` 	//存放系统管理员安装的程序
+
+`~/Library `	//存放普通用户安装的程序
+
+
 
 launch daemon和launch agents区别：
 它们本质上都是守护进程，launch daemons在系统装载时启动，属于所有用户；launch agents是某个用户拥有的程序，在这个用户登录后启动。

@@ -2,7 +2,7 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: post
-title: (转载)控制macOS的开机启动
+title: 控制macOS的开机启动(转载)
 date: 2019-10-22 09:35
 category: 技术
 tags: [mac]

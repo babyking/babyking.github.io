@@ -72,13 +72,33 @@ Shotcat, `⌘⇧` + `space`
 
 **iterm2设置**
 
-1. 边框
+1. 目录
+
+   ![Screen Shot 2019-10-22 at 10.25.58 AM](/image/Screen Shot 2019-10-22 at 10.25.58 AM.png)
+
+   
+
+2. 边框
 
    ![image-20191021112346574](/image/image-20191021112346574.png)
 
-2. `⌥ + ←→` 以单词为单位移动光标
+3. `⌥ + ←→` 以单词为单位移动光标
 
    ![Screen Shot 2019-10-21 at 11.29.57 AM](/image/Screen Shot 2019-10-21 at 11.29.57 AM.png)
+
+**vi设置**
+
+vi光标设置, `.vimrc` 中加入
+
+```sh
+" Change cursor shape between insert and normal mode in iTerm2.app
+if $TERM_PROGRAM =~ "iTerm"
+let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
+let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
+endif
+```
+
+
 
 **/etc/hosts**
 
@@ -163,7 +183,7 @@ brew install tldr
 
 ## VSCode
 
-1. Alfred中的vscode helper的菜单要控制长度
+1. Alfred中的vscode helper的菜单控制其长度
 2. 
 
 
@@ -174,5 +194,5 @@ brew install tldr
 * Wunderlist
 * Nutstore
 * 1Password
-* 
+* axel 多线程下载
 

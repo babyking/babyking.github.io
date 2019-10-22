@@ -15,14 +15,14 @@ macOS系统上开机启动这个叫法不准确，应该叫“自启动”或者
 
 下面简要介绍如何配置自启动项。
 
-#### 使用登录项添加自启动项
+## 使用登录项添加自启动项
 
 这种方式支持有用户界面的程序。
 进入`设置`->`用户与群组`->`登录项`，点击+号找到想自动启动的软件，选择后按确定即可。
 
 删除自启动项，重新进入`登录项`，选中目标项点击减号后确定即可。
 
-### 使用launchctl工具添加启动项
+## 使用launchctl工具添加启动项
 
 从OS X 10.4 Tiger开始，Apple要求开发者使用[launch daemons and agents](https://link.jianshu.com/?t=https%3A%2F%2Fdeveloper.apple.com%2Flibrary%2Fmac%2Fdocumentation%2FMacOSX%2FConceptual%2FBPSystemStartup%2FChapters%2FCreatingLaunchdJobs.html)配置自启动项，launch daemons和launch agents由launchd进程管理。launchd是macOS下用于初始化系统环境的关键进程，它是内核装载成功之后在OS环境下启动的第一个进程。采用这种方式来配置自启动项只需要一个plist文件，该plist文件存在于以下目录，各目录决定了其启动的先后和拥有的权限：
 `~/Library/LaunchAgents //特定用户登录后以当前用户启动，第三方程序一般都放这里`
@@ -109,7 +109,7 @@ launchctl unload ~/Library/LaunchAgents/aria2.plist
 launchctl list
 ```
 
-#### Homebrew安装的程序可使用[Homebrew Services](https://link.jianshu.com/?t=https%3A%2F%2Fgithub.com%2FHomebrew%2Fhomebrew-services)设置开机启动
+## Homebrew安装的程序可使用[Homebrew Services](https://link.jianshu.com/?t=https%3A%2F%2Fgithub.com%2FHomebrew%2Fhomebrew-services)设置开机启动
 
 设置开机启动
 

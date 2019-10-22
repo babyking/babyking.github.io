@@ -1,12 +1,4 @@
----
-typora-root-url: ../
-typora-copy-images-to: ../image
-layout: post
-title: Mac初始化
-date: 2019-10-12 13:55
-category: Mac
-tags: [mac]
----
+
 
 
 > 一台合乎自己使用习惯的Mac的设置
@@ -16,8 +8,6 @@ tags: [mac]
 ## 用户名
 
 多台电脑使用同一用户名,方便一些脚本在不同电脑上一致性,虽然然脚本中可以使用$HOME这样的环境变量.
-
-
 
 ## 效率软件
 
@@ -42,8 +32,6 @@ Keyboard Maestro
 
 Shotcat, `⌘⇧` + `space` 
 
-
-
 ## 输入法
 
 1. 只保留中英两个输入法
@@ -62,11 +50,20 @@ Shotcat, `⌘⇧` + `space`
    
 7. 如果五笔无法提供字库的定制,提供词的调频功能也可以部分解决问题,但是五笔输入法的字词调频功能是一把双刃剑,这跟拼音不同.
 
+## 截图设置
 
+系统截图的命名设置.默认命名中有空格.
+
+```sh
+defaults write com.apple.screencapture name "screenshot_$(date +%Y%m%d_%H%M%S)"
+defaults write com.apple.screencapture "include-date" 0
+```
 
 ## 浏览器/Chrome
 
 1. 繁体转简体
+
+
 
 ## 终端/iTerm2
 
@@ -178,8 +175,6 @@ brew install tldr
 ## Go2Shell
 
 运行运行安装,配置通过运行来进行.
-
-
 
 ## VSCode
 

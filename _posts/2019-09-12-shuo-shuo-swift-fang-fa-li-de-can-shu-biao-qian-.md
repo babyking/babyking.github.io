@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: post
 title: 说说swift方法里的参数标签
 date: 2019-09-12 14:13
-category: 开发
+category: 技术
 tags: [swift,objc]
 ---
 

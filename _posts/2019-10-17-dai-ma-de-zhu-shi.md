@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: post
 title: 代码的注释
 date: 2019-10-17 09:51
-category: 开发 
+category: 技术 
 tags: [c,注释]
 ---
 

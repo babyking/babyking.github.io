@@ -64,6 +64,10 @@ Shotcat, `⌘⇧` + `space`
 
 
 
+## 浏览器/Chrome
+
+1. 繁体转简体
+
 ## 终端/iTerm2
 
 **iterm2设置**

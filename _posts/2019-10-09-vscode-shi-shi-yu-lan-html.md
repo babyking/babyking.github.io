@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: post
 title: vscode实时预览html
 date: 2019-10-09 14:11
-category: 开发
+category: 技术
 tags: [vscode,html,webserver]
 ---
 

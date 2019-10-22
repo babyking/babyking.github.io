@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: post
 title: Github Pages 备忘123
 date: 2019-10-12 13:02
-category: 开发 
+category: 技术 
 tags: [jekyll,blog,github]
 ---
 

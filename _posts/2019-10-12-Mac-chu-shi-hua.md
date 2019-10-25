@@ -1,4 +1,12 @@
-
+---
+typora-root-url: ../
+typora-copy-images-to: ../image
+layout: post
+title: Mac初始化
+date: 2019-10-12 13:55
+category: Mac
+tags: [mac]
+---
 
 
 > 一台合乎自己使用习惯的Mac的设置
@@ -115,16 +123,16 @@ export HOMEBREW_NO_AUTO_UPDATE=true
 
 ```sh
 # pyenv
-export PATH="$HOME/.pyenv/bin:$PATH"
+# export PATH="$HOME/.pyenv/bin:$PATH" //新版本不需要显式设置shim
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# eval "$(pyenv virtualenv-init -)"
 ```
 
 **rbenv**
 
 ```sh
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
+# export PATH="$HOME/.rbenv/bin:$PATH" //新版本不需要显式设置shim
 eval "$(rbenv init -)"
 ```
 

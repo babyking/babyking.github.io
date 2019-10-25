@@ -2,7 +2,7 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: post
-title: 代码的注释
+title: 一段很好的C编码习惯
 date: 2019-10-17 09:51
 category: 技术 
 tags: [c,注释]
@@ -10,7 +10,7 @@ tags: [c,注释]
 
 
 
-一个很好的c代码注释习惯
+一段很好的C编码习惯
 
 1. 返回类型独立一行
 2. 函数级的左括号单独一行

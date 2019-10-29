@@ -131,13 +131,13 @@ brew services start mysql //如果用Homebrew安装了mysq：
 
 只运行不开机启动
 
-```undefined
+```sh
 brew services run mysql
 ```
 
 停止运行不再开机启动(存疑，未验证）
 
-```undefined
+```sh
 brew services stop mysql
 ```
 

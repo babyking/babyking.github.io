@@ -8,7 +8,7 @@ kramdown:
   # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
   # span, block element options fall back to global
   syntax_highlighter_opts:
-    line_numbers: false # bad idea, spans don't need linenos and would inherit this option
+    line_numbers: false  # bad idea, spans don't need linenos and would inherit this option
     span:
       line_numbers: false
     block:

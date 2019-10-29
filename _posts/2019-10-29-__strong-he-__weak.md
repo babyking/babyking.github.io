@@ -18,10 +18,10 @@ tags: [ios,objc]
     self.block = ^{
         __strong typeof(weakSelf) strongSelf = weakSelf; // retain(self)
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            NSLog(@"%@",strongSelf);
-          	//if (stringSelf) {
-            //  
-            //}
+          NSLog(@"%@",strongSelf);
+          if (strongSelf) {
+            // dosth
+          }
         });
       	// 结束后 strongSelf超出作用域, 会release(self)
     };

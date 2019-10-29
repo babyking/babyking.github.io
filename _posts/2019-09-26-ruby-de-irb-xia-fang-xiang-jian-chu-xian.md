@@ -35,7 +35,6 @@ brew install readline
 加入readline 编译选项进行安装
 
 ```sh
-
 RUBY_CONFIGURE_OPTS=--with-readline-dir=`brew --prefix readline` rbenv install 2.5.1
 ```
 

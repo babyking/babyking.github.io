@@ -403,8 +403,6 @@ hr {
   border: 0;
   border-top: 1px solid #eee;
 }
-
-
 code,
 pre {
   font-family: 'Source Code Pro', Consolas, Monaco, Menlo, Consolas, monospace;
@@ -416,14 +414,15 @@ pre {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   -moz-box-shadow: 0 -1px 0 #444444;
-  background-color: #222222;
+  background-color: #f7f7f7;
   color: #dddddd;
   font-size: 14px;
-  padding: 20px;
-  text-shadow: 0 1px 0 #000000;
+  padding: 10px;
+  /* text-shadow: 0 1px 0 #000000; */
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+
 div.notice {
   -moz-border-radius: 5px 5px 5px 5px;
   -webkit-border-radius: 5px;

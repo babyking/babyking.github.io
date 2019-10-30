@@ -57,7 +57,7 @@ sendMessage(msg, to:sb)
 
 -(void) sendMessage:(NSString*) msg {}
 
--(void) sendMessage:(NSString*) to:(NSString*) sb {}
+-(void) sendMessage:(NSString*) msg to:(NSString*) sb {}
 ```
 
 三个方法,虽然方法名相同,参数不同,但其实是三个不同的方法,在obj-c中这三个方法调用实际上是通过

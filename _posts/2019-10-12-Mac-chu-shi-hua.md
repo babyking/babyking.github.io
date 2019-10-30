@@ -198,4 +198,5 @@ brew install tldr
 * Nutstore
 * 1Password
 * axel 多线程下载
+* the archiver ,解决windows下压缩文件的乱码问题.
 

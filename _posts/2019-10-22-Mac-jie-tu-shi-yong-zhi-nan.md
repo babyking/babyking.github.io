@@ -46,9 +46,16 @@ tags: [mac]
 
 ## 截图文件设置
 
+ 
+
+~~defaults write com.apple.screencapture name "screenshot_$(date +%Y%m%d_%H%M%S)~~
+
+> 上面的本义是要在截图的时候命名为当前日期时间,但是不生效,文件名是执行命令时的时间,我的解决办法是没有办法,自己定义了一个快捷改名的操作,不过跟这个配置无关了.
+
 ```sh
-# 保存文件名设置 
-defaults write com.apple.screencapture name "screenshot_$(date +%Y%m%d_%H%M%S)"
+# 保存文件名设置
+defaults write com.apple.screencapture name "screenshot"
+
 # 文件名中不包括时间 (默认系统会在文件名末尾增加时间字符串)
 defaults write com.apple.screencapture "include-date" 0
 

@@ -34,3 +34,14 @@ google了一下,给出的解决方法是重装xcode command line
 ```
 xcode-select --install
 ```
+
+
+
+## 有些APP打不开了
+
+```sh
+xattr -cr /path/to/application.app
+```
+
+这个不能多说了
+

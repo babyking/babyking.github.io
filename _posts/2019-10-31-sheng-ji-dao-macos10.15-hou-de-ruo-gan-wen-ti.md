@@ -1,0 +1,36 @@
+---
+typora-root-url: ../
+typora-copy-images-to: ../image
+layout: post
+title: 升级到macOS10.15后的若干问题
+date: 2019-10-31 18:00
+category: Mac
+tags: [mac]
+---
+
+
+
+## Alfred
+
+blog相关的脚不工作了
+
+```sh
+[2019-10-31 17:57:49][action.script] Processing output of 'output.notification' with arg ''
+[2019-10-31 17:58:03][trigger.hotkey] Processing output of 'input.keyword' with arg ''
+[2019-10-31 17:58:08][trigger.hotkey] Processing output of 'input.keyword' with arg ''
+[2019-10-31 17:58:21][input.keyword] Processing output of 'action.script' with arg '关键时候能救命 'xattr -cr /path/to/application.app''
+[2019-10-31 17:58:21][ERROR: action.script] xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+[2019-10-31 17:58:21][action.script] Processing output of 'action.script' with arg 'git pull error:
+'
+[2019-10-31 17:58:21][ERROR: action.script] xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+[2019-10-31 17:58:21][action.script] Processing output of 'output.notification' with arg ''
+```
+
+google了一下,给出的解决方法是重装xcode command line
+
+```
+xcode-select --install
+```

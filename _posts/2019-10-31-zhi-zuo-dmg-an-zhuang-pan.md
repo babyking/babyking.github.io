@@ -5,7 +5,7 @@ layout: post
 title: 制作DMG安装盘
 date: 2019-10-31 14:23
 category: 开发
-tags: [Mac,开发]
+tags: [mac,开发]
 ---
 
 
@@ -73,3 +73,4 @@ tags: [Mac,开发]
 bless --openfolder /Volumes/Untitled
 ```
 
+![screenshot_20191022_14152](/image/screenshot_20191022_14152.png)

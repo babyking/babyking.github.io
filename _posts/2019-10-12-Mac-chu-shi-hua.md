@@ -79,7 +79,7 @@ defaults write com.apple.screencapture "include-date" 0
 
 1. 目录
 
-   ![Screen Shot 2019-10-22 at 10.25.58 AM](/image/Screen Shot 2019-10-22 at 10.25.58 AM.png)
+   ![Screen Shot 2019-10-22 at 10.25.58 AM](/image/screenshot_2019_1031_0438_24.png)
 
    
 
@@ -89,7 +89,7 @@ defaults write com.apple.screencapture "include-date" 0
 
 3. `⌥ + ←→` 以单词为单位移动光标
 
-   ![Screen Shot 2019-10-21 at 11.29.57 AM](/image/Screen Shot 2019-10-21 at 11.29.57 AM.png)
+   ![screenshot_2019_1031_0438_56](/image/screenshot_2019_1031_0438_56.png)
 
 **vi设置**
 

@@ -140,7 +140,7 @@ end
 `Podfile`文件内容可以非常简单，如下所示：
 
 ```ruby
-target 'MyApp` do
+target 'MyApp' do
   pod 'Mantle'
 end
 ```
@@ -165,7 +165,7 @@ end
 
 添加第三方库时，如果没有指定版本，则默认使用最新正式版。另外，使用如下命令指定版本：
 
-```csharp
+```ruby
 // 使用2.1.0版本的Mantle
 pod 'Mantle', '2.1.0'
 ```

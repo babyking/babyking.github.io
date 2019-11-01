@@ -26,7 +26,7 @@ Xcode 不仅仅只是一个应用程序，在 GUI 之下是一个应用程序和
 
 从 Mavericks 开始，在 Mac 上的开发者从执行一条命令开始：
 
-```csharp
+```sh
 $ xcode-select --install
 ```
 

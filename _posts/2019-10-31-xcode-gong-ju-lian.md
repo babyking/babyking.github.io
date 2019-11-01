@@ -36,13 +36,13 @@ $ xcode-select --install
 
 `xcrun` 是 Xcode 基本的命令行工具。使用它可以调用其他工具。
 
-```ruby
+```sh
 $ xcrun xcodebuild
 ```
 
 除运行命令之外，`xcrun` 可以查找文件和显示 SDK 的路径：
 
-```ruby
+```sh
 $ xcrun --find clang
 $ xcrun --sdk iphoneos --find pngcrush
 $ xcrun --sdk macosx --show-sdk-path
@@ -58,13 +58,13 @@ $ xcrun --sdk macosx --show-sdk-path
 
 不用传递任何构建参数，`xcodebuild` 默认为 Xcode.app 最近使用的 scheme 和 配置：
 
-```ruby
+```sh
 $ xcodebuild
 ```
 
 然而，任何 scheme、targets、配置、目标设备、SDK和导出数据位置都可以配置：
 
-```objectivec
+```sh
 $ xcodebuild -workspace NSHipster.xcworkspace -scheme "NSHipster"
 ```
 
@@ -92,7 +92,7 @@ $ genstrings -a /path/to/source/files/*.m
 
 fr.lproj/Localizable.strings
 
-```cpp
+```sh
 /* No comment provided by engineer. */
 
 "Username"="nom d'utilisateur";
@@ -106,7 +106,7 @@ fr.lproj/Localizable.strings
 
 正如 `genstrings` 作用于源代码，而 `ibtool` 作用于 `XIB` 文件。
 
-```php
+```sh
 $ ibtool --generate-strings-file Localizable.strings en.lpoj/Interface.xib
 ```
 
@@ -122,7 +122,7 @@ $ ibtool --generate-strings-file Localizable.strings en.lpoj/Interface.xib
 
 `iprofiler` 测量应用程序的性能，而不启动 `Instruments.app`：
 
-```objectivec
+```sh
 $ iprofiler -allocations -leaks -T 15s -o perf -a NSHipster
 ```
 
@@ -132,7 +132,7 @@ $ iprofiler -allocations -leaks -T 15s -o perf -a NSHipster
 
 这个命令可以简单地打开 Xcode。
 
-```objectivec
+```sh
 $ xed NSHipster.xcworkspace
 ```
 
@@ -142,13 +142,13 @@ $ xed NSHipster.xcworkspace
 
 `agvtool` 用于读取和写入 Xcode工程 Info.plist 中的版本号。
 
-```ruby
+```sh
 $ agvtool what-version
 ```
 
 返回当前版本
 
-```ruby
+```sh
 $ agvtool next-version
 ```
 
@@ -229,13 +229,13 @@ Objective-C 文档由任何 `@interface` 或 `@protocol` 之前的 `/** */` 注�
 
 `appledoc` 可以通过以下命令安装：
 
-```ruby
+```sh
 $ brew install appledoc
 ```
 
 要生成文档，需要在 Xcode 工程的根目录下执行 `appledoc` 命令，传递元数据比如工程名和公司名：
 
-```objectivec
+```sh
 $ appledoc --project-name CFHipsterRef --project-company "NSHipster" --company-id com.nshipster --output ~/Documents .
 ```
 
@@ -243,7 +243,7 @@ $ appledoc --project-name CFHipsterRef --project-company "NSHipster" --company-i
 
 通过传递 `--help` 参数可以找到其他配置选项（包括HTML输出）：
 
-```bash
+```sh
 $ appledoc --help
 ```
 
@@ -253,7 +253,7 @@ $ appledoc --help
 
 我们自己作为苹果硬件和软件的消费者，都清楚设计的重要性怎么强调都不为过。在这个方面，xctool 做得非常漂亮。构建过程的每一步都经过清晰的组织，使用 ANSI 彩色字符和一系列 Unicode 装饰字符，使得表现的方式既容易理解又具有视觉吸引力，同时 xctool 的美丽不仅仅体现了表面：构建过程同样支持以其他工具可读取的格式进行输出：
 
-```ruby
+```sh
 $ xctool -reporter plain:output.txt build
 ```
 
@@ -270,7 +270,7 @@ xctool 相对于 xcodebuild 另一个主要的进步是，xctool 可以和 Xcode
 
 通过以下命令安装 `xctool`：
 
-```ruby
+```sh
 $ brew install xctool
 ```
 
@@ -280,13 +280,13 @@ OCLint 是一个静态代码分析工具，可以检查 Objective-C（也支持 
 
 安装 OCLint 最好的方式是通过 Homebrew Cask:
 
-```ruby
+```sh
 $ brew cask install oclint
 ```
 
 还记得 `xctool` 的 `json-compilation-database` 输出选项吗？它的输出可以直接 被 `OCLint` 读取，供它进行魔法一般的静态分析。
 
-```ruby
+```sh
 $ xctool -workspace NSHipster.xcworkspace -scheme "NSHipster" -reporter json-compilation-database build > compile_commands.json
 
 $ oclint-json-compilation-database
@@ -298,7 +298,7 @@ $ oclint-json-compilation-database
 
 实际上，xcpretty 通过获取 xcodebuild 的管道输出而不是直接调用，充分体现了 Unix的可组合性理念：
 
-```ruby
+```sh
 $ xcodebuild [flags] | xcpretty -c
 ```
 
@@ -308,7 +308,7 @@ $ xcodebuild [flags] | xcpretty -c
 
 xcpretty 通过 RubyGems 安装：
 
-```ruby
+```sh
 $ gem install xcpretty
 ```
 
@@ -318,7 +318,7 @@ $ gem install xcpretty
 
 每个工具可以单独安装，也可以一起安装：
 
-```ruby
+```sh
 $ gem install nomad-cli
 ```
 
@@ -330,7 +330,7 @@ $ gem install nomad-cli
 
 `Cupertino` 提供一个命令行工具管理设备、provisioning proﬁle、app ID 和证书。
 
-```ruby
+```sh
 $ ios devices:list
 
 +------------------------------+---------------------------------------+
@@ -368,7 +368,7 @@ $ ios devices:add "iPad 2"=def456 "iPad 3"=ghi789 ...
 
 通过以下命令单独安装：
 
-```ruby
+```sh
 $ gem install cupertino
 ```
 
@@ -380,7 +380,7 @@ Web 开发人员在 iOS 上的对应部分是能够在几秒钟内持续部署�
 
 `Shenzhen` 是进一步自动化此过程的工具，通过构建 .ipa文件，然后发布到 FTP/SFTP服务器、S3 存储或者其他任何上述第三方服务。
 
-```ruby
+```sh
 $ cd /path/to/iOS Project/
 $ ipa build
 $ ipa distribute:sftp --host HOST -u USER -p PASSWORD -P FTP_PATH
@@ -390,7 +390,7 @@ $ ipa distribute:sftp --host HOST -u USER -p PASSWORD -P FTP_PATH
 
 `Houston` 是一个简单的工具发送苹果推送通知。传递凭据、构造消息并将其发送到设备。
 
-```ruby
+```sh
 $ apn push "<token>" -c /path/to/apple_push_notification.pem -m "Hello from the command line!"
 ```
 
@@ -402,7 +402,7 @@ $ apn push "<token>" -c /path/to/apple_push_notification.pem -m "Hello from the 
 
 `Venice` 是一个命令行程序，用于验证 Apple 应用内购买收据，并检索与收据数据相关的信息。
 
-```ruby
+```sh
 $ iap verify /path/to/receipt
 +-----------------------------+-------------------------------+
 
@@ -478,13 +478,13 @@ Passbook 管理登机牌、电影票、零售优惠券和会员卡。使用 Pass
 
 `Dubai`可以很容易地从脚本或命令行生成 .pkpass 文件，允许快速迭代你的 pass 的设计和内容，或者在空中生成一次性的。
 
-```python
+```sh
 $ pk generate Example.pass -T boarding-pass
 ```
 
 一旦生成了通行证，它可以用 `Dubai` 创建本地 HTTP 服务，允许通行证在 iOS 模拟器中实时预览：
 
-```ruby
+```sh
 $ pk serve Example.pass -c /path/to/certificate.p12
 $ open http://localhost:4567/pass.pkpass
 ```

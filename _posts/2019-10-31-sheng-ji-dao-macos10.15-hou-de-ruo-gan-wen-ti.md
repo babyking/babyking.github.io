@@ -77,4 +77,4 @@ xattr -cr /path/to/application.app
 
 ```
 
-偶尔发生,重启后恢复正常.
+karbiner 12.6.0. 偶尔发生,重启后恢复正常. 等新版本看是否修复此问题.

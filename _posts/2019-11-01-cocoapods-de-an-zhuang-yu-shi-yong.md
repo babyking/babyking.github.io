@@ -18,7 +18,7 @@ CocoaPods是使用Ruby语言编写的，macOS系统默认安装了Ruby。CocoaPo
 
 使用如下命令安装CocoaPods：
 
-```ruby
+```sh
 $ sudo gem install cocoapods
 ```
 
@@ -26,7 +26,7 @@ $ sudo gem install cocoapods
 
 输入上面命令后，命令行提示如下：
 
-```css
+```sh
 Fetching: concurrent-ruby-1.0.5.gem (100%)
 Successfully installed concurrent-ruby-1.0.5
 Fetching: i18n-0.9.1.gem (100%)
@@ -39,7 +39,7 @@ Done installing documentation for concurrent-ruby, i18n, thread_safe, tzinfo, ac
 
 使用如下命令查看CocoaPods版本：
 
-```php
+```sh
 $ gem list --local | grep cocoapods
 cocoapods (1.3.1)
 cocoapods-core (1.3.1)
@@ -72,7 +72,7 @@ $ [sudo] gem install cocoapods
 
 CocoaPods更新到新版本后，低版本的CocoaPods并不会被自动移除。如下所示：
 
-```php
+```sh
 $ gem list --local | grep cocoapods
 cocoapods (1.3.1, 1.1.0)
 cocoapods-core (1.3.1, 1.1.0)
@@ -87,7 +87,7 @@ cocoapods-try (1.1.0)
 
 使用如下命令移除指定版本CocoaPods：
 
-```php
+```sh
 $ gem uninstall cocoapods -v 1.1.0
 Successfully uninstalled cocoapods-1.1.0
 $ gem uninstall cocoapods-core -v 1.1.0
@@ -139,7 +139,7 @@ end
 
 `Podfile`文件内容可以非常简单，如下所示：
 
-```rust
+```ruby
 target 'MyApp` do
   pod 'Mantle'
 end
@@ -183,7 +183,7 @@ pod 'Mantle', '2.1.0'
 
 使用`pod install`命令添加第三方库：
 
-```tsx
+```sh
 $ pod install
 Analyzing dependencies
 Downloading dependencies
@@ -241,7 +241,7 @@ CocoaPods创建`Mantle`pod工程，并添加到你的workspace。因此，当你
 
 当运行`pod outdated`命令时，CocoaPods会查找`Podfile.lock`中所有pods，并列出更新版本的pods。也就是说，运行`pod update [PODNAME]`命令时，如果新版本符合`Podfile`的描述，则会更新pod到新版本。
 
-```rust
+```sh
 $ pod outdated
 Updating spec repo `master`
   $ /usr/local/bin/git -C /Users/ad/.cocoapods/repos/master fetch origin
@@ -281,7 +281,7 @@ The following pod updates are available:
 
 在Terminal中输入`pod search [PODNAME]`即可进行查找，查找时不区分大小写。可以配合其它可选项进行检索，如`—simple`只查找pod名称，`—stats`显示GitHub中watch fork数据。
 
-```ruby
+```sh
 $ pod search --simple --stats AFNetworking
 -> AFNetworking (3.1.0)
    A delightful iOS and OS X networking framework.

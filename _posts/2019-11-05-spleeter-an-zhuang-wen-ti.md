@@ -150,3 +150,4 @@ INFO:tensorflow:Downloading model archive https://github.com/deezer/spleeter/rel
 
 ![screenshot_2019_1105_1026_24](/image/screenshot_2019_1105_1026_24.png)
 
+可以正常工作了.

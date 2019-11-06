@@ -78,3 +78,11 @@ xattr -cr /path/to/application.app
 ```
 
 karbiner 12.6.0. 偶尔发生,重启后恢复正常. 等新版本看是否修复此问题.
+
+
+
+## zip无法解压
+
+![screenshot_2019_1106_0929_33](/image/screenshot_2019_1106_0929_33.png)
+
+使用第三方的keka可以正常解压,不知为何?

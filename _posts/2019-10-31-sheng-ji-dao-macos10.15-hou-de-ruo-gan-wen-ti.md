@@ -86,3 +86,11 @@ karbiner 12.6.0. 偶尔发生,重启后恢复正常. 等新版本看是否修复
 ![screenshot_2019_1106_0929_33](/image/screenshot_2019_1106_0929_33.png)
 
 使用第三方的keka可以正常解压,不知为何?
+
+
+
+## Preview
+
+有些pdf打不开了,但是chrome还是可以打开的
+
+![screenshot_2019_1106_0432_27](/image/screenshot_2019_1106_0432_27.png)

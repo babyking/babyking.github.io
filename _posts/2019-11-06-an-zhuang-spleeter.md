@@ -142,7 +142,7 @@ INFO:tensorflow:Downloading model archive https://github.com/deezer/spleeter/rel
 
 ```
 
-但是速度很慢 ,可以将https://github.com/deezer/spleeter/releases/ 中的几个文件下载
+但是速度很慢 ,可以将[https://github.com/deezer/spleeter/releases/ ](https://github.com/deezer/spleeter/releases/ )中的几个文件下载
 
 ![screenshot_2019_1105_1025_16](/image/screenshot_2019_1105_1025_16.png)
 

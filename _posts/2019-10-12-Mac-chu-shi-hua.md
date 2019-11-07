@@ -128,6 +128,19 @@ eval "$(pyenv init -)"
 # eval "$(pyenv virtualenv-init -)"
 ```
 
+**pip 使用国内镜像**
+
+创建~/.pip/pip.conf
+
+```sh
+[global]
+index-url = http://mirrors.aliyun.com/pypi/simple
+[install]
+trusted-host = mirrors.aliyun.com
+```
+
+
+
 **rbenv**
 
 ```sh

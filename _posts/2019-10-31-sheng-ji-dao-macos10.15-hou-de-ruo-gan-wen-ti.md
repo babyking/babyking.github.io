@@ -128,3 +128,11 @@ Warning: count(): Parameter must be an array or an object that implements Counta
 ```
 
 原因是7.2以后,count函数的参数要实现Countable接口.
+
+
+
+## Reminder(提醒)
+
+长的文字不能折行?
+
+![screenshot_2019_1108_0926_51](/image/screenshot_2019_1108_0926_51.png)

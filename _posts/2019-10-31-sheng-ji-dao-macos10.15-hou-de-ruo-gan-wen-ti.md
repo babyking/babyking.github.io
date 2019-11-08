@@ -104,3 +104,27 @@ karbiner 12.6.0. 偶尔发生,重启后恢复正常. 等新版本看是否修复
 > 解决:
 >
 > 将系统语言切换到中文,就可以打开了,然后再切回英文,也可以打开了,不知道为什么,但是解决了.也许是重新启动就好了?
+
+
+
+## PHP
+
+Catalina的 PHP版本比较新,7.3.9
+
+alfred里的一些脚本警告
+
+
+```sh
+Warning: count(): Parameter must be an array or an object that implements Countable in /Users/bob/Nutstore/Preferences/alfred/Alfred.alfredpreferences/workflows/user.workflow.B0724C7A-42CF-490E-9CCE-7761BD21428F/e4WorkflowApp.php on line 51
+```
+
+警告的是下面if所在的行
+
+```php
+// Loading default configuration
+		if (count($e4Config['defaults']) > 0)
+			foreach ($e4Config['defaults'] AS $key => $value)
+				$this->addDefault($key, $value);
+```
+
+原因是7.2以后,count函数的参数要实现Countable接口.

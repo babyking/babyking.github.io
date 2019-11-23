@@ -60,7 +60,7 @@ Shotcat, `⌘⇧` + `space`
 
 ## 截图设置
 
-系统截图的命名设置.默认命名中有空格.
+~~系统截图的命名设置.默认命名中有空格.~~
 
 ~~**下面的命名方式请不要采用,因为日期无法根据当前日期时间动态更新**~~
 
@@ -68,6 +68,13 @@ Shotcat, `⌘⇧` + `space`
 #defaults write com.apple.screencapture name "screenshot_$(date +%Y%m%d_%H%M%S)"
 #defaults write com.apple.screencapture "include-date" 0
 ```
+
+快捷键
+
+1. 长按4,截图到clipboard, 相当于 `⌘⌥`+ `4`
+2. `hyper`+`4`,截图并编辑圈选,相关于 `⌃⌘⌥`+ `4`
+
+
 
 ## 浏览器/Chrome
 
@@ -187,9 +194,11 @@ brew install tldr
 
 全局选中文字快捷键 `⇧⌘` + `R` ,karabiner中长按 `R` 也映射到此组合.
 
-## Snip
+## ~~Snip~~
 
-截图快捷键使用 `⌃⌥⌘⇧` + `4`
+~~截图快捷键使用 `⌃⌥⌘⇧` + `4`~~
+
+> macOS自己提供了截图圈选功能后,第三方的截图工具不怎么用了.
 
 ## Palua
 

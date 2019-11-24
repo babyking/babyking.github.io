@@ -196,6 +196,14 @@ brew install tldr
 # alias manx=tldr
 ```
 
+**alias**
+
+```sh
+alias manx=tldr
+alias cr=crystal
+alias his="history | grep "
+```
+
 
 
 ## Dash

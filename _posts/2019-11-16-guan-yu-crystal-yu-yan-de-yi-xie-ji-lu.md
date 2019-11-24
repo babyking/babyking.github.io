@@ -9,9 +9,6 @@ tags: [crystal,ruby]
 ---
 
 
-
-## 
-
 ## brew 安装时显示的依赖
 
 ```sh

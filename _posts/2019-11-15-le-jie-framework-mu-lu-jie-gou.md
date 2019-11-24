@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: post
 title: 了解Framework目录结构
 date: 2019-11-15 13:27
-category: 开当
+category: 开发
 tags: [ios,mac]
 ---
 

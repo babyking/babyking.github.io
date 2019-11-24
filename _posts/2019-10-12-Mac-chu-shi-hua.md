@@ -99,6 +99,14 @@ Shotcat, `⌘⇧` + `space`
 3. `⌥ + ←→` 以单词为单位移动光标
 
    ![screenshot_2019_1031_0438_56](/image/screenshot_2019_1031_0438_56.png)
+   
+4. `⌘`+`delete`  `⌥`+`delete`
+
+   0x15,0x17
+
+   ![image-20191124171900819](/image/image-20191124171900819.png)
+
+
 
 **vi设置**
 

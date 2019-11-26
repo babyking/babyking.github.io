@@ -52,3 +52,19 @@ ln -s /usr/local/opt/openssl/lib/libcrypto.dylib /usr/local/lib
 ln -s /usr/local/Cellar/openssl/1.0.2q/lib/libssl.dylib /usr/local/lib/
 ```
 
+
+
+## 编译时static的问题
+
+```sh
+crystal build hello.cr --release --link-flags -static
+
+
+ld: library not found for -lcrt0.o (this usually means you need to install the development package for libcrt0.o)
+```
+
+查得答案
+
+> This option will not work on Mac OS X unless all libraries (including libgcc.a) have also been compiled with -static. Since neither a static version of libSystem.dylib nor crt0.o are provided, this option is not useful to most people.
+
+-static  在macOS下不支持,不要使用.

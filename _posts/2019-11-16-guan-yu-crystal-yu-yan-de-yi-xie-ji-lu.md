@@ -68,3 +68,20 @@ ld: library not found for -lcrt0.o (this usually means you need to install the d
 > This option will not work on Mac OS X unless all libraries (including libgcc.a) have also been compiled with -static. Since neither a static version of libSystem.dylib nor crt0.o are provided, this option is not useful to most people.
 
 -static  在macOS下不支持,不要使用.
+
+
+
+## Amber运行时问题
+
+amber是crystal下的web框架,对标ruby下的rails.
+
+```sh
+LIBRARY_PATH和LD_LIBRARY_PATH环境变量
+ld: library not found for -lssl (this usually means you need to install the development package for libssl)
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+Error: execution of command failed with code: 1: `cc "${@}" -o '/Users/bob/develop/practice/crystal/pet-tracker/bin/pet-tracker'  -rdynamic  -lyaml -lz `command -v pkg-config > /dev/null && pkg-config --libs --silence-errors libssl || printf %s '-lssl -lcrypto'` `command -v pkg-config > /dev/null && pkg-config --libs --silence-errors libcrypto || printf %s '-lcrypto'` -lpcre /usr/local/Cellar/crystal/0.31.1/embedded/lib/libgc.a -lpthread /usr/local/Cellar/crystal/0.31.1/src/ext/libcrystal.a -levent -liconv -ldl -L/usr/local/Cellar/crystal/0.31.1/embedded/lib -L/usr/lib -L/usr/local/lib`
+07:39:14 Watch run  | (INFO) Compile time errors detected, exiting...
+```
+
+
+

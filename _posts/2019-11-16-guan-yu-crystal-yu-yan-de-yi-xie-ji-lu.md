@@ -83,5 +83,11 @@ Error: execution of command failed with code: 1: `cc "${@}" -o '/Users/bob/devel
 07:39:14 Watch run  | (INFO) Compile time errors detected, exiting...
 ```
 
+解决
+
+```sh
+export LIBRARY_PATH=/usr/local/Cellar/openssl/1.0.2s/lib:$LIBRARY_PATH
+```
+
 
 

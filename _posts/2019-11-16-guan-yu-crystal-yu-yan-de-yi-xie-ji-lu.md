@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: post
 title: 关于crystal语言的一些记录
 date: 2019-11-16 22:47
-category: 开发 
+category: 技术 
 tags: [crystal,ruby]
 ---
 

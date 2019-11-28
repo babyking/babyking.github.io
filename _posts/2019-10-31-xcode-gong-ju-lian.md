@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: post
 title: xcode工具链(转载)
 date: 2019-10-31 18:10
-category: 开发
+category: 技术
 tags: [mac,xcode]
 ---
 

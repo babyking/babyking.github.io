@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: post
 title: 安装Spleeter
 date: 2019-11-06 09:22
-category: 开发
+category: 技术
 tags: [python,tensorflow,伴奏]
 ---
 

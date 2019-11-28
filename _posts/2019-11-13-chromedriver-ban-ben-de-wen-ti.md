@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: post
 title: ChromeDriver版本的问题
 date: 2019-11-13 22:57
-category: 开发
+category: 技术
 tags: [selenium,chromedriver]
 ---
 

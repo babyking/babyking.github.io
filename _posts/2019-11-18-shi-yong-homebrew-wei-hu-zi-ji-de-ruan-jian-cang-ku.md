@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: post
 title: 使用 Homebrew 维护自己的软件仓库(转载)
 date: 2019-11-18 17:02
-category: 开发
+category: 技术
 tags: [homebrew,包管理]
 ---
 

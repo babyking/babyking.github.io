@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: post
 title: 那是我不知道的命令
 date: 2019-11-09 23:09
-category: 开发
+category: 技术
 tags: [shell,tools]
 ---
 

@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: post
 title: __strong和__weak
 date: 2019-10-29 14:04
-category: 开发
+category: 技术
 tags: [ios,objc]
 ---
 

@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: post
 title: 制作DMG安装盘
 date: 2019-10-31 14:23
-category: 开发
+category: 技术
 tags: [mac,开发]
 ---
 

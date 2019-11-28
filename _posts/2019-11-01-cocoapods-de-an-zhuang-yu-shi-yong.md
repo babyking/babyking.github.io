@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: post
 title: CocoaPods的安装与使用(转载)
 date: 2019-11-01 13:40
-category: 开发
+category: 技术
 tags: [mac,包管理,cocoapods]
 ---
 

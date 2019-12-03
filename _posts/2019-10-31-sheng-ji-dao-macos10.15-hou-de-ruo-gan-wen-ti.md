@@ -136,3 +136,9 @@ Warning: count(): Parameter must be an array or an object that implements Counta
 长的文字不能折行?
 
 ![screenshot_2019_1108_0926_51](/image/screenshot_2019_1108_0926_51.png)
+
+
+
+## Preview
+
+经常提示无法打开pdf,预览正常,重启电脑后正常.

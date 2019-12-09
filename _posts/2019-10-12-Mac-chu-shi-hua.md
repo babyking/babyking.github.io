@@ -229,7 +229,11 @@ alias his="history | grep "
 1. Alfred中的vscode helper的菜单控制其长度
 2. 
 
+## SizeUp
 
+hyper+上下左右方向键
+
+hyper+ins,del,pgup,pgdn,四个corner
 
 ## 其他软件列表
 

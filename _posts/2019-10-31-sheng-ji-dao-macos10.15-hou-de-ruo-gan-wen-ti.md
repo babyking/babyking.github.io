@@ -10,6 +10,12 @@ tags: [mac]
 
 
 
+## Mail
+
+Alfred的mail wf不可用了,原因是Catalina中不再允许第三方应用检索Mail的数据了,无解
+
+![image-20191211150647047](/image/image-20191211150647047.png)
+
 ## Finder
 
 finder里两个文件显示相同文件名

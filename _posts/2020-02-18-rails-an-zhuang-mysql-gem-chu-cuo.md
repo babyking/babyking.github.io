@@ -92,7 +92,7 @@ Run `bundle install` to install missing gems.
 #如果没有安装openssl,则先安装
 brew install opensll
 
-# 注意使用sudo
+# 注意使用sudo 
 sudo gem install mysql2 -v '0.5.3' -- --with-ldflags=-L/usr/local/opt/openssl/lib --with-cppflags=-I/usr/local/opt/openssl/include
 ```
 

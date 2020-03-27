@@ -157,7 +157,13 @@ Warning: count(): Parameter must be an array or an object that implements Counta
 
 长的文字不能折行?
 
+
+
 ![screenshot_2019_1108_0926_51](/image/screenshot_2019_1108_0926_51.png)
+
+后续: 新的reminder升级了数据格式,一条提醒分为标题和内容,那意思就是内容多的你就弄个简短的标题,把文字多的放到内容部分.好像没毛病.但是,我是说但是,为啥手机端的reminder反着来?  标题多长都能显示全,内容部分的文字多了反而显示不全,这是什么配合?
+
+![image-20200327155338928](/image/image-20200327155338928.png)
 
 
 

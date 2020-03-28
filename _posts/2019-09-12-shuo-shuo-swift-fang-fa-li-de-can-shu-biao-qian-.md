@@ -78,7 +78,7 @@ sendMessage(msg, to:sb)
 
 
 
-从swift3开始,对这个做了一些调整,就是方法的第一个参数不再是默认省略标签了, 所有的参数在方法定义都必须显示声明标签,如果调用的时候不想输入标签,那也要使用`_` 进行声明.
+从swift3开始,对这个做了一些调整,就是方法的第一个参数不再是默认省略标签了, ~~所有的参数在方法定义都必须显示声明标签~~ ,如果调用的时候不想输入标签,那也要使用`_` 进行声明.
 
 ```swift
 func send(msg msg:String, to sb:String){}
@@ -93,4 +93,27 @@ send(msg,sb)
 
 
 到这里,基本明白swift为什么会有方法标签了,如果没有obj-c的兼容问题,估计语言的设计者不会保留标签这个特性了,毕竟现在的IDE或是编辑器都可以很方便的显示参数的相关信息,并不需要通过语言特性来实现,有时候对开发者反而是个负担. 好在swift3的做法也基本能自圆其说了,但仍然无法有obj-c那样的对称美了. 但想到obj-c是一个80年代就出生的语言,当年连个象样的编辑器都不多,别说IDE了.所以这样的别致设计还真是让人眼前一亮. 
+
+
+
+swift5补充:  有三种方式,但是一般最常用 的就是前两种
+
+```swift
+//第一种
+//定义,编译器默认生成跟内部参数一样的外部名称 func send(msg msg: String, to to:String){}
+func send(msg:String, to:String){}  
+send(msg: "hello", to: "bob")
+
+//第二种
+//通过 _ 省略外部名称,调用方式就跟其他语言一样
+func send(_ msg:String, _ to: String){}
+send("hello", "bob")
+
+//第三种 以前是objc最常用的,现在反而最不常用
+func send(exMsg msg:String, exTo to:String){}
+send (exMsg:"hello", exTo:"bob")
+
+```
+
+
 

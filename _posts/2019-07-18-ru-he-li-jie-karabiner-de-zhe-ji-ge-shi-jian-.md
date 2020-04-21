@@ -13,7 +13,7 @@ tags: [karabiner,键盘]
 ```json
 {
     "parameters": {      
-      "basic.to_delayed_action_delay_milliseconds": 200, //设置与held_down时间一至,可以用于解决按键过快带来的丢键问题
+      "basic.to_delayed_action_delay_milliseconds": 250, //主要用于double `key`的设置,在设定的时间内双击可以触发事件,需要condition及变量的配合.
       "basic.to_if_alone_timeout_milliseconds": 200,  //一般与held_down的时间设置一至
       "basic.to_if_held_down_threshold_milliseconds": 200,
       "mouse_motion_to_scroll.speed": 100
@@ -24,13 +24,22 @@ tags: [karabiner,键盘]
   	"to":{     //to总是被执行
       "key_code": "x"
     }
-    "to_delayed_action": {  //超过delay设置的时间会被执行,是执行invoked还是canceled,要看后续按键情况
-      "to_if_invoked": [  //如果"o"键按下后200毫秒内没有其他键按下,那么就会执行invoked,输出"r"
+    "to_delayed_action": {  //超过delay设置的时间会被执行,是执行invoked还是canceled,要看上下文按键情况
+      "to_if_invoked": [  //如果"o"键按下后250毫秒内没有其他键按下,那么就会执行invoked,输出"r"
         {
           "key_code": "r"
         }        
       ],
-      "to_if_canceled": [ //如果"o"键按下后200毫秒内有其他按键按下,那么就会执行canceled,输出"s".这里有一个非常巧妙的用法.就是取消invoked,只设置canceled. 这样可以解决有些打字特别快的情况下,两个键几乎同时按下的情况下丢键的问题. 比如 a和b几乎同时按下,产生 a_keydown,b_keydown,b_keyup,a_keyup,,这种情况会导致 a键的丢失,所以cancled事件设置输出的key_code与from一至,就可以解决因两个键的事件太过靠近而带来的丢键问题. 虽然delay设计的初衷是为了实现 双击修饰键和像emacs中的二次快捷组合键C-x,c这样的场景,但是也可以解决快速输入引起的丢键问题. 这种情况下建议delay的时间与alone及held_down的时间设置一致.
+      "to_if_canceled": [ 
+        //如果"o"键按下后250毫秒内有其他按键按下,那么就会执行canceled,输出"s",同时会终止invoked的执行
+        //这里有一个非常巧妙有用的用法.就是取消invoked,只设置canceled. 这样可以解决有些打字特别快的情况下,两个键几乎同时按下的情况下丢键的问题. 
+        //比如 a和b几乎同时按下,产生 
+        //a_keydown
+        //b_keydown
+        //b_keyup
+        //a_keyup  
+        //有些软件因为a键的keydown,keyup事件不完整就会将a_keyup丢掉,导致丢键
+        //这种情况下cancled事件设置输出的key_code与from一致,就可以此问题. 虽然delay设计的初衷是为了实现 双击修饰键和像emacs中的二次快捷组合键C-x,c这样的场景,但是也可以解决快速输入引起的丢键问题. 这种情况下时间设置to_delayed_action_delay_milliseconds没有什么特殊要求. 不知道作者在设计这个特性的时候有没有考虑到这个功能:)
         {
           "key_code": "s"
         }
@@ -56,8 +65,8 @@ tags: [karabiner,键盘]
 
 1. from  
 2. to
-3. alone //如果满足单击时间
-4. held_down //如果满足条件 . 与alone是互斥的(当他们的时间设置没有交叉时)
+3. alone //如果满足单击时间条件(一般在多少毫秒内), 与held_down是互斥的
+4. held_down //如果满足条件 . 与alone是互斥的. **一般将alone和held_down的时间设置为相同.**
 5. delay_action
    1. invoked  // 在delay设置的时间内没有其他键按下执行. 
    2. canceled //在delay设置的时间内如果有其他键按下触发此事件,并取消invoked的事件.
@@ -66,7 +75,11 @@ tags: [karabiner,键盘]
 
 一般来说 to和held_down并用.   alone和_held_down并用,看起来他们好像都是完成单击和长按,但是略有不同.前者可以保证单击的最快响应.
 
-如,空格键映射至shift键,单击输出空格 要求shift的键的响应是第一位的.因为在事件流中to也是靠前的.所以尽管后者也可以实现类似功能,但是会有缺陷,因为alone和held_down是互斥关系,快速输入的情况下,要求shift键的组合输入响应时间可能要小于"单击",但实际上held_down的时间一定是会比alone要长的.
+如,空格键映射至shift键,单击输出空格 要求shift的键的响应是第一位的.因为在事件流中to也是靠前的.
+
+所以尽管后者alone和_held_down也可以实现类似功能,但是会有缺陷,因为alone和held_down是互斥关系,快速输入的情况下,要求shift键的组合输入响应时间可能要小于"单击",但实际上held_down的时间一定是会比alone要长的.
+
+下面是正确的更好的配置
 
 ```json
 {
@@ -105,7 +118,9 @@ tags: [karabiner,键盘]
 
 
 
-其他的如普通键映射成cmd这样的修饰键,情况恰恰相反,要求普通的键的输出一定是要优先的,如果只使用 to和alone 这样配置的话在临界条件下是有一些问题的.**因为to是第一响应的,如果配成修饰键,在前面说的快速输入的情况下会有机率跟其他键组合成一个"功能组合键".**
+其他的如普通键映射成cmd这样的修饰键,情况恰恰相反,要求普通的键的输出一定是要优先的,如果只使用 to和alone 这样配置的话在临界条件下是有一些问题的.**因为to是第一响应的,如果配成修饰键,在前面说的快速输入的情况下会有机率跟其他键组合成一个"功能组合键".**并且对于组合键的响应时间的要求是低于普通键的输入的.
+
+其实软件预置的一些vi的配置都有这样的问题
 
 ```json
 {
@@ -170,7 +185,9 @@ tags: [karabiner,键盘]
 
 
 
-> 以下文章部分理解有误,请参考文章最前部分.
+## 
+
+## 下面的内容理解有误,请不要参考,以前面的为准.
 
 
 

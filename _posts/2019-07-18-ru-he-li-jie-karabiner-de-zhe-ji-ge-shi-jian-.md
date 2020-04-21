@@ -78,13 +78,13 @@ tags: [karabiner,键盘]
 
   			"basic.to_if_alone_timeout_milliseconds": 200,    
 
-  			**// 按下一个键并释放的时间不超过200毫秒触发 to_if_alone 事件**
+  			**// 一个键按下释放在200毫秒内完成的话,触发 to_if_alone 事件**
 
   			
 
   			"basic.to_if_held_down_threshold_milliseconds": 200    
 
-  			**//按下一个键超过200毫秒**         
+  			**//按下一个键超过200毫秒触发 to_if_held_down事件**         
 
 
 
@@ -100,7 +100,7 @@ tags: [karabiner,键盘]
 比如,需要对T键做如下功能实现:
 
 1. 正常的单击输出t
-2. 长按F输出⌘
+2. 长按t输出⌘
 
 我们不加思索,就可以写个配置
 
@@ -138,7 +138,7 @@ tags: [karabiner,键盘]
 
 但是上面的配置可以运行,但是会有2个问题
 
-1. 当单击t时,key_down与key_up事件间的时间处于`basic.to_if_alone_timeout_milliseconds`定义的临界点时,会顺序输出left_command和t,当然对于这个场景独立的输出command没有功能影响,但如果是其他功能组合键就会有问题了.
+1. 当单击t时,key_down与key_up事件间的**时间差**处于`basic.to_if_alone_timeout_milliseconds`定义的临界点时,会顺序输出left_command和t,当然对于这个场景独立的输出command没有功能影响,但如果是其他功能组合键就会有问题了.
 
 2. 当打字速度快的时候,当`t`的key_up事件还没发生的时候,另外一个键的key_down发生时,t的这个输入就会丢失.
 
@@ -174,7 +174,7 @@ tags: [karabiner,键盘]
             "key_code": "t"
           }
         ]
-        //,"to_if_invoked":[  //如果to_if_canceled 未被触发,超出300毫秒后刚触发此事件.
+        //,"to_if_invoked":[  //如果to_if_canceled 未被触发,超出300毫秒后触发此事件.
         //  {}
         //]
       },

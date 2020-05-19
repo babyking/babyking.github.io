@@ -42,7 +42,11 @@ tags: [mac]
 
 14. 安装karabiner-element,并设置坚果网盘中相应的数据. https://karabiner-elements.pqrs.org/  设置相应权限,把网盘中的配置数据目录  .../karabiner ln 到  ~/.config/karabiner.  建议重启.
 
-15. 安装[搜狗五笔输入法](https://pinyin.sogou.com/mac/wubi.php)_,并将系统配置->键盘中的`后一个输入法`关闭,`前一个输入法`的快捷键设置为 `⌃⌥⌘+0`,与karabiner-el中的一键切换输入法一致. 同时将搜狗输入法中的shift禁用,否则会与karabiner中的一键切换输入法设置冲突. 
+15. 安装[搜狗五笔输入法](https://pinyin.sogou.com/mac/wubi.php)_
+
+    * 将系统配置->键盘中的`后一个输入法`关闭,`前一个输入法`的快捷键设置为 `⌃⌥⌘+0`,与karabiner-el中的一键切换输入法一致. 
+    * 将搜狗输入法中的shift禁用,否则会与karabiner中的一键切换输入法设置冲突. 
+    * 打开五笔拼音混合输入
 
 16. 安装Alfred并激活,设置同步数据. 激活快捷键设置为`⌘+spacebar`记得更改 spotlight search的快捷键,有可能有冲突.spotlight设置为 `⌥⌘ +spacebar`和`⌃⌥⌘+spacebar`
 
@@ -52,7 +56,7 @@ tags: [mac]
 
 19. iTerm2 
 
-    设置normal和insert模式的光标,在~/.vimrc下加入
+    * 设置normal和insert模式的光标,在~/.vimrc下加入
 
     ```
     " Change cursor shape between insert and normal mode in iTerm2.app
@@ -62,18 +66,22 @@ tags: [mac]
     endif
     ```
 
-    设置opthon快速移动文字.
+    * 设置option快速移动文字.
 
-20. 安装`oh-my-zsh`  ` sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`  把`export ALL_PROXY=socks5://127.0.0.1:1086` 放置到~/.zshrc中,很多脚本执行需要代理:)
+    * 安装`oh-my-zsh`  ` sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`  把`export ALL_PROXY=socks5://127.0.0.1:1086` 放置到~/.zshrc中,很多脚本执行需要代理:)
 
-21. 安装autojump `brew install autojump` 根据安装提示把 `[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh` 加入到 .zshrc中
+    * 安装autojump `brew install autojump` 根据安装提示把 `[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh` 加入到 .zshrc中
 
-22. 安装 pyenv `brew install pyenv`
+20. `brew install tldr` 并设置别名 alias manx=tldr
 
-23. 安装设置sizeup,设置以hyper为主的快捷键. 四角快捷键需要接入外接机械键盘来设定.
+21. 安装 pyenv `brew install pyenv`
 
-24. palua, 用于切换F功能键的功能状态. 设置开机启动
+22. 安装设置sizeup,设置以hyper为主的快捷键. 四角快捷键需要接入外接机械键盘来设定.
 
-25. evernote,同步数据
+23. palua, 用于切换F功能键的功能状态. 设置开机启动
+
+24. evernote,同步数据
+
+25. VPN软件Viscosity,支持openvpn,
 
 26. 

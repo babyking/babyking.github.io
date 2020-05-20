@@ -24,7 +24,7 @@ tags: [mac]
 
 5. 安装坚果网盘,有一些软件配置数据在网盘中,后面会使用到.注意网盘的数据目录不要使用默认.
 
-6. 系统配置中将trackpad的的`Tap to click`打开,取消`scroll direction:Natural`,在 Accessibility->Ponter Control->Trackpad Option... -> Enable dragging 中打开三指拖拽.
+6. 系统配置中将trackpad的的`Tap to click`打开,取消`scroll direction:Natural`,在 Accessibility->Ponter Control->Trackpad Option... -> Enable dragging 中打开三指拖拽.lookup启用`三指轻拍`
 
 7. 系统配置中设置apple id,如果有多台电脑,最好保持一致. 取消邮件,图片同步.打开iCloundDrive
 
@@ -32,29 +32,31 @@ tags: [mac]
 
 9. Dock设置自动隐藏
 
-10. 设置`1password`,后面会经常用到
+10. icloud帐号作为appleid登录,可同步数据.有多台电脑,请保持一至.  如果购买APP的帐户与icloud帐户独立 ,需要AppStore里登出再登录.
 
-11. 安装 `Home brew`  ` https://brew.sh/     `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`   有可能要打开翻墙模式.
+11. 设置`1password`,后面会经常用到
 
-12. 通过brew cask安装软件.如chrome
+12. 安装 `Home brew`  ` https://brew.sh/     `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`   有可能要打开翻墙模式.
 
-13. chrome登录,同步数据
+13. 通过brew cask安装软件.如chrome
 
-14. 安装karabiner-element,并设置坚果网盘中相应的数据. https://karabiner-elements.pqrs.org/  设置相应权限,把网盘中的配置数据目录  .../karabiner ln 到  ~/.config/karabiner.  建议重启.
+14. chrome登录,同步数据
 
-15. 安装[搜狗五笔输入法](https://pinyin.sogou.com/mac/wubi.php)_
+15. 安装karabiner-element,并设置坚果网盘中相应的数据. https://karabiner-elements.pqrs.org/  设置相应权限,把网盘中的配置数据目录  .../karabiner ln 到  ~/.config/karabiner.  建议重启.
+
+16. 安装[搜狗五笔输入法](https://pinyin.sogou.com/mac/wubi.php)_
 
     * 将系统配置->键盘中的`后一个输入法`关闭,`前一个输入法`的快捷键设置为 `⌃⌥⌘+0`,与karabiner-el中的一键切换输入法一致. 
     * 将搜狗输入法中的shift禁用,否则会与karabiner中的一键切换输入法设置冲突. 
     * 打开五笔拼音混合输入
 
-16. 安装Alfred并激活,设置同步数据. 激活快捷键设置为`⌘+spacebar`记得更改 spotlight search的快捷键,有可能有冲突.spotlight设置为 `⌥⌘ +spacebar`和`⌃⌥⌘+spacebar`
+17. 安装Alfred并激活,设置同步数据. 激活快捷键设置为`⌘+spacebar`记得更改 spotlight search的快捷键,有可能有冲突.spotlight设置为 `⌥⌘ +spacebar`和`⌃⌥⌘+spacebar`
 
-17. 安装Keyboard Maestro, 设置同步网盘中的配置数据,设置开机启动 .
+18. 安装Keyboard Maestro, 设置同步网盘中的配置数据,设置开机启动 .
 
-18. export ALL_PROXY=socks5://127.0.0.1:1086  
+19. export ALL_PROXY=socks5://127.0.0.1:1086  
 
-19. iTerm2 
+20. iTerm2 
 
     * 设置normal和insert模式的光标,在~/.vimrc下加入
 
@@ -72,16 +74,16 @@ tags: [mac]
 
     * 安装autojump `brew install autojump` 根据安装提示把 `[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh` 加入到 .zshrc中
 
-20. `brew install tldr` 并设置别名 alias manx=tldr
+21. `brew install tldr` 并设置别名 alias manx=tldr
 
-21. 安装 pyenv `brew install pyenv`
+22. 安装 pyenv `brew install pyenv`
 
-22. 安装设置sizeup,设置以hyper为主的快捷键. 四角快捷键需要接入外接机械键盘来设定.
+23. 安装设置sizeup,设置以hyper为主的快捷键. 四角快捷键需要接入外接机械键盘来设定.
 
-23. palua, 用于切换F功能键的功能状态. 设置开机启动
+24. palua, 用于切换F功能键的功能状态. 设置开机启动
 
-24. evernote,同步数据
+25. evernote,同步数据
 
-25. VPN软件Viscosity,支持openvpn,
+26. VPN软件Viscosity,支持openvpn,
 
-26. 
+27. 

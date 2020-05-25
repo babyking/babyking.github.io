@@ -49,6 +49,7 @@ tags: [mac]
     * 将系统配置->键盘中的`后一个输入法`关闭,`前一个输入法`的快捷键设置为 `⌃⌥⌘+0`,与karabiner-el中的一键切换输入法一致. 
     * 将搜狗输入法中的shift禁用,否则会与karabiner中的一键切换输入法设置冲突. 
     * 打开五笔拼音混合输入
+    * 中文状态下使用英文标点
 
 17. 安装Alfred并激活,设置同步数据. 激活快捷键设置为`⌘+spacebar`记得更改 spotlight search的快捷键,有可能有冲突.spotlight设置为 `⌥⌘ +spacebar`和`⌃⌥⌘+spacebar`
 

@@ -75,6 +75,21 @@ tags: [mac]
 
     * 安装autojump `brew install autojump` 根据安装提示把 `[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh` 加入到 .zshrc中
 
+    * git config
+
+      ```bash
+      # git
+      git config --global alias.co checkout
+      git config --global alias.br branch
+      git config --global alias.ci commit
+      git config --global alias.st status
+      
+      git config --global user.email "babyking1949@gmail"
+      git config --global user.name "babyking"
+      ```
+
+      
+
 21. `brew install tldr` 并设置别名 alias manx=tldr
 
 22. 安装 pyenv `brew install pyenv`

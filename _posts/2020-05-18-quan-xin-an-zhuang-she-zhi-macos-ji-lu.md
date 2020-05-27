@@ -88,7 +88,9 @@ tags: [mac]
       git config --global user.name "babyking"
       ```
 
-      
+    * 设置border
+
+      ![image-20200527142455052](/image/image-20200527142455052.png)
 
 21. `brew install tldr` 并设置别名 alias manx=tldr
 

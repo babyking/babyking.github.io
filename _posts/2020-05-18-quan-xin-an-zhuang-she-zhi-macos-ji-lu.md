@@ -102,4 +102,10 @@ tags: [mac]
 
 26. VPN软件Viscosity,支持openvpn,
 
-27. 
+27. Dash的已安装数据迁移 `~/Library/Application Support/Dash/`
+
+28.  QQ的这个快捷键得去掉,很坑
+
+    ![Xnip2020-05-27_12-22-21](/image/Xnip2020-05-27_12-22-21.png)
+
+29. 

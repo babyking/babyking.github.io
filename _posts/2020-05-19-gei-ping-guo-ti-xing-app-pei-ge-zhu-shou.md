@@ -20,7 +20,7 @@ tags: [mac,奇妙清单,Todo]
 
 
 
-![img](/image/96c7bb1ef4857e86c1943ea95142ecde.png)
+![img](/image/b6adf061931b0a75768fccf464f94e8f.jpeg)
 
 
 

@@ -91,6 +91,10 @@ tags: [mac]
     * 设置border
 
       ![image-20200527142455052](/image/image-20200527142455052.png)
+      
+    * 登录其他的系统可以设置徽标
+
+      <img src="/image/image-20200610110312815.png" alt="image-20200610110312815"  />
 
 21. `brew install tldr` 并设置别名 alias manx=tldr
 

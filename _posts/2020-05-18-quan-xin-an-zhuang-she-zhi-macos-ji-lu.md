@@ -114,4 +114,11 @@ tags: [mac]
 
     ![qqshortcut](/image/qqshortcut.png)
 
+29. vscode启动命令行
+
+    ```sh
+    ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/bin/code
+    ```
+
     
+

@@ -16,5 +16,3 @@ Some of 3rd party tool like PyInstaller might require CPython installation built
 $ env PYTHON_CONFIGURE_OPTS=”–enable-framework” pyenv install 3.5.0
 ```
 
-rgf
-

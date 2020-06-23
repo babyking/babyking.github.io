@@ -235,6 +235,10 @@ hyper+上下左右方向键
 
 hyper+ins,del,pgup,pgdn,四个corner
 
+## Vanilla
+
+状态栏图标管理 [官网](https://matthewpalmer.net/vanilla/)
+
 ## 其他软件列表
 
 * ShadowsocksX-NG-R8

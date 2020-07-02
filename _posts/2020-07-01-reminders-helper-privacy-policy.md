@@ -1,7 +1,7 @@
 ---
 typora-root-url: ../
 typora-copy-images-to: ../image
-layout: post
+layout: private
 title: Reminders Helper Privacy Policy
 date: 2020-07-01 08:25
 category: 

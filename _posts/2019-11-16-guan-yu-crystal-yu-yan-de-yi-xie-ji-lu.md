@@ -8,6 +8,7 @@ category: 技术
 tags: [crystal,ruby]
 ---
 
+关于crystal语言的一些记录
 
 ## brew 安装时显示的依赖
 

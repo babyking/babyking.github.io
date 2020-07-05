@@ -8,7 +8,7 @@ category: 技术
 tags: [ruby,bundle,gem]
 ---
 
-
+解决bundle install太慢的问题
 
 ```sh
 bundle config mirror.https://rubygems.org https://gems.ruby-china.com

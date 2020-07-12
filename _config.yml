@@ -1,5 +1,7 @@
 title: "穿越这无限世界-BabyKing's Blog"
 
+remote_theme: erlzhang/jekyll-theme-arktos
+
 toc_levels: 2..4
 markdown: kramdown
 kramdown:

@@ -195,6 +195,7 @@ div.wrapper {
   /* display: block; */
   overflow: hidden;
   white-space: nowrap;
+  margin-left: 15px;
 }
 
 #content .posts li span.category {
@@ -256,7 +257,7 @@ div#content ul.posts li {
   margin: 0px -15px 0px;
   font-size: 16px;
   list-style: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.05); */
   padding: 10px 15px;
 }
 
@@ -297,9 +298,9 @@ ul.index li {
 }
 
 ul.posts li .date {
-  float: right;
+  /* float: right; */
   color: #999;
-  font-size: 12px;
+  font-size: 9px;
   margin: 0;
 }
 

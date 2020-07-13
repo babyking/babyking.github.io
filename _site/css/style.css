@@ -666,8 +666,8 @@ div#disqus_thread li ul li {
 }
 
 #content .tags-items-section a {
-  font-weight: normal;
-  /* color: #434c5e */
+  font-weight: bold;
+  color: #434c5e
 }
 
 #content .category-items-list a {
@@ -685,8 +685,8 @@ div#disqus_thread li ul li {
 }
 
 #content .category-items-section a {
-  font-weight: normal;
-  /* color: #434c5e */
+  font-weight: bold;
+  color: #434c5e
 }
 
 #markdown:before {
@@ -706,11 +706,17 @@ ul#markdown-toc {
   background-color: white;
 }	
 
+/* 首页按年分隔 */
 .year-category {
-  /* , 微软雅黑,Arial, "Hiragino Sans GB", 冬青黑,  SimSun, 宋体, Helvetica, Tahoma, "Arial sans-serif"; */
-  /* font-family: "Arial sans-serif"; */
-  /* font-weight: bolder; */
   font-size: 1.5rem;
   margin: 25px 0 25px 0;
+}
+
+/* category 显示标题 */
+.category-title {
+  font-size: 18px;
+  line-height: 200%;
+  white-space: nowrap;
+  margin-top: 20px;
 }
 

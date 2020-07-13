@@ -18,8 +18,9 @@
                 {% endfor %}
   
                 <div class="tags-items-section">
+                  <br>
                   {% for tag in tags %}
-						      <div class="category-title" id="{{ tag[0] | slugify }}" onclick="javascript: scroll(0,0);"> <a href="javascript: scroll(0, 0)">{{ tag[0] }}</a></div>
+						      <h3 id="{{ tag[0] | slugify }}" onclick="javascript: scroll(0,0);"> <a href="javascript: scroll(0, 0)">{{ tag[0] }}</a></h3>
                   <hr>
                   <ul class="posts">
                     {% for post in tag[1] %}

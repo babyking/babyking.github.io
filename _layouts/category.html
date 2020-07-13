@@ -16,10 +16,11 @@
 							</a>
 						</span>
 						{% endfor %}
-		  
+						
 						<div class="category-items-section">
+						  <br>
 						  {% for category in categories %}
-						  <div class="category-title" id="{{ category[0] | slugify }}" onclick="javascript: scroll(0,0);"> <a href="javascript: scroll(0, 0)">{{ category[0] }}</a></div>
+						  <h4 id="{{ category[0] | slugify }}" onclick="javascript: scroll(0,0);"> <a href="javascript: scroll(0, 0)">{{ category[0] }}</a></h4>
 						  <hr>
 						  <ul class="posts">
 							{% for post in category[1] %}

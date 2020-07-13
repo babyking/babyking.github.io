@@ -192,9 +192,9 @@ div.wrapper {
 #content .posts li a {
   font-weight: normal;
   text-overflow: ellipsis;
-  /* display: block; */
   overflow: hidden;
   white-space: nowrap;
+  margin-left: 25px;
 }
 
 #content .posts li span.category {
@@ -297,7 +297,7 @@ ul.index li {
 }
 
 ul.posts li .date {
-  /* float: left; */
+  float: left;
   display: block;
   color: #999;
   font-size: 9px;

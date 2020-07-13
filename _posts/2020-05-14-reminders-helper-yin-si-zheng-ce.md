@@ -4,8 +4,7 @@ typora-copy-images-to: ../image
 layout: private
 title: Reminders Helper 隐私政策
 date: 2020-05-14 15:12
-category: 
-tags: [privacy]
+permalink: /privacy/rh.zh/
 ---
 
 ## Reminders Helper 隐私政策

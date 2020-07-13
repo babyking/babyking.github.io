@@ -4,8 +4,7 @@ typora-copy-images-to: ../image
 layout: private
 title: TextText Privacy Policy
 date: 2020-07-01 08:35
-category: 
-tags: [privacy]
+permalink: /privacy/texttext.en/
 ---
 
 # TextText! Privacy Policy

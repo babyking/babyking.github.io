@@ -256,7 +256,7 @@ div#content ul.posts li {
   margin: 0px -15px 0px;
   font-size: 16px;
   list-style: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.05); */
   padding: 10px 15px;
 }
 
@@ -297,13 +297,12 @@ ul.index li {
 }
 
 ul.posts li .date {
-  float: right;
+  /* float: left; */
+  display: block;
   color: #999;
-  font-size: 12px;
+  font-size: 9px;
   margin: 0;
 }
-
-
 
 h2,
 h3,
@@ -707,5 +706,11 @@ ul#markdown-toc {
   background-color: white;
 }	
 
-
+.year-category {
+  /* , 微软雅黑,Arial, "Hiragino Sans GB", 冬青黑,  SimSun, 宋体, Helvetica, Tahoma, "Arial sans-serif"; */
+  /* font-family: "Arial sans-serif"; */
+  /* font-weight: bolder; */
+  font-size: 1.5rem;
+  margin: 25px 0 25px 0;
+}
 

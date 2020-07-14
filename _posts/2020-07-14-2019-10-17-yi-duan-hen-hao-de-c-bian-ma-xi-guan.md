@@ -3,7 +3,7 @@ typora-root-url: ../
 typora-copy-images-to: ../image
 layout: post
 title: 一段很好的C编码习惯
-date: 2019-10-17 09:51
+date: 2020-07-14 11:05
 category: 技术 
 tags: [c,注释]
 ---

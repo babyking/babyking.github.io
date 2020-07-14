@@ -27,7 +27,6 @@ type slice struct {
 	len   int // 长度 
 	cap   int // 容量
 }
-
 ```
 
 看到了吗，`slice` 共有三个属性： `指针`，指向底层数组； `长度`，表示切片可用元素的个数，也就是说使用下标对 slice 的元素进行访问时，下标不能超过 slice 的长度； `容量`，底层数组的元素个数，容量 >= 长度。在底层数组不进行扩容的情况下，容量也是 slice 可以扩张的最大限度。
@@ -85,14 +84,12 @@ func main() {
 	s1 := []int{0, 1, 2, 3, 8: 100}
 	fmt.Println(s1, len(s1), cap(s1))
 }
-
 ```
 
 运行结果：
 
 ```go
 [0 1 2 3 0 0 0 0 100] 9 9
-
 ```
 
 唯一值得注意的是上面的代码例子中使用了索引号，直接赋值，这样，其他未注明的元素则默认 `0 值`。
@@ -115,14 +112,12 @@ func main() {
 	slice[2] = 2 // 索引为2的元素赋值为2
 	fmt.Println(slice)
 }
-
 ```
 
 执行如下命令，得到 Go 汇编代码：
 
 ```
 go tool compile -S main.go
-
 ```
 
 我们只关注main函数：
@@ -180,7 +175,6 @@ go tool compile -S main.go
 0x00e4 00228 (main.go:5)PCDATA  $0, $-1
 0x00e4 00228 (main.go:5)CALL    runtime.morestack_noctxt(SB)
 0x00e9 00233 (main.go:5)JMP     0
-
 ```
 
 先说明一下，Go 语言汇编 `FUNCDATA` 和 `PCDATA` 是编译器产生的，用于保存一些和垃圾收集相关的信息，我们先不用 care。
@@ -194,7 +188,6 @@ CALL    runtime.makeslice(SB)
 CALL    runtime.convT2Eslice(SB)
 CALL    fmt.Println(SB)
 CALL    runtime.morestack_noctxt(SB)
-
 ```
 
 | 序号 | 功能       |
@@ -237,7 +230,6 @@ CALL    runtime.morestack_noctxt(SB)
 
 ```go
 func convT2Eslice(t *_type, elem unsafe.Pointer) (e eface) 
-
 ```
 
 第一个参数是指针 `*_type`，`_type`是一个表示类型的结构体，这里传入的就是 `slice`的类型 `[]int`；第二个参数则是元素的指针，这里传入的就是 `slice` 底层数组的首地址。
@@ -249,14 +241,12 @@ type eface struct {
 	_type *_type
 	data  unsafe.Pointer
 }
-
 ```
 
 由于我们会调用 `fmt.Println(slice)`，看下函数原型：
 
 ```go
 func Println(a ...interface{}) (n int, err error)
-
 ```
 
 `Println` 接收 interface 类型，因此我们需要将 `slice` 转换成 interface 类型。由于 `slice` 没有方法，是个“`空 interface`”。因此会调用 `convT2Eslice` 完成这一转换过程。
@@ -293,7 +283,6 @@ func Println(a ...interface{}) (n int, err error)
 0x00d3 00211 (main.go:9)MOVQ    88(SP), BP
 0x00d8 00216 (main.go:9)ADDQ    $96, SP
 RET
-
 ```
 
 `BP`可以理解为保存了当前函数栈帧栈底的地址，`SP`则保存栈顶的地址。
@@ -323,14 +312,12 @@ RET
 ```go
  data := [...]int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
  slice := data[2:4:6] // data[low, high, max]
-
 ```
 
 对 `data` 使用3个索引值，截取出新的  `slice`。这里 `data` 可以是数组或者 `slice`。`low` 是最低索引值，这里是闭区间，也就是说第一个元素是 `data` 位于 `low` 索引处的元素；而 `high` 和 `max` 则是开区间，表示最后一个元素只能是索引 `high-1` 处的元素，而最大容量则只能是索引 `max-1` 处的元素。
 
 ```
 max >= high >= low
-
 ```
 
 当 `high == low` 时，新 `slice` 为空。
@@ -358,7 +345,6 @@ func main() {
 	fmt.Println(s2)
 	fmt.Println(slice)
 }
-
 ```
 
 先看下代码运行的结果：
@@ -367,7 +353,6 @@ func main() {
 [2 3 20]
 [4 5 6 7 100 200]
 [0 1 2 3 20 5 6 7 100 9]
-
 ```
 
 我们来走一遍代码，初始状态如下：
@@ -376,7 +361,6 @@ func main() {
 slice := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 s1 := slice[2:5]
 s2 := s1[2:6:7]
-
 ```
 
 `s1` 从 `slice` 索引2（闭区间）到索引5（开区间，元素真正取到索引4），长度为3，容量默认到数组结尾，为8。 `s2` 从 `s1` 的索引2（闭区间）到索引6（开区间，元素真正取到索引5），容量到索引7（开区间，真正到索引6），为5。
@@ -406,7 +390,6 @@ s2 = append(s2, 100)
 
 ```
 s2 = append(s2, 100)
-
 ```
 
 这时，`s2` 的容量不够用，该扩容了。于是，`s2` 另起炉灶，将原来的元素复制新的位置，扩大自己的容量。并且为了应对未来可能的 `append` 带来的再一次扩容，`s2` 会在此次扩容的时候多留一些 `buffer`，将新的容量将扩大为原始容量的2倍，也就是10了。
@@ -421,7 +404,6 @@ s2 = append(s2, 100)
 
 ```go
 s1[2] = 20
-
 ```
 
 这次只会影响原始数组相应位置的元素。它影响不到 `s2` 了，人家已经远走高飞了。
@@ -450,7 +432,6 @@ slice 的底层数据是数组，slice 是对数组的封装，它描述一个�
 
 ```go
 func append(slice []Type, elems ...Type) []Type
-
 ```
 
 append 函数的参数长度可变，因此可以追加多个值到 slice 中，还可以用 `...` 传入 slice，直接追加一个切片。
@@ -458,7 +439,6 @@ append 函数的参数长度可变，因此可以追加多个值到 slice 中，
 ```go
 slice = append(slice, elem1, elem2)
 slice = append(slice, anotherSlice...)
-
 ```
 
 `append`函数返回值是一个新的slice，Go编译器不允许调用了 append 函数后不使用返回值。
@@ -466,7 +446,6 @@ slice = append(slice, anotherSlice...)
 ```go
 append(slice, elem1, elem2)
 append(slice, anotherSlice...)
-
 ```
 
 所以上面的用法是错的，不能编译通过。
@@ -504,7 +483,6 @@ func main() {
 		}
 	}
 }
-
 ```
 
 我先创建了一个空的 `slice`，然后，在一个循环里不断往里面 `append` 新的元素。然后记录容量的变化，并且每当容量发生变化的时候，记录下老的容量，以及添加完元素之后的容量，同时记下此时 `slice` 里的元素。这样，我就可以观察，新老 `slice` 的容量变化情况，从而找出规律。
@@ -559,7 +537,6 @@ func growslice(et *_type, old slice, cap int) slice {
 	capmem = roundupsize(uintptr(newcap) * ptrSize)
 	newcap = int(capmem / ptrSize)
 }
-
 ```
 
 看到了吗？如果只看前半部分，现在网上各种文章里说的 `newcap` 的规律是对的。现实是，后半部分还对 `newcap` 作了一个`内存对齐`，这个和内存分配策略相关。进行内存对齐之后，新 slice 的容量是要 `大于等于` 老 slice 容量的 `2倍`或者`1.25倍`。
@@ -580,14 +557,12 @@ func main() {
 	s = append(s,4,5,6)
 	fmt.Printf("len=%d, cap=%d",len(s),cap(s))
 }
-
 ```
 
 运行结果是：
 
 ```
 len=5, cap=6
-
 ```
 
 如果按网上各种文章中总结的那样：小于原 slice 长度小于 1024 的时候，容量每次增加 1 倍。添加元素 4 的时候，容量变为4；添加元素 5 的时候不变；添加元素 6 的时候容量增加 1 倍，变成 8。
@@ -596,7 +571,6 @@ len=5, cap=6
 
 ```
 len=5, cap=8
-
 ```
 
 这是错误的！我们来仔细看看，为什么会这样，再次搬出代码：
@@ -617,7 +591,6 @@ func growslice(et *_type, old slice, cap int) slice {
 	capmem = roundupsize(uintptr(newcap) * ptrSize)
 	newcap = int(capmem / ptrSize)
 }
-
 ```
 
 这个函数的参数依次是 `元素的类型，老的 slice，新 slice 最小求的容量`。
@@ -644,14 +617,12 @@ func roundupsize(size uintptr) uintptr {
 const _MaxSmallSize = 32768
 const smallSizeMax = 1024
 const smallSizeDiv = 8
-
 ```
 
 很明显，我们最终将返回这个式子的结果：
 
 ```
 class_to_size[size_to_class8[(size+smallSizeDiv-1)/smallSizeDiv]]
-
 ```
 
 这是 `Go` 源码中有关内存分配的两个 `slice`。`class_to_size`通过 `spanClass`获取 `span`划分的 `object`大小。而 `size_to_class8` 表示通过 `size` 获取它的 `spanClass`。
@@ -669,7 +640,6 @@ var class_to_size = [_NumSizeClasses]uint16{0, 8, 16, 32, 48, 64, 80, 96, 112, 1
 
 ```
 newcap = int(capmem / ptrSize) // 6
-
 ```
 
 至于，上面的两个`魔法数组`的由来，暂时就不展开了。
@@ -712,14 +682,12 @@ func f(s []int) {
 		s[i] += 1
 	}
 }
-
 ```
 
 运行一下，程序输出：
 
 ```go
 [2 2 2]
-
 ```
 
 果真改变了原始 slice 的底层数据。这里传递的是一个 slice 的副本，在 `f` 函数中，`s` 只是 `main` 函数中 `s` 的一个拷贝。在`f` 函数内部，对 `s` 的作用并不会改变外层 `main` 函数的 `s`。
@@ -755,7 +723,6 @@ func main() {
 	myAppendPtr(&s)
 	fmt.Println(s)
 }
-
 ```
 
 运行结果：
@@ -764,7 +731,6 @@ func main() {
 [1 1 1]
 [1 1 1 100]
 [1 1 1 100 100]
-
 ```
 
 `myAppend` 函数里，虽然改变了 `s`，但它只是一个值传递，并不会影响外层的 `s`，因此第一行打印出来的结果仍然是 `[1 1 1]`。

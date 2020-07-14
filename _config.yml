@@ -1,10 +1,19 @@
 title: "BabyKing's Blog"
 
 toc_levels: 2..4
+
+# highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    line_numbers: true  # bad idea, spans don't need linenos and would inherit this option
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
 
 # Google Analytics

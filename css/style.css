@@ -279,11 +279,11 @@ p.nav + div {
 }
 
 p code {
-  background: #eee;
+  /* background: #eee;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 3px 6px;
-  margin: 0 3px;
+  margin: 0 3px; */
 }
 
 ul.posts li a {
@@ -409,17 +409,17 @@ pre {
   line-height: 150%;
 }
 pre {
-  -moz-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px; 
   -webkit-border-radius: 5px;
   border-radius: 5px;
   -moz-box-shadow: 0 -1px 0 #444444;
-  background-color: #122b3b;
-  color: #faf6e4;
+  /* background-color: #152b38;
+  color: #faf6e4; */
   font-size: 14px;
-  padding: 15px;
+  padding: 5px;
   /* text-shadow: 0 1px 0 #000000; */
   white-space: pre-wrap;
-  word-wrap: break-word;
+  word-wrap: break-word; 
 }
 
 div.notice {
@@ -710,3 +710,9 @@ ul#markdown-toc {
   margin: 25px 0 25px 0;
 }
 
+pre.lineno {
+  border-right: 1px solid #bbbbbb;
+  border-radius: 0px;
+  text-align: right;
+  color: gray;
+}

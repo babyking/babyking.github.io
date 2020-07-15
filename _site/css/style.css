@@ -413,11 +413,10 @@ pre {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   -moz-box-shadow: 0 -1px 0 #444444;
-  /* background-color: #152b38;
-  color: #faf6e4; */
+  /* background-color: #152b38; */
+  /* color: #faf6e4; */
   font-size: 14px;
   padding: 5px;
-  /* text-shadow: 0 1px 0 #000000; */
   white-space: pre-wrap;
   word-wrap: break-word; 
 }
@@ -711,8 +710,8 @@ ul#markdown-toc {
 }
 
 pre.lineno {
-  border-right: 1px solid #bbbbbb;
+  border-right: 1px solid #eeeeee;
   border-radius: 0px;
   text-align: right;
-  color: gray;
+  color: rgba(27,31,35,.3);
 }

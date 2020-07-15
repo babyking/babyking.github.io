@@ -602,7 +602,8 @@ func growslice(et *_type, old slice, cap int) slice {
 我们再看内存对齐，搬出 `roundupsize` 函数的代码：
 
 ```go
-// src/runtime/msize.go:13
+//src/runtime/msize.go:13
+
 func roundupsize(size uintptr) uintptr {
 	if size < _MaxSmallSize {
 		if size <= smallSizeMax-8 {

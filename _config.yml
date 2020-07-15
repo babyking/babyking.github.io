@@ -2,8 +2,9 @@ title: "BabyKing's Blog"
 
 toc_levels: 2..4
 
-# highlighter: rouge
 markdown: kramdown
+highlighter: rouge
+
 kramdown:
   input: GFM
   syntax_highlighter: rouge

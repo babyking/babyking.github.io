@@ -3,7 +3,7 @@ typora-root-url: ../
 typora-copy-images-to: ../image
 layout: post
 title: 如何在3秒内打开一个网址
-date: 2020-08-27 14:11
+date: 2020-08-27 14:52
 category: 技术
 tags: [效率,alfred]
 

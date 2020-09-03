@@ -3,7 +3,7 @@ typora-root-url: ../
 typora-copy-images-to: ../image
 layout: post
 title: vscode实时预览html
-date: 2019-10-09 14:11
+date: 2020-09-03 14:10
 category: 技术
 tags: [vscode,html,webserver]
 ---

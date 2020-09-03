@@ -110,7 +110,7 @@ a {
   text-decoration: none;
 }
 
-#content a{
+.cnt a{
     color: #191919;
     padding: 2px 0 1px 0;
     text-decoration: none;

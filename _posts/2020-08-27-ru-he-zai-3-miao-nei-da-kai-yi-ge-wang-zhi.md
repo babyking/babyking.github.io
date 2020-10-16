@@ -2,14 +2,14 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: post
-title: 如何在3秒内打开一个网址
+title: 3秒内打开一个网址
 date: 2020-08-27 14:52
 category: 技术
 tags: [效率,alfred]
 
 ---
 
-有点标题党了,这篇文章主要是介绍自己写的一个Alfred 的小插件,解决快速打开一个网站,当然要使用这个插件,你得是个Alfred的使用者.
+这篇文章主要是介绍自己写的一个Alfred 的小插件,解决快速打开一个网站,当然要使用这个插件,你得是个Alfred的使用者.
 
 
 

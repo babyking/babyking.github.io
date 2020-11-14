@@ -13,3 +13,5 @@ tags: [bigsur,10.16]
 ### Apogee Duet
 
 系统无法直接控制duet音量,直接用声卡上的旋纽是可以的.
+
+官网升级 apogee maestro for bigsur版本,问题依然存在.

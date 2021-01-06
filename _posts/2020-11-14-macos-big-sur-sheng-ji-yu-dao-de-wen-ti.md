@@ -5,7 +5,7 @@ layout: post
 title: macOS  Big Sur升级遇到的问题
 date: 2020-11-14 22:07
 category: Mac
-tags: [bigsur,10.16]
+tags: [bigsur,"10.16"]
 ---
 
 

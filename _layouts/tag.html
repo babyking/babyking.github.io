@@ -13,6 +13,7 @@
                     <a href="#{{ tag[0] | slugify }}"
                         style="font-size: {{ tag | last | size  |  times: 6 | plus: 95  }}%">
                             {{ tag[0] | replace:'-', ' ' }} <span>({{ tag | last | size }})</span>
+                            <!-- {{ tag[0] | replace:'-', ' ' }} <span>({{ tag | last | size }})</span> -->
                     </a>
                 </span>
                 {% endfor %}

@@ -42,8 +42,9 @@ Copy,Paste 的使用对我来说最为频繁,并且绝大部分都是通过快�
 
 好处就是:
 
-1. 在打字模式下,双手不需要离开打字键区
-2. 在需要较多的copy     paste时,右手鼠标选择,左手一键按C,V操作,非常舒适便捷,完美实现盲操作.
+* 在打字模式下,双手不需要离开打字键区
+
+* 在需要较多的copy     paste时,右手鼠标选择,左手一键按C,V操作,非常舒适便捷,完美实现盲操作.
 
  
 
@@ -55,10 +56,11 @@ Copy,Paste 的使用对我来说最为频繁,并且绝大部分都是通过快�
 
 ![image-20210511115438958](/image/image-20210511115438958.png)
 
-1. 下载我的配置文件.[https://babyking.github.io/lazytips/karabiner/lrzz.json](https://babyking.github.io/lazytips/karabiner/lrzz.json)
-2. 将这个配置文件copy到 `~/.config/karabiner/assets/complex_modifications/` 下. 
+2. 下载我的配置文件.[https://babyking.github.io/lazytips/karabiner/lrzz.json](https://babyking.github.io/lazytips/karabiner/lrzz.json)
 
-Finder下⌘⇧+G 
+​       将这个配置文件copy到 `~/.config/karabiner/assets/complex_modifications/` 下. 
+
+​		Finder下可使用快捷键⌘⇧+G 进入到目录  
 
 ![image-20210511115522091](/image/image-20210511115522091.png)
 

@@ -51,18 +51,18 @@ Copy,Paste 的使用对我来说最为频繁,并且绝大部分都是通过快�
 
  
 
-1. 下载安装karabiner elements. https://karabiner-elements.pqrs.org/ karabiner是Mac下一款功能强大的键盘映射工具,开源免费.      由于karabiner工作在驱动层,安装过程需要你进行授权,如果你没有授权,也可在系统配置中自行打开.
+1. 下载安装[karabiner elements](https://karabiner-elements.pqrs.org/ ) karabiner是Mac下一款功能强大的键盘映射工具,开源免费.      由于karabiner工作在驱动层,安装过程需要你进行授权,如果你没有授权,也可在系统配置中自行打开.
 
 ![image-20210511115438958](/image/image-20210511115438958.png)
 
-1. 下载我的配置文件. https://babyking.github.io/lazytips/karabiner/lrzz.json
-2. 将这个配置文件copy到 ~/.config/karabiner/assets/complex_modifications/ 下. 
+1. 下载我的配置文件.[https://babyking.github.io/lazytips/karabiner/lrzz.json](https://babyking.github.io/lazytips/karabiner/lrzz.json)
+2. 将这个配置文件copy到 `~/.config/karabiner/assets/complex_modifications/` 下. 
 
 Finder下⌘⇧+G 
 
 ![image-20210511115522091](/image/image-20210511115522091.png)
 
-1. 将配置文件导入到karabiner中.
+3. 将配置文件导入到karabiner中.
 
 ![image-20210511115535229](/image/image-20210511115535229.png)
 
@@ -72,4 +72,7 @@ Finder下⌘⇧+G
 
  
 
-这时候就可以正常工作了,试试,是不是比以前更简单了.
+这时候就可以工作了,试试,是不是比以前更简单了.对了,配置里还加了一键X剪切 ^^.
+
+![image-20210511131513616](/image/image-20210511131513616.png)
+

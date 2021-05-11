@@ -2,7 +2,7 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: post
-title: 快捷的键(1) copy和paste
+title: copy和paste
 date: 2021-05-11 13:51
 category: 快捷的键
 tags: [快捷的键]

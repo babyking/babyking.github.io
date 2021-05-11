@@ -2,7 +2,7 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: post
-title: 快捷的键(0)写点没用的东西
+title: 快捷的键(0) 写点没用的东西
 date: 2021-05-11 13:23
 category: 快捷的键
 tags: [快捷的键]

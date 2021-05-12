@@ -14,7 +14,9 @@ tags: [快捷的键]
 
 ##  下载
 
-下载安装[karabiner elements](https://karabiner-elements.pqrs.org/) karabiner是Mac下一款功能强大的键盘映射工具,开源免费.   由于karabiner工作在驱动层,安装过程需要你进行授权,如果你没有授权,也可在系统配置中自行打开.
+下载安装  [karabiner elements](https://karabiner-elements.pqrs.org/) 
+
+karabiner是Mac下一款功能强大的键盘映射工具,开源免费.   由于karabiner工作在驱动层,安装过程需要你进行授权,如果你没有授权,也可在系统配置中自行打开.
 
 ![image-20210511115438958](/image/image-20210511115438958.png?lastModify=1620790411)
 

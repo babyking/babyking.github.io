@@ -3,7 +3,7 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: post
-title: 寻找消失的右ctrl键
+title: 寻找消失的右Ctrl键
 date: 2021-05-12 10:51
 category: 快捷的键
 tags: [快捷的键]

@@ -53,3 +53,12 @@ Macbook键盘上⌘⌥⇧都是成对出现的,唯独ctrl键例外,显然是没�
 
 
 
+## 实现
+
+参考: [Karabiner Elements配置文件导入及使用](https://babyking.github.io/%E5%BF%AB%E6%8D%B7%E7%9A%84%E9%94%AE/2021/05/12/karabiner-pei-zhi-wen-jian-dao-ru-ji-shi-yong.html)
+
+
+
+![image-20210512131854564](/image/image-20210512131854564.png)
+
+![image-20210512131923311](/image/image-20210512131923311.png)

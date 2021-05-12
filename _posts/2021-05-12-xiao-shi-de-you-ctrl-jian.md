@@ -57,7 +57,7 @@ Macbook键盘上⌘⌥⇧都是成对出现的,唯独ctrl键例外,显然是没�
 
 Karabiner配置文件: [下载](https://babyking.github.io/lazytips/karabiner/lrzz.json)
 
-如何使用: [Karabiner Elements配置文件导入及使用](https://babyking.github.io/%E5%BF%AB%E6%8D%B7%E7%9A%84%E9%94%AE/2021/05/12/karabiner-pei-zhi-wen-jian-dao-ru-ji-shi-yong.html)
+如何使用上面的配置文件请参考这里: [Karabiner Elements配置文件导入及使用](https://babyking.github.io/%E5%BF%AB%E6%8D%B7%E7%9A%84%E9%94%AE/2021/05/12/karabiner-pei-zhi-wen-jian-dao-ru-ji-shi-yong.html)
 
 
 

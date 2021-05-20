@@ -97,3 +97,6 @@ Karabiner配置文件: [下载](https://babyking.github.io/lazytips/karabiner/lr
 
 ## 应用
 
+![image-20210520153315825](/image/image-20210520153315825.png)
+
+上面是在Keyboard Maestro中使用的快捷键,实际操作时,只需要按长按 `H`+`1` 就可以了,当然也你可以用其他三个hyper键,看你的方便了.

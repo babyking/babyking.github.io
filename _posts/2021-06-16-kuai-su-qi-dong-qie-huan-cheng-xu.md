@@ -30,7 +30,7 @@ Option + key 来启动或切换应用程序.
 
 
 
-同时,前面我们在 [超级键HyperKey](https://babyking.github.io/) 一文中有把长按 "D"和"K"键映射到option键,这样我们在打字模式的时候启动和切换应用将变得更为舒适,两只手不需要作任何移动.
+同时,前面我们在 [超级键HyperKey](https://babyking.github.io/%E5%BF%AB%E6%8D%B7%E7%9A%84%E9%94%AE/2021/05/20/chao-ji-de-jian-hyper-key.html) 一文中有把长按 "D"和"K"键映射到option键,这样我们在打字模式的时候启动和切换应用将变得更为舒适,两只手不需要作任何移动.
 
 ![image-20210616152819400](/image/image-20210616152819400.png)
 

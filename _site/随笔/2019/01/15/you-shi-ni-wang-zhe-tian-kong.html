@@ -18,32 +18,20 @@
 	<div class="wrapper">
 		<ul>
 			<li>↳</li>
-			<li id="1"><a href="/">Blog</a></li>
-			<li id="2"><a href="/category/"><span>分类</span></a></li>
-			<li id="3"><a href="/tag/"><span>标签</span></a></li>
-			<!-- <li id="5"><a href="/music/">弹弹琴</a></li> -->
-			<li id="4"><a href="/t/">一个人推</a></li>
-			<li id="6"><a href="/about/">关于</a></li>
+			<li id="/"><a href="/">Blog</a></li>
+			<li id="/category/"><a href="/category/"><span>分类</span></a></li>
+			<li id="/tag/"><a href="/tag/"><span>标签</span></a></li>
+			<li id="/t/"> <a href="/t/">一个人推</a> </li>
+			<li id="/t/2020/"> <a href="/t/2020"><span>2020</span></a> </li>
+			<li id="/t/2019/"> <a href="/t/2019"><span>2019</span></a> </li>
+			<li id="/about/"><a href="/about/">关于</a></li>
 		</ul>
 	</div>
 </div>
 
 <script>
 	var category = location.pathname;
-	if (category == '/') {
-		document.getElementById('1').style.textDecoration = "underline";
-	} else if (category == '/category/') {
-		document.getElementById('2').style.textDecoration = "underline";
-	} else if (category == '/tag/') {
-		document.getElementById('3').style.textDecoration = "underline";
-	} else if (category == '/t/') {
-		document.getElementById('t').style.color = "red";
-	}else if (category == '/music/') {
-		document.getElementById('5').style.textDecoration = "underline";
-	} else if (category == '/about/') {
-		document.getElementById('6').style.textDecoration = "underline";
-	} 
-
+	document.getElementById(category).style.textDecoration = "underline";
 </script>
 	<div class="wrapper main">
 		<div id="content" style="margin-top:30px;">
@@ -62,9 +50,14 @@
 	<p style="clear:both"></p>
 </div>
 <link rel="alternate" type="application/atom+xml" title="Babyking's Blog" href="/feed.xml">
-<script data-ad-client="ca-pub-3047364963784226" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127077562-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-
+  gtag('config', 'UA-127077562-1');
+</script>
 	</div>
 </body>
 

@@ -72,6 +72,10 @@ amix的vimrc使用指南, 配置文件仓库:<https://github.com/amix/vimrc>
 
 * 最近两个Tab切换 `,tl`
 
+* 快速切换tab, `,N`  N取值1-9 
+
+  > 快速切换是自己扩展的,定义在my.vimrc中,切换最方便
+
   
 
 * 移动当前Tab位置到第几个Tab后 `,tm N`  **重点,N不是移动目标位置,而是第几个tab的后面**

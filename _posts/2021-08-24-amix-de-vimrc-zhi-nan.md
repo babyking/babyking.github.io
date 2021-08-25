@@ -12,14 +12,13 @@ amix的vimrc使用指南, 配置文件仓库:<https://github.com/amix/vimrc>
 
 
 
-* Leader键 `,` 后面大部分的操作都依赖这个键
-
 ## General
 
+* Leader键 `,` 后面大部分的操作都依赖这个键
+
 * 以当前Buffer的目录作为工作目录(CWD), `,cd`
-* 
 
-
+  
 
 ## 文件,Buffer
 
@@ -49,10 +48,8 @@ amix的vimrc使用指南, 配置文件仓库:<https://github.com/amix/vimrc>
 ## 窗口
 
 * windows切换 `^+hjkl`
-* 
-* 
 
-
+  
 
 ## Tab
 

@@ -30,7 +30,7 @@ dup2 从字面上理解其实就是把 fd1指向的文件表项复制给了fd2,�
 FILE* f; //这里的f也可以是管道等其他文件
 
 int fd_backup = dup(STDOUT_FILENO);
-int fd = dup2(f,STDOUT_FILENO); //这里的fd如果不是-1,则是第二个参数中的fd值,用于后面恢复到重定向前状态
+int fd = dup2(f,STDOUT_FILENO); //这里的fd如果不是-1,返回值是第二个参数中的fd值,用于后面恢复到重定向前状态
 
 // 此时对STDOUT的操作重定向到 f
 

@@ -298,11 +298,11 @@ p.nav + div {
 }
 
 p code {
-  /* background: #eee;
+  background: #eee;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 3px 6px;
-  margin: 0 3px; */
+  margin: 0 3px; 
 }
 
 ul.posts li a {

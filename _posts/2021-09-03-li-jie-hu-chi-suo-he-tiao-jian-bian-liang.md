@@ -50,11 +50,12 @@ mutex //全局变量
  ready = false //全局变量
 
 //Thread A
- pthread_mutex_lock(&mutex) //加锁 mutext到wait调用成功之前,不允许对ready条件进行修改
+ pthread_mutex_lock(&mutex) //加锁 mutext到wait调用成功之前,不允许对ready条件进行修改。如果这里不加锁mutex的话，有可能在pthread_cond_wait调用未完成（没把当前线程成功放到等待队列）之前，别的线程改变了条件ready, 这个时候Thread A还没有成功进入到等待队列，所以无法被唤醒，也就错过此唤醒信号，Thread会继续阻塞，但此时条件却已经被改变。
  while ready == false {
    			
    	pthread_cond_wait(&cond, &mutex) 
     // wait内部把线程放到等待队列完成后,再解锁mutex,主要是为了其他线程这时可以获取mutex并得到修改条件变量 ready的机会,然后通过发送con信号来唤醒线程A
+    // 被唤醒后先加锁mutex,然后开始新的while判断，如果ready则跳出while,解锁mutex,执行后面的操作。 如果not ready 则继续阻塞等待。
  }
 	pthread_mutex_unlock(&mutex) //如果条件 read==true的话,解锁mutext,继续执行条件满足后的操作
   

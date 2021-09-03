@@ -54,8 +54,8 @@ mutex //全局变量
  while ready == false {
    			
    	pthread_cond_wait(&cond, &mutex) 
-    // wait内部把线程放到等待队列完成后,再解锁mutex,主要是为了其他线程这时可以获取mutex并得到修改条件变量 ready的机会,然后通过发送con信号来唤醒线程A
-    // 被唤醒后先加锁mutex,然后开始新的while判断，如果ready则跳出while,解锁mutex,执行后面的操作。 如果not ready 则继续阻塞等待。
+    // wait内部把线程放到等待队列完成后,再解锁mutex,最后一步解锁mutex主要是为了其他线程这时可以获取mutex并得到修改条件变量 ready的机会,然后通过发送con信号来唤醒线程A
+    // 线程A被唤醒后先加锁mutex,然后开始新的while判断，如果ready则跳出while,解锁mutex,执行后面的操作。 如果not ready 则继续阻塞等待。
  }
 	pthread_mutex_unlock(&mutex) //如果条件 read==true的话,解锁mutext,继续执行条件满足后的操作
   

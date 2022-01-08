@@ -28,7 +28,7 @@ tags: [效果器,吉他]
 2. 2×12“ Vintage 30 by Celestion
 3. CabIR的Marshall®8×12″ AlNiCo
 
-#### 
+
 
 ## 详细内容
 

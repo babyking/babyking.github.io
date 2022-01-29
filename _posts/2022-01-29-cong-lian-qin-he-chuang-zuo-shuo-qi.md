@@ -3,7 +3,7 @@ typora-root-url: ../
 typora-copy-images-to: ../image
 layout: post
 title: 从练琴和创作说起
-date: 2022-01-29 10:07
+date: 2022-01-28 10:07
 category: 音乐
 tags: [学习方法]
 ---

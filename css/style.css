@@ -120,7 +120,9 @@ a {
     background-position: 0 0;
     word-break: break-word;
 }
-
+.cnt p+font {
+  color: lightgray;
+}
 p a {
   text-decoration: underline;
 }

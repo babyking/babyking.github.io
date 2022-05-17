@@ -10,6 +10,10 @@ tags: [Mac,macOS]
 
 
 
+![image-20220517195515187](/image/image-20220517195515187.png)
+
+
+
 ```lua
 -- 多显示屏幕切换
 hs.hotkey.bind(hyper, 'return', function() 

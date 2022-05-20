@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: post
 title: HammerSpoon下窗口在多个显示器切换
 date: 2022-05-17 15:28
-category: 其他
+category: 技术
 tags: [Mac,macOS]
 ---
 

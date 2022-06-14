@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: private
 title: 音乐伴奏隐私政策
 date: 2022-04-07 15:12
-permalink: /privacy/myaccompaniment/zh/
+permalink: /privacy/myaccompaniment/cn/
 ---
 
 ## 音乐伴奏隐私政策

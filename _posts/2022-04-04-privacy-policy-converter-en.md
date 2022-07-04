@@ -2,7 +2,7 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: private
-title: Converter: Audio & Video Privacy Policy
+title: Converter Audio & Video Privacy Policy
 date: 2022-04-07 15:12
 permalink: /privacy/converter/en/
 ---

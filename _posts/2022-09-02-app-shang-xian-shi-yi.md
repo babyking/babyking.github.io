@@ -2,13 +2,17 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: post
-title: APP上线拾遗
+title: iOS/macOS 开发上线拾遗
 date: 2022-09-02 14:59
 category: 技术
 tags: [ios,app,appstore]
 ---
 
 
+
+## 国际化/多国语言
+
+![image-20220907215136408](/image/image-20220907215136408.png)
 
 ## 未使用出口加密
 

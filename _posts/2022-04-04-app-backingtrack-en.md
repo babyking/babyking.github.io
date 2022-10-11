@@ -26,7 +26,7 @@ You can easily extract audio from music files and video files, and change the ke
  Export to iCloud Drive and any other app that can receive shared files
 
 
-Email: jintongbao@qq.com
+Email: <jintongbao@qq.com>
 
 
 

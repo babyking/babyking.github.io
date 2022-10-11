@@ -23,7 +23,7 @@ permalink: /app/backingtrack/zh/
 
 
 
-Email: jintongbao@qq.com
+Email: <jintongbao@qq.com>
 
 
 

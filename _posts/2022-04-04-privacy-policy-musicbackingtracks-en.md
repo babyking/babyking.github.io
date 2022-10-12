@@ -51,3 +51,5 @@ Changes to this privacy policy
 
 Please protect your personal information properly and provide it to others only when necessary.
 
+If you have any questions, you can contact us by email. Email: <jintongbao@qq.com>
+

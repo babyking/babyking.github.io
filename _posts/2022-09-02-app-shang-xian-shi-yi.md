@@ -10,6 +10,15 @@ tags: [ios,app,appstore]
 
 
 
+# Info.plist
+
+1. `Supports Document Browser` `YES`   //如果APP接受分享文件需要增加此项
+2. 
+
+
+
+
+
 ## 隐私政策和EULA
 
 1. 在APP介绍说明中添加隐私政策和EULA的链接

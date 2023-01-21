@@ -2,9 +2,9 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: private
-title: pdf-格式转换
+title: 电子书-格式转换
 date: 2022-04-07 15:12
-permalink: /privacy/pdf-converter/zh/
+permalink: /privacy/ebook-converter/zh/
 ---
 
 ## 电子书-格式转换隐私政策

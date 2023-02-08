@@ -13,7 +13,25 @@ permalink: /app/videovolume/en/
 
 
 
- 
+"Video Loudify" is an efficient video volume adjusting application. It provides the following features:
+
+1.Analyze the audio in the video and give the best volume adjustment suggestions.
+
+2.Adjust the volume of the video.
+
+3.Supports common format video and audio files.
+
+4.Supports sharing and export.
+
+5.Will not re-encode the video and prioritize adjustment time.
+
+"Video Loudify" allows you to easily adjust the volume of your video, making it perfect.
+
+
+
+ ![image-20230208161620556](/image/image-20230208161620556.png)
+
+
 
 
 

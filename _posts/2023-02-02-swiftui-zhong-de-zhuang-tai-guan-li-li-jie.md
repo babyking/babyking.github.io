@@ -10,11 +10,51 @@ tags: [swiftui]
 
 
 
+总结更新:
+
+1. @State是针对一个View的简单数据存储且私有. 一个View的多个实例都有自己的 @State
+2. @StateObject是针对一个View的复杂数据存储,一个View的多个实例共享一个@StateObject
+3. @ObservedObjec是对一个View的复杂数据存储,一个View的多个实例有多个@ObservedObject
+4. @StateObject、@ObservedObject 实现ObservableObject协议,通过@Pblished来声明被观察对象
+5. @Binding 不光可以接受@State的对象,也可以接受@StateObject和@ObservedObject对象中的成员数据.
+
+```swift
+class Settings: ObservableObject {
+    @Published var fontSize: Int = 17
+}
+
+struct ContentView: View {
+    @ObservedObject var settings = Settings()
+
+    var body: some View {
+        Text("Hello, World!")
+            .font(.system(size: CGFloat(settings.fontSize)))
+            .padding()
+    }
+}
+
+struct SettingsView: View {
+    @Binding var fontSize: Int
+
+    var body: some View {
+        VStack {
+            Text("Font Size")
+            Stepper("Size", value: $fontSize, in: 10...50)
+        }
+    }
+}
+
+```
+
+6. 
+
+
+
 以下的很多理解是看了[@StateObject 和 @ObservedObject 的区别和使用](https://onevcat.com/2020/06/stateobject/)跟chatGPT聊完得出的,谢谢chatGPT
 
 
 
-1. @State 和@Binding 是一对,@StateObject 和 @ObservedObject 是一对. (可能不对?) .****
+1. ~~@State 和@Binding 是一对,@StateObject 和 @ObservedObject 是一对. (可能不对?) .****~~
 
 2. 在View中声明并创建实例@ObservedObject ,那么View多次创建则其@ObservedObject 也会多次创建,如果多个View需要共享一个数据状态,则需要声明 @StateObject来替代 @ObservedObject .  **@StateObject更像是状态单例描述符**
 

@@ -2,30 +2,28 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: private
-title: APP名称
+title: 吉他手伴奏
 date: 2022-04-07 15:12
-permalink: /app/APP名称/en/
+permalink: /app/guitarbacking/zh/
 ---
 
-# APP名称
-
-## 介绍
-
-
-
- 
+## 吉他手伴奏
 
 
 
 
 
-End User License Agreement (EULA):
+
+
+
+
+最终用户许可协议 (EULA):
 
  https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
-Feedback:
+反馈:
 
-For any questions, please contact us at yueyin.music@foxmail.com
+任何问题,请邮件联系我们  yueyin.music@foxmail.com
 
 
 

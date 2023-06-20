@@ -2,12 +2,12 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: private
-title: Audio/Video Tools
+title: Audio Editing
 date: 2022-04-07 15:12
 permalink: /privacy/audiotools/en/
 ---
 
-## Audio/Video Tools Privacy Policy
+## Audio Editing Privacy Policy
 
 
 This application respects and protects the privacy of all users who use the service. In order to provide you with more accurate and personalized services, this application will use and disclose your personal information in accordance with the provisions of this privacy policy. However, this application will treat this information with a high degree of diligence and prudence. Except as otherwise provided in this privacy policy, this application will not disclose or provide this information to third parties without your prior permission. This application will update this privacy policy from time to time. When you agree to this application service agreement, you are deemed to have agreed to the entire contents of this privacy policy. This privacy policy is an integral part of the application service agreement.

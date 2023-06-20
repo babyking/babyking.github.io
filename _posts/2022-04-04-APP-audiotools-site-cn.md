@@ -2,13 +2,13 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: private
-title: 音频视频工具箱
+title: 音频编辑APP
 date: 2022-04-07 15:12
 permalink: /app/audiotools/zh/
 
 ---
 
-## 音频视频工具箱
+## 音频编辑APP
 
 
 
@@ -18,7 +18,7 @@ permalink: /app/audiotools/zh/
 
 ![image-20230422091513016](/image/image-20230422091513016.png)
 
-音频视频工具箱是一款提供多种音频、视频处理工具的应用。该应用包括以下功能：
+音频编辑APP是一款提供多种音频、视频处理工具的应用。该应用包括以下功能：
 
 1. 人声伴奏分离：去掉音乐中的人声，提取伴奏。
 

@@ -2,12 +2,12 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: private
-title: Audio Video Tools
+title: Audio Editing
 date: 2022-04-07 15:12
 permalink: /app/audiotools/en/
 ---
 
-## Audio Video Tools
+## Audio Editing
 
 
 
@@ -19,7 +19,7 @@ permalink: /app/audiotools/en/
 
 
 
-Audio/Video Tools is an application that provides a variety of audio and video processing tools. It includes the following functions:
+Audio Editing is an application that provides a variety of audio and video processing tools. It includes the following functions:
 
 1. Vocal Isolation: remove vocals from music tracks and extract instrumentals.
 2. Audio Extraction from Video: extract audio from video files.

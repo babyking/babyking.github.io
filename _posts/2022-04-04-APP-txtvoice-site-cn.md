@@ -3,7 +3,7 @@ typora-root-url: ../
 typora-copy-images-to: ../image
 layout: private
 title: 文字转语音
-date: 2022-04-07 15:12
+date: 2023-07-07 15:12
 permalink: /app/txtvoice/zh/
 
 ---
@@ -29,6 +29,28 @@ permalink: /app/txtvoice/zh/
 无论你是希望把文章、笔记快速制作成有声书,还是想把聊天记录、留言转成语音文件,这个APP都能完美满足你的需求。
 
 简单易用的操作,专业完美的语音转换质量,在工作、学习、生活中都可以发挥巨大作用。无论你是学生,上班族,作家,这个APP都将成为你最实用的语音转换工具!
+
+
+
+订阅会员将享有:
+
+1. 支持长文本转换
+2. 无数量限制
+3. 无广告
+
+关于订阅、续订:
+
+1. 订阅确认后,将从您的苹果iTuns帐户付款.
+2. 订阅到期后会自动续订 ,如果您需要取消订阅,在到期前至少24小时操作取消.
+3. 随时可取消订阅.(AppStore -> 右上角AppleID头像 -> 订阅 -> 选择订阅项目 -> 点击取消订阅)
+
+隐私政策:
+
+https://babyking.github.io/privacy/txtvoice/zh/
+
+最终用户许可协议 (EULA):
+
+https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
 
 

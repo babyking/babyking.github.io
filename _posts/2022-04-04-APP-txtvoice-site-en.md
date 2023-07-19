@@ -3,7 +3,7 @@ typora-root-url: ../
 typora-copy-images-to: ../image
 layout: private
 title: Text2Voice
-date: 2022-04-07 15:12
+date: 2023-07-07 15:12
 permalink: /app/txtvoice/en/
 ---
 
@@ -28,6 +28,28 @@ This app quickly converts any text into natural sounding speech.
 
 
 Whether you need to convert text for business, school or pleasure, this text to speech app has you covered!
+
+
+
+Subscribing members will enjoy:
+
+1. support for large text conversion
+2. No quantity limit
+3. No advertising
+
+About subscriptions and renewals:
+
+1. Payment will be made from your Apple iTuns account after the subscription is confirmed. 2.
+2. The subscription will automatically renew when it expires, if you need to cancel it, do so at least 24 hours before it expires.
+3. You can cancel your subscription at any time. (AppStore -> AppleID avatar in the upper right corner -> Subscriptions -> select the subscription item -> click to cancel the subscription)
+
+Privacy Policy:
+
+https://babyking.github.io/privacy/txtvoice/en/
+
+End User License Agreement (EULA):
+
+https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
 
 

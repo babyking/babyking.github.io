@@ -3,7 +3,7 @@ typora-root-url: ../
 typora-copy-images-to: ../image
 layout: private
 title: Text2Voice
-date: 2022-04-07 15:12
+date: 2023-07-07 15:12
 permalink: /privacy/txtvoice/en/
 ---
 

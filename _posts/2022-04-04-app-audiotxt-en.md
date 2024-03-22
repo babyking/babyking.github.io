@@ -7,11 +7,10 @@ date: 2022-04-07 15:12
 permalink: /app/audiotxt/en/
 ---
 
-##Audio text converter
+## Audio text converter
 
 ![image-20240319122210092](/image/image-20240319122210092.png)
 
-![image-20230124020329570](/image/image-20230124020329570.png
 
 1. 音频录音转文字是一款将录音、音频、视频中的语音转换成文字的应用,使用简单便捷.
 

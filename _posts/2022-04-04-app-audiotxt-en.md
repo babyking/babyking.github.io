@@ -2,7 +2,7 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: private
-title: Audio text converter
+title: Audio-Text
 date: 2022-04-07 15:12
 permalink: /app/audiotxt/en/
 ---
@@ -12,38 +12,34 @@ permalink: /app/audiotxt/en/
 ![image-20240319122210092](/image/image-20240319122210092.png)
 
 
-1. 音频录音转文字是一款将录音、音频、视频中的语音转换成文字的应用,使用简单便捷.
+Audio-Text is an application that converts speech in recordings, audios, and videos into text. It is simple and convenient to use.
 
-   核心功能:
+Core functions:
+[Recording to text] Start recording with one click and support text editing.
+[Audio to text] Import third-party audio files for transcription.
+[Video to text] Quickly extract video audio and convert the audio content into text.
+【Audio Tool】Cut and merge audio to make text conversion easier
+[One-click recording] One-click quick recording, easy to operate.
 
-   【录音转文字】一键开始录音,支持文字编辑。
 
-   【音频转文字】导入第三方音频文件进行转录。
 
-   【视频转文字】快速提取视频音频,并将音频内容转换成文字。
+Applicable scene:
+Text workers, short video creators, office staff meeting records, students' class notes, reporter interviews and organization, business communication and collaboration, etc.
 
-   【音频工具】裁剪合并音频,更方便做文字转换
 
-   【一键录音】一键快捷录音,操作便捷.
+About subscription and renewal:
 
-   适用场景:
+1. After subscription is confirmed, payment will be made from your Apple iTunes account.
+2. The subscription will be automatically renewed after expiration. If you need to cancel the subscription, please cancel it at least 24 hours before expiration.
+3. You can cancel the subscription at any time. (AppStore -> Apple ID avatar in the upper right corner -> Subscription -> Select the subscription item -> Click to cancel the subscription)
 
-   文字工作者、短视频创作者、办公人员会议记录、学生上课笔记、记者采访整理、商务沟通协作等。
 
 Privacy Policy:  
-
-
-
-
-https://babyking.github.io/privacy/audiotxt/en/
-
+https://babyking.github.io/privacy/audiotxt/zh/
 End User License Agreement (EULA):
-
- https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
-
-Feedback:
-
-For any questions, please contact us at yueyin.music@foxmail.com
+  https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
 
+feedback:
 
+If you have any questions, please contact us by email: yueyin.music@foxmail.com

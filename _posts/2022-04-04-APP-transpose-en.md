@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: private
 title: Bass Backing
 date: 2022-04-07 15:12
-permalink: /audiotranspose-app/
+permalink: /musictranspose-app/
 ---
 
 # Music Transpose 

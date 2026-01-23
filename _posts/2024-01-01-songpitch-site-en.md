@@ -44,4 +44,4 @@ End User License Agreement (EULA):
 
 feedback:
 
-If you have any questions, please contact us by email: tapaudio@qq.com
+If you have any questions, please contact us by email: yueyin.music@foxmail.com

@@ -35,7 +35,7 @@ permalink: /app/songpitch/zh/
 
 反馈:
 
-任何问题,请邮件联系我们  tapaudio@qq.com
+任何问题,请邮件联系我们  yueyin.music@foxmail.com
 
 
 

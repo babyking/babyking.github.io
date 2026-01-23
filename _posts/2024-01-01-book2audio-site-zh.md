@@ -37,7 +37,7 @@ Book2Audio 是一款功能强大的电子书转有声书工具，专为书籍爱
 
 反馈:
 
-任何问题,请邮件联系我们  tapaudio@qq.com
+任何问题,请邮件联系我们  yueyin.music@foxmail.com
 
 
 

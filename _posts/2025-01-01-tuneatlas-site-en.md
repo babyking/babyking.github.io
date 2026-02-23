@@ -12,27 +12,23 @@ permalink: /app/tuneatlas/en/
 This page provides app support information and key links.
 
 ### App Overview
-TuneAtlas is a professional batch music key and BPM analysis tool designed for musicians, DJs, and music enthusiasts. It helps you quickly analyze the musical key and tempo of your audio files, making it easy to organize your music library and create harmonic mixes.
+TuneAtlas is a professional music analysis tool designed for DJs, music producers, and audio enthusiasts. It provides fast and accurate batch analysis of your music library, detecting musical keys and BPM (Beats Per Minute) with precision.
 
-Key Features:
-• Batch Analysis: Automatically analyze the key and BPM of multiple audio files at once
-• Camelot Wheel Browser: Visualize and browse your music collection using the Camelot wheel for harmonic mixing
-• Music Library Management: Organize your tracks with powerful filtering and sorting capabilities
-• Statistics Dashboard: View detailed analytics of your music collection including key distribution and BPM ranges
-• Transpose & Tempo Change: Adjust key and playback speed for practice and performance
-• Export Functionality: Export your analysis results for use in other applications
+**Key Features:**
 
-Free Version:
-• Analyze up to 10 tracks per day
-• Basic library management features
-• 45-second preview playback
+• **Batch Analysis** – Process multiple audio files simultaneously, saving you hours of manual work. Simply drag and drop your music files and let TuneAtlas do the heavy lifting.
 
-Premium Features (One-Time Purchase):
-• Unlimited batch analysis
-• Full track playback without time limits
-• Advanced statistics and reporting
+• **Camelot Wheel Visualization** – Browse your music library by harmonic keys using the popular Camelot wheel system. Easily find compatible tracks for seamless mixing and harmonic transitions.
 
-Perfect for DJs preparing sets, musicians practicing with backing tracks, or anyone looking to better understand their music collection.
+• **Smart Library Management** – Organize your music by key, BPM, and other metadata. Filter, sort, and search your collection with powerful tools designed for music discovery.
+
+• **Wide Format Support** – Supports common audio formats including MP3, FLAC, WAV, M4A, and more.
+
+• **Offline Processing** – All analysis happens locally on your Mac. Your music files never leave your device, ensuring complete privacy.
+
+Whether you're preparing a DJ set, organizing a production library, or cataloging your personal music collection, TuneAtlas streamlines your workflow with powerful batch analysis and intuitive visual tools.
+
+Perfect for harmonic mixing, set preparation, and music library organization.
 
 ### Links
 - Privacy Policy: https://babyking.github.io/privacy/tuneatlas/en/

@@ -2,16 +2,16 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: private
-title: StemExtractor
+title: SongSplit
 date: 2024-02-18 11:00
 permalink: /app/stemextractor/en/
 ---
 
-## StemExtractor
+## SongSplit
 
-<img src="/image/stemextractor-screenshot.png" alt="StemExtractor Screenshot" style="zoom:50%;" />
+<img src="/image/stemextractor-screenshot.png" alt="SongSplit Screenshot" style="zoom:50%;" />
 
-StemExtractor is a professional AI-powered audio stem separation tool designed for musicians, producers, and audio enthusiasts. Whether you're practicing, remixing, or analyzing music, StemExtractor provides the tools you need to work with individual audio components.
+SongSplit is a professional AI-powered audio stem separation tool designed for musicians, producers, and audio enthusiasts. Whether you're practicing, remixing, or analyzing music, SongSplit provides the tools you need to work with individual audio components.
 
 Key Features:
 • AI-Powered Stem Separation: Separate audio into vocals, drums, bass, guitar, piano, and other instruments with advanced AI technology.
@@ -20,7 +20,7 @@ Key Features:
 • Multiple Export Formats: Export stems in MP3, AAC, WAV, and AIFF formats.
 • Professional Audio Processing: High-quality audio separation suitable for professional use.
 
-Whether you're a professional musician, music producer, or just love to explore audio, StemExtractor is the ultimate tool for audio stem separation! Download now and unleash your musical creativity!
+Whether you're a professional musician, music producer, or just love to explore audio, SongSplit is the ultimate tool for audio stem separation! Download now and unleash your musical creativity!
 
 Applicable Scene:
 Music practice, instrument learning, vocal removal for karaoke, remix production, music analysis, educational purposes, audio research, etc.

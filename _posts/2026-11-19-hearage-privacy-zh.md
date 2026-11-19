@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: private
 title: HearAge 隐私政策
 date: 2026-11-19 00:00
-permalink: /privacy/hhearage/zh/
+permalink: /privacy/hearage/zh/
 ---
 
 ## HearAge 隐私政策

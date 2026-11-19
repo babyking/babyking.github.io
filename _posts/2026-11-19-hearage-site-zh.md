@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: private
 title: HearAge 支持
 date: 2026-11-19 00:00
-permalink: /app/hhearage/zh/
+permalink: /app/hearage/zh/
 ---
 
 ## HearAge 支持
@@ -28,7 +28,7 @@ permalink: /app/hhearage/zh/
 全部在端侧运行：无账号、无上传、无广告、无统计 SDK。
 
 ### 链接
-- 隐私政策：https://babyking.github.io/privacy/hhearage/zh/
+- 隐私政策：https://babyking.github.io/privacy/hearage/zh/
 - EULA：https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
 ### 联系方式

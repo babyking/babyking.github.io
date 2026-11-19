@@ -4,7 +4,7 @@ typora-copy-images-to: ../image
 layout: private
 title: HearAge Support
 date: 2026-11-19 00:00
-permalink: /app/hhearage/en/
+permalink: /app/hearage/en/
 ---
 
 ## HearAge Support
@@ -28,7 +28,7 @@ How old are your ears? HearAge plays pure tones that climb in frequency — you 
 Everything runs on-device: no accounts, no uploads, no ads, no analytics SDKs.
 
 ### Links
-- Privacy Policy: https://babyking.github.io/privacy/hhearage/en/
+- Privacy Policy: https://babyking.github.io/privacy/hearage/en/
 - EULA: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
 ### Contact

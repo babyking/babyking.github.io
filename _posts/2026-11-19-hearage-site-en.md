@@ -2,17 +2,17 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: private
-title: EarAge Support
+title: HearAge Support
 date: 2026-11-19 00:00
-permalink: /app/earage/en/
+permalink: /app/hhearage/en/
 ---
 
-## EarAge Support
+## HearAge Support
 
 This page provides feature information and support for the app.
 
 ### About
-How old are your ears? EarAge plays pure tones that climb in frequency — you tap each time you hear one, and the app estimates your ear age from the highest frequency you can still catch, matched against age-group norms. It takes about a minute, works offline, and gives you a shareable result card.
+How old are your ears? HearAge plays pure tones that climb in frequency — you tap each time you hear one, and the app estimates your ear age from the highest frequency you can still catch, matched against age-group norms. It takes about a minute, works offline, and gives you a shareable result card.
 
 **Key features:**
 
@@ -28,7 +28,7 @@ How old are your ears? EarAge plays pure tones that climb in frequency — you t
 Everything runs on-device: no accounts, no uploads, no ads, no analytics SDKs.
 
 ### Links
-- Privacy Policy: https://babyking.github.io/privacy/earage/en/
+- Privacy Policy: https://babyking.github.io/privacy/hhearage/en/
 - EULA: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
 ### Contact

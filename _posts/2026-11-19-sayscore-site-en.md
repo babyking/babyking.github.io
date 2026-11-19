@@ -2,17 +2,17 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: private
-title: VocalCoach Support
+title: SayScore Support
 date: 2026-11-19 00:00
-permalink: /app/vocalcoach/en/
+permalink: /app/sayscore/en/
 ---
 
-## VocalCoach Support
+## SayScore Support
 
 This page provides feature information and support for the app.
 
 ### About
-A reading coach that lives entirely on your iPhone. Pick a piece, tap the mic, read it aloud for 30–60 seconds — VocalCoach scores the take on-device and shows you exactly which words, sounds, and pauses to work on.
+A reading coach that lives entirely on your iPhone. Pick a piece, tap the mic, read it aloud for 30–60 seconds — SayScore scores the take on-device and shows you exactly which words, sounds, and pauses to work on.
 
 **Key features:**
 
@@ -30,7 +30,7 @@ A reading coach that lives entirely on your iPhone. Pick a piece, tap the mic, r
 Recording, transcription, and scoring all run on-device: no accounts, no uploads, no ads, no analytics SDKs.
 
 ### Links
-- Privacy Policy: https://babyking.github.io/privacy/vocalcoach/en/
+- Privacy Policy: https://babyking.github.io/privacy/sayscore/en/
 - EULA: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
 ### Contact

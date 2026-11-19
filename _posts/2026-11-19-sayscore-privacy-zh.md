@@ -2,14 +2,14 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: private
-title: VocalCoach 隐私政策
+title: SayScore 隐私政策
 date: 2026-11-19 00:00
-permalink: /privacy/vocalcoach/zh/
+permalink: /privacy/sayscore/zh/
 ---
 
-## VocalCoach 隐私政策
+## SayScore 隐私政策
 
-VocalCoach 是一位私人口语教练：朗读一小段文字录下来，应用在端侧为你的表现评分——发音、语速、停顿、填充词——再针对薄弱点生成练习。
+SayScore 是一位私人口语教练：朗读一小段文字录下来，应用在端侧为你的表现评分——发音、语速、停顿、填充词——再针对薄弱点生成练习。
 本应用无广告、无统计 SDK，不会将用户数据用于广告营销。
 
 ### 数据与隐私

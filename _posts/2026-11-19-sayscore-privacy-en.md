@@ -2,14 +2,14 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: private
-title: VocalCoach Privacy Policy
+title: SayScore Privacy Policy
 date: 2026-11-19 00:00
-permalink: /privacy/vocalcoach/en/
+permalink: /privacy/sayscore/en/
 ---
 
-## VocalCoach Privacy Policy
+## SayScore Privacy Policy
 
-VocalCoach is a private reading coach: record yourself reading a short piece aloud, and the app scores your delivery on-device — pronunciation, pacing, pauses, and filler words — then builds practice around your weak spots.
+SayScore is a private reading coach: record yourself reading a short piece aloud, and the app scores your delivery on-device — pronunciation, pacing, pauses, and filler words — then builds practice around your weak spots.
 The app contains no ads and no analytics SDKs, and your data is never used for advertising.
 
 ### Data & Privacy

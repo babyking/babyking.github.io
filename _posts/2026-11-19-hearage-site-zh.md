@@ -2,17 +2,17 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: private
-title: EarAge 支持
+title: HearAge 支持
 date: 2026-11-19 00:00
-permalink: /app/earage/zh/
+permalink: /app/hhearage/zh/
 ---
 
-## EarAge 支持
+## HearAge 支持
 
 本页面提供应用功能说明与技术支持。
 
 ### 关于
-你的耳朵几岁了？EarAge 播放频率递增的纯音——每听到一声就点一下，应用根据你仍能捕捉的最高频率，对照年龄常模估算你的「耳朵年龄」，并生成可分享的结果卡。全程约一分钟，离线可用。
+你的耳朵几岁了？HearAge 播放频率递增的纯音——每听到一声就点一下，应用根据你仍能捕捉的最高频率，对照年龄常模估算你的「耳朵年龄」，并生成可分享的结果卡。全程约一分钟，离线可用。
 
 **主要功能：**
 
@@ -28,7 +28,7 @@ permalink: /app/earage/zh/
 全部在端侧运行：无账号、无上传、无广告、无统计 SDK。
 
 ### 链接
-- 隐私政策：https://babyking.github.io/privacy/earage/zh/
+- 隐私政策：https://babyking.github.io/privacy/hhearage/zh/
 - EULA：https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
 ### 联系方式

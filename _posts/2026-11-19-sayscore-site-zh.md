@@ -2,17 +2,17 @@
 typora-root-url: ../
 typora-copy-images-to: ../image
 layout: private
-title: VocalCoach 支持
+title: SayScore 支持
 date: 2026-11-19 00:00
-permalink: /app/vocalcoach/zh/
+permalink: /app/sayscore/zh/
 ---
 
-## VocalCoach 支持
+## SayScore 支持
 
 本页面提供应用功能说明与技术支持。
 
 ### 关于
-一位完全住在你 iPhone 里的朗读教练。选一段材料，点麦克风，朗读 30–60 秒——VocalCoach 在端侧为这次朗读评分，并精确告诉你哪些词、哪些音、哪些停顿需要练。
+一位完全住在你 iPhone 里的朗读教练。选一段材料，点麦克风，朗读 30–60 秒——SayScore 在端侧为这次朗读评分，并精确告诉你哪些词、哪些音、哪些停顿需要练。
 
 **主要功能：**
 
@@ -30,7 +30,7 @@ permalink: /app/vocalcoach/zh/
 录音、转写与评分全部在端侧完成：无账号、无上传、无广告、无统计 SDK。
 
 ### 链接
-- 隐私政策：https://babyking.github.io/privacy/vocalcoach/zh/
+- 隐私政策：https://babyking.github.io/privacy/sayscore/zh/
 - EULA：https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
 ### 联系方式
